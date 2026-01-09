@@ -640,6 +640,36 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* === FORM PREMIUM TWEAKS === */
+
+/* Gold labels */
+.apply-form label {
+  color: #d4af37;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* Quiet placeholders */
+.apply-form input::placeholder,
+.apply-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 400;
+}
+
+/* Even quieter on focus */
+.apply-form input:focus::placeholder,
+.apply-form textarea:focus::placeholder {
+  color: rgba(255, 255, 255, 0.18);
+}
+
+/* Better focus feel */
+.apply-form input:focus,
+.apply-form textarea:focus,
+.apply-form select:focus {
+  outline: none;
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.25);
+}
 
 
 
