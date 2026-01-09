@@ -175,7 +175,7 @@
       upload_manifesto_p:
         "Ако имаш история, позиция или текст, който подкрепя идеята — прати го тук. Ще изберем най-силните.",
 
-      // FOOTER (optional keys)
+      // FOOTER
       footer_home: "Начало",
       footer_project: "Проектът",
       footer_partners: "Партньори",
@@ -354,7 +354,7 @@
       upload_manifesto_p:
         "If you have a story, position, or text that supports the idea — send it here. We’ll select the strongest ones.",
 
-      // FOOTER (optional keys)
+      // FOOTER
       footer_home: "Home",
       footer_project: "Project",
       footer_partners: "Partners",
@@ -371,8 +371,8 @@
     localStorage.setItem("lang", lang);
     document.documentElement.lang = lang;
 
-    // translate HTML blocks
     const trans = TRANSLATIONS[lang] || {};
+
     const i18nEls = Array.from(document.querySelectorAll("[data-i18n]"));
     for (let i = 0; i < i18nEls.length; i++) {
       const el = i18nEls[i];
@@ -381,7 +381,6 @@
       if (val !== undefined) el.innerHTML = val;
     }
 
-    // placeholders (only for elements that have data-ph)
     const phEls = Array.from(document.querySelectorAll("[data-ph]"));
     for (let i = 0; i < phEls.length; i++) {
       const el = phEls[i];
@@ -390,7 +389,6 @@
       if (val) el.setAttribute("placeholder", val);
     }
 
-    // active language button
     const langBtns = Array.from(document.querySelectorAll("[data-lang]"));
     for (let i = 0; i < langBtns.length; i++) {
       const b = langBtns[i];
@@ -398,7 +396,6 @@
     }
   }
 
-  // bind language buttons
   const langButtons = Array.from(document.querySelectorAll("[data-lang]"));
   for (let i = 0; i < langButtons.length; i++) {
     const btn = langButtons[i];
@@ -460,7 +457,6 @@
         return;
       }
 
-      // Map EN role values back to BG (Google Form options are BG)
       const roleMapENtoBG = {
         "Owner / Enthusiast": "Собственик / Любител",
         Breeder: "Развъдник",
