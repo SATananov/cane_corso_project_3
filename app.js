@@ -5,6 +5,8 @@
   const TRANSLATIONS = {
     bg: {
       // NAV
+      nav_manifesto: "Манифест",
+      nav_standard: "Стандарт",
       nav_project: "Проектът",
       nav_partners: "Партньори",
       nav_contact: "Контакт",
@@ -15,6 +17,7 @@
         "Платформа за любители на породата и подбрани партньори: <strong>развъдници, ветеринарни клиники, ветеринарни аптеки, зоомагазини и дресьори</strong>.",
       home_btn_owner: "🐕 Интерес (собственик / развъдник)",
       home_btn_partner: "🏆 Интерес (партньор)",
+      home_btn_upload: "📸 Качи снимка",
       home_note:
         "Партньорствата са <strong>поетапни</strong> и с <strong>подбор</strong>. Без масовка.",
       home_card_h2: "Какво получаваш",
@@ -113,7 +116,66 @@
       msg_opened:
         "✅ Формата се отвори с попълнени данни. Натисни Submit в Google Form.",
 
-      // FOOTER (ако имаш такива ключове)
+      // UPLOAD (shared)
+      upload_section_h2: "Качване на снимки и материали",
+      upload_section_p:
+        "Изпрати снимки на Cane Corso и материали. Всичко минава през преглед и подбор.",
+      upload_photos_h3: "Снимки от потребители",
+      upload_photos_p: "Снимки (JPG/PNG/WEBP). Кратка информация и град.",
+      upload_label_name: "Име",
+      upload_label_city: "Град",
+      upload_label_contact: "Имейл / Телефон",
+      upload_label_file: "Файл",
+      upload_label_file_optional: "Файл (по желание)",
+      upload_label_message: "Бележка",
+      upload_btn_send: "Изпрати →",
+      upload_open_standard: "Отвори страницата →",
+      upload_open_manifesto: "Отвори страницата →",
+      upload_standard_h3: "Материали за стандарта",
+      upload_standard_small: "PDF/DOCX/снимки — всичко релевантно за стандарта.",
+      upload_manifesto_h3: "Материали за манифеста",
+      upload_manifesto_small: "Текст, история, позиция — подкрепа за идеята.",
+
+      upload_ph_name: "Име и фамилия",
+      upload_ph_city: "напр. Кърджали",
+      upload_ph_contact: "email / телефон",
+      upload_ph_message: "2–3 изречения…",
+
+      // STANDARD PAGE
+      standard_title: "Стандарт — UNICO SUO GENERE",
+      standard_h1: "Стандарт (Българско разклонение)",
+      standard_lead:
+        "Тук ще публикуваме <strong>реален стандарт</strong> за Cane Corso в България — изграден върху практика, отговорност и експертна преценка.",
+      standard_what_h2: "Какво означава „стандарт“",
+      standard_what_li1: "Екстериор: пропорции, глава, костна система, движения.",
+      standard_what_li2: "Темперамент: стабилен характер, контрол, социализация.",
+      standard_what_li3: "Здраве: тестове, грижа, отговорно развъждане.",
+      standard_download_h2: "Документ",
+      standard_download_p:
+        "Финалният документ ще бъде наличен тук (PDF). До тогава можеш да изпратиш предложения/материали.",
+      standard_cta: "Изпрати материал →",
+      upload_standard_h2: "Качи материал за стандарта",
+      upload_standard_p:
+        "PDF/DOCX/снимки — всичко, което подкрепя стандарта. Ще го прегледаме и ако е релевантно, ще го включим.",
+
+      // MANIFESTO PAGE
+      manifesto_title: "Манифест — UNICO SUO GENERE",
+      manifesto_h1: "Манифест",
+      manifesto_lead:
+        "Това не е поредният „проект“. Това е позиция: <strong>стандарт, контрол, честност</strong>.",
+      manifesto_p1:
+        "Cane Corso не е аксесоар. Това е сила, характер и отговорност. Ако човек не е готов да води — не трябва да взима.",
+      manifesto_p2:
+        "UNICO SUO GENERE съществува, за да върне реда: яснота за породата, реални критерии, и видимост за качествените хора.",
+      manifesto_p3:
+        "Без масовка. Без търговия „на всяка цена“. Само това, което заслужава доверие.",
+      manifesto_signature: "— Stefano De Tanini",
+      manifesto_cta: "Изпрати подкрепа / текст →",
+      upload_manifesto_h2: "Качи текст/материал за манифеста",
+      upload_manifesto_p:
+        "Ако имаш история, позиция или текст, който подкрепя идеята — прати го тук. Ще изберем най-силните.",
+
+      // FOOTER (optional keys)
       footer_home: "Начало",
       footer_project: "Проектът",
       footer_partners: "Партньори",
@@ -122,6 +184,8 @@
 
     en: {
       // NAV
+      nav_manifesto: "Manifesto",
+      nav_standard: "Standard",
       nav_project: "Project",
       nav_partners: "Partners",
       nav_contact: "Contact",
@@ -132,6 +196,7 @@
         "A platform for breed enthusiasts and selected partners: <strong>breeders, veterinary clinics, veterinary pharmacies, pet shops, and trainers</strong>.",
       home_btn_owner: "🐕 Interest (owner / breeder)",
       home_btn_partner: "🏆 Interest (partner)",
+      home_btn_upload: "📸 Upload a photo",
       home_note:
         "Partnerships are <strong>phased</strong> and <strong>curated</strong>. No mass listing.",
       home_card_h2: "What you get",
@@ -229,7 +294,67 @@
       msg_opened:
         "✅ Opened Google Form with prefilled data. Press Submit there.",
 
-      // FOOTER (ако имаш такива ключове)
+      // UPLOAD (shared)
+      upload_section_h2: "Upload photos & materials",
+      upload_section_p:
+        "Send Cane Corso photos and relevant materials. Everything goes through review and selection.",
+      upload_photos_h3: "User photo submissions",
+      upload_photos_p: "Photos (JPG/PNG/WEBP). Short note and city.",
+      upload_label_name: "Name",
+      upload_label_city: "City",
+      upload_label_contact: "Email / Phone",
+      upload_label_file: "File",
+      upload_label_file_optional: "File (optional)",
+      upload_label_message: "Note",
+      upload_btn_send: "Send →",
+      upload_open_standard: "Open the page →",
+      upload_open_manifesto: "Open the page →",
+      upload_standard_h3: "Standard materials",
+      upload_standard_small: "PDF/DOCX/photos — anything relevant to the standard.",
+      upload_manifesto_h3: "Manifesto materials",
+      upload_manifesto_small: "Text, story, position — support for the idea.",
+
+      upload_ph_name: "Full name",
+      upload_ph_city: "e.g. Sofia",
+      upload_ph_contact: "email / phone",
+      upload_ph_message: "2–3 sentences…",
+
+      // STANDARD PAGE
+      standard_title: "Standard — UNICO SUO GENERE",
+      standard_h1: "Standard (Bulgarian branch)",
+      standard_lead:
+        "Here we will publish a <strong>real standard</strong> for the Cane Corso in Bulgaria — built on practice, responsibility, and expert judgment.",
+      standard_what_h2: "What “standard” means",
+      standard_what_li1:
+        "Conformation: proportions, head, bone structure, movement.",
+      standard_what_li2: "Temperament: stability, control, socialization.",
+      standard_what_li3: "Health: testing, care, responsible breeding.",
+      standard_download_h2: "Document",
+      standard_download_p:
+        "The final document will be available here (PDF). Until then, you can submit proposals/materials.",
+      standard_cta: "Submit material →",
+      upload_standard_h2: "Upload material for the standard",
+      upload_standard_p:
+        "PDF/DOCX/photos — anything that supports the standard. We’ll review it and include what’s relevant.",
+
+      // MANIFESTO PAGE
+      manifesto_title: "Manifesto — UNICO SUO GENERE",
+      manifesto_h1: "Manifesto",
+      manifesto_lead:
+        "This is not just another “project”. It’s a position: <strong>standards, control, honesty</strong>.",
+      manifesto_p1:
+        "The Cane Corso is not an accessory. It is power, character, and responsibility. If a person is not ready to lead, they should not own one.",
+      manifesto_p2:
+        "UNICO SUO GENERE exists to restore order: clarity about the breed, real criteria, and visibility for the people who deserve trust.",
+      manifesto_p3:
+        "No mass listings. No “sell at any cost”. Only what truly earns credibility.",
+      manifesto_signature: "— Stefano De Tanini",
+      manifesto_cta: "Send support / text →",
+      upload_manifesto_h2: "Upload text/material for the manifesto",
+      upload_manifesto_p:
+        "If you have a story, position, or text that supports the idea — send it here. We’ll select the strongest ones.",
+
+      // FOOTER (optional keys)
       footer_home: "Home",
       footer_project: "Project",
       footer_partners: "Partners",
@@ -247,29 +372,38 @@
     document.documentElement.lang = lang;
 
     // translate HTML blocks
-    document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const trans = TRANSLATIONS[lang] || {};
+    const i18nEls = Array.from(document.querySelectorAll("[data-i18n]"));
+    for (let i = 0; i < i18nEls.length; i++) {
+      const el = i18nEls[i];
       const key = el.getAttribute("data-i18n");
-      const val = TRANSLATIONS[lang] && TRANSLATIONS[lang][key];
+      const val = trans[key];
       if (val !== undefined) el.innerHTML = val;
-    });
+    }
 
     // placeholders (only for elements that have data-ph)
-    document.querySelectorAll("[data-ph]").forEach((el) => {
+    const phEls = Array.from(document.querySelectorAll("[data-ph]"));
+    for (let i = 0; i < phEls.length; i++) {
+      const el = phEls[i];
       const key = el.getAttribute("data-ph");
-      const val = TRANSLATIONS[lang] && TRANSLATIONS[lang][key];
+      const val = trans[key];
       if (val) el.setAttribute("placeholder", val);
-    });
+    }
 
     // active language button
-    document.querySelectorAll("[data-lang]").forEach((b) => {
+    const langBtns = Array.from(document.querySelectorAll("[data-lang]"));
+    for (let i = 0; i < langBtns.length; i++) {
+      const b = langBtns[i];
       b.classList.toggle("active", b.getAttribute("data-lang") === lang);
-    });
+    }
   }
 
   // bind language buttons
-  document.querySelectorAll("[data-lang]").forEach((btn) => {
+  const langButtons = Array.from(document.querySelectorAll("[data-lang]"));
+  for (let i = 0; i < langButtons.length; i++) {
+    const btn = langButtons[i];
     btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang")));
-  });
+  }
 
   setLang(getLang());
 
@@ -322,7 +456,7 @@
       };
 
       if (!v.role || !v.name || !v.city || !v.contact) {
-        showToast(TRANSLATIONS[lang].msg_required);
+        showToast((TRANSLATIONS[lang] || TRANSLATIONS.bg).msg_required);
         return;
       }
 
@@ -345,7 +479,7 @@
       p.set(ENTRY.message, v.message || "");
 
       window.open(GOOGLE_FORM + "?" + p.toString(), "_blank", "noopener");
-      showToast(TRANSLATIONS[lang].msg_opened);
+      showToast((TRANSLATIONS[lang] || TRANSLATIONS.bg).msg_opened);
     });
   }
 
