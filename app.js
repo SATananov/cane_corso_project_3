@@ -15,11 +15,15 @@
         "Платформа за любители на породата и подбрани партньори: <strong>развъдници, ветеринарни клиники, ветеринарни аптеки, зоомагазини и дресьори</strong>.",
       home_btn_owner: "🐕 Интерес (собственик / развъдник)",
       home_btn_partner: "🏆 Интерес (партньор)",
-      home_note: "Партньорствата са <strong>поетапни</strong> и с <strong>подбор</strong>. Без масовка.",
+      home_note:
+        "Партньорствата са <strong>поетапни</strong> и с <strong>подбор</strong>. Без масовка.",
       home_card_h2: "Какво получаваш",
-      home_card_li1: "Ясна насока за породата: характер, грижа, отговорно отглеждане.",
-      home_card_li2: "Сигнал за качество: партньори, които държат на стандарт.",
-      home_card_li3: "Канал за връзка: бърза ориентация към правилните хора и услуги.",
+      home_card_li1:
+        "Ясна насока за породата: характер, грижа, отговорно отглеждане.",
+      home_card_li2:
+        "Сигнал за качество: партньори, които държат на стандарт.",
+      home_card_li3:
+        "Канал за връзка: бърза ориентация към правилните хора и услуги.",
       home_card_h3: "За кого е",
       home_card_p:
         "За хора, които уважават силата на Cane Corso и искат контрол, стабилен характер и отговорност.",
@@ -58,11 +62,14 @@
       partners_pharm_h2: "Ветеринарни аптеки",
       partners_pharm_p: "Проверени продукти, коректни консултации и наличности.",
       partners_shop_h2: "Зоомагазини",
-      partners_shop_p: "Качествена храна и екипировка, подходящи за едрите породи.",
+      partners_shop_p:
+        "Качествена храна и екипировка, подходящи за едрите породи.",
       partners_trainer_h2: "Дресьори",
-      partners_trainer_p: "Контрол, социализация, послушание — стабилен характер, не показност.",
+      partners_trainer_p:
+        "Контрол, социализация, послушание — стабилен характер, не показност.",
       partners_join_h2: "Искаш да участваш?",
-      partners_join_p: "Заяви интерес и ще се свържем с теб за следващи стъпки.",
+      partners_join_p:
+        "Заяви интерес и ще се свържем с теб за следващи стъпки.",
       partners_join_btn: "Заяви интерес",
 
       // CONTACT (page texts)
@@ -83,7 +90,8 @@
       chip_shops: "Зоомагазини",
       chip_trainers: "Дресьори",
       contact_form_h2: "Заявка за участие",
-      contact_form_p: "Попълваш за 30 секунди. После натискаш Submit в Google Form.",
+      contact_form_p:
+        "Попълваш за 30 секунди. После натискаш Submit в Google Form.",
       contact_btn: "Продължи към Google Form →",
       label_role: "Тип заявка",
       label_city: "Град",
@@ -102,7 +110,8 @@
       ph_contact: "0888... или email@...",
       ph_message: "Напиши 2–3 изречения…",
       msg_required: "Моля, попълни всички задължителни полета.",
-      msg_opened: "✅ Формата се отвори с попълнени данни. Натисни Submit в Google Form.",
+      msg_opened:
+        "✅ Формата се отвори с попълнени данни. Натисни Submit в Google Form.",
 
       // FOOTER (ако имаш такива ключове)
       footer_home: "Начало",
@@ -123,11 +132,14 @@
         "A platform for breed enthusiasts and selected partners: <strong>breeders, veterinary clinics, veterinary pharmacies, pet shops, and trainers</strong>.",
       home_btn_owner: "🐕 Interest (owner / breeder)",
       home_btn_partner: "🏆 Interest (partner)",
-      home_note: "Partnerships are <strong>phased</strong> and <strong>curated</strong>. No mass listing.",
+      home_note:
+        "Partnerships are <strong>phased</strong> and <strong>curated</strong>. No mass listing.",
       home_card_h2: "What you get",
-      home_card_li1: "Clear guidance: temperament, care, responsible ownership.",
+      home_card_li1:
+        "Clear guidance: temperament, care, responsible ownership.",
       home_card_li2: "A quality signal: partners who stand for standards.",
-      home_card_li3: "A direct channel: faster orientation to the right people and services.",
+      home_card_li3:
+        "A direct channel: faster orientation to the right people and services.",
       home_card_h3: "Who it’s for",
       home_card_p:
         "For people who respect the power of the Cane Corso and want control, stable temperament, and responsibility.",
@@ -162,15 +174,19 @@
       partners_breeders_h2: "Breeders",
       partners_breeders_p: "Focus on quality, responsibility, and reputation.",
       partners_vet_h2: "Veterinary clinics",
-      partners_vet_p: "Preference for experience with large breeds and real practice.",
+      partners_vet_p:
+        "Preference for experience with large breeds and real practice.",
       partners_pharm_h2: "Veterinary pharmacies",
-      partners_pharm_p: "Verified products, correct guidance, and availability.",
+      partners_pharm_p:
+        "Verified products, correct guidance, and availability.",
       partners_shop_h2: "Pet shops",
       partners_shop_p: "Quality food and equipment suitable for large breeds.",
       partners_trainer_h2: "Trainers",
-      partners_trainer_p: "Control, socialization, obedience — stable temperament, not show.",
+      partners_trainer_p:
+        "Control, socialization, obedience — stable temperament, not show.",
       partners_join_h2: "Want to join?",
-      partners_join_p: "Submit interest and we’ll contact you with next steps.",
+      partners_join_p:
+        "Submit interest and we’ll contact you with next steps.",
       partners_join_btn: "Submit interest",
 
       // CONTACT
@@ -210,14 +226,15 @@
       ph_contact: "phone or email",
       ph_message: "Write 2–3 sentences…",
       msg_required: "Please fill in all required fields.",
-      msg_opened: "✅ Opened Google Form with prefilled data. Press Submit there.",
+      msg_opened:
+        "✅ Opened Google Form with prefilled data. Press Submit there.",
 
       // FOOTER (ако имаш такива ключове)
       footer_home: "Home",
       footer_project: "Project",
       footer_partners: "Partners",
       footer_contact: "Contact",
-    }
+    },
   };
 
   function getLang() {
@@ -230,27 +247,27 @@
     document.documentElement.lang = lang;
 
     // translate HTML blocks
-    document.querySelectorAll("[data-i18n]").forEach(el => {
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       const val = TRANSLATIONS[lang] && TRANSLATIONS[lang][key];
       if (val !== undefined) el.innerHTML = val;
     });
 
     // placeholders (only for elements that have data-ph)
-    document.querySelectorAll("[data-ph]").forEach(el => {
+    document.querySelectorAll("[data-ph]").forEach((el) => {
       const key = el.getAttribute("data-ph");
       const val = TRANSLATIONS[lang] && TRANSLATIONS[lang][key];
       if (val) el.setAttribute("placeholder", val);
     });
 
     // active language button
-    document.querySelectorAll("[data-lang]").forEach(b => {
+    document.querySelectorAll("[data-lang]").forEach((b) => {
       b.classList.toggle("active", b.getAttribute("data-lang") === lang);
     });
   }
 
   // bind language buttons
-  document.querySelectorAll("[data-lang]").forEach(btn => {
+  document.querySelectorAll("[data-lang]").forEach((btn) => {
     btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang")));
   });
 
@@ -312,11 +329,11 @@
       // Map EN role values back to BG (Google Form options are BG)
       const roleMapENtoBG = {
         "Owner / Enthusiast": "Собственик / Любител",
-        "Breeder": "Развъдник",
+        Breeder: "Развъдник",
         "Veterinary clinic": "Ветеринарна клиника",
         "Veterinary pharmacy": "Ветеринарна аптека",
         "Pet shop": "Зоомагазин",
-        "Trainer": "Дресьор",
+        Trainer: "Дресьор",
       };
       if (lang === "en" && roleMapENtoBG[v.role]) v.role = roleMapENtoBG[v.role];
 

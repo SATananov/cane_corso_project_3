@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="manifesto_title">Манифест — UNICO SUO GENERE</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <span class="brand-mark">USG</span>
+        <span class="brand-text">UNICO SUO GENERE</span>
+      </a>
+
+      <nav class="nav">
+        <a class="active" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+        <a href="./project.html" data-i18n="nav_project">Проектът</a>
+        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
+        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+
+        <div class="lang">
+          <button type="button" class="lang-btn" data-lang="bg">BG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="container page-inner">
+      <h1 class="h1" data-i18n="manifesto_h1">Манифест</h1>
+
+      <p class="lead" data-i18n="manifesto_lead">
+        Това не е поредният „проект“. Това е позиция: <strong>стандарт, контрол, честност</strong>.
+      </p>
+
+      <div class="card manifesto-block">
+        <p data-i18n="manifesto_p1">
+          Cane Corso не е аксесоар. Това е сила, характер и отговорност. Ако човек не е готов да води — не трябва да взима.
+        </p>
+        <p data-i18n="manifesto_p2">
+          UNICO SUO GENERE съществува, за да върне реда: яснота за породата, реални критерии, и видимост за качествените хора.
+        </p>
+        <p data-i18n="manifesto_p3">
+          Без масовка. Без търговия „на всяка цена“. Само това, което заслужава доверие.
+        </p>
+        <p class="muted" data-i18n="manifesto_signature">— Stefano De Tanini</p>
+
+        <div class="divider"></div>
+        <a class="btn btn-outline" href="#upload-manifesto" data-i18n="manifesto_cta">Изпрати подкрепа / текст →</a>
+      </div>
+
+      <div class="card upload-card" id="upload-manifesto">
+        <h2 class="h2" data-i18n="upload_manifesto_h2">Качи текст/материал за манифеста</h2>
+        <p class="muted" data-i18n="upload_manifesto_p">
+          Ако имаш история, позиция или текст, който подкрепя идеята — прати го тук. Ще изберем най-силните.
+        </p>
+
+        <form class="apply-form" data-upload="manifesto" novalidate>
+          <div class="row">
+            <div class="field">
+              <label data-i18n="upload_label_name">Име</label>
+              <input name="name" required data-ph="upload_ph_name" />
+            </div>
+            <div class="field">
+              <label data-i18n="upload_label_contact">Имейл / Телефон</label>
+              <input name="contact" required data-ph="upload_ph_contact" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label data-i18n="upload_label_file_optional">Файл (по желание)</label>
+            <input name="file" type="file" accept=".pdf,.doc,.docx,.txt,image/*" />
+          </div>
+
+          <div class="field">
+            <label data-i18n="upload_label_message">Бележка</label>
+            <textarea name="message" data-ph="upload_ph_message"></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-wide" type="submit" data-i18n="upload_btn_send">Изпрати →</button>
+          <div class="toast" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
