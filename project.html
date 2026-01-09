@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Проектът — UNICO SUO GENERE</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <span class="brand-mark">USG</span>
+        <span class="brand-text">UNICO SUO GENERE</span>
+      </a>
+
+      <nav class="nav">
+        <a class="active" href="./project.html" data-i18n="nav_project">Проектът</a>
+        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
+        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+
+        <div class="lang">
+          <button type="button" class="lang-btn" data-lang="bg">BG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="container page-inner">
+      <h1 class="h1" data-i18n="project_h1">Проектът</h1>
+
+      <p class="lead" data-i18n="project_lead">
+        UNICO SUO GENERE е създаден като платформа за Cane Corso в България,
+        където фокусът е върху <strong>стандарта</strong>, <strong>отговорността</strong> и <strong>доверените партньори</strong>.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h2 class="h2" data-i18n="project_card1_h2">Какво е</h2>
+          <p class="muted" data-i18n="project_card1_p">
+            Място за информация, ориентация и подбрани участници от екосистемата на породата — от собственици до професионални партньори.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="h2" data-i18n="project_card2_h2">Какво НЕ е</h2>
+          <ul class="list">
+            <li data-i18n="project_card2_li1">Не е “обяви и търговия на всяка цена”.</li>
+            <li data-i18n="project_card2_li2">Не е “всеки може да се добави”.</li>
+            <li data-i18n="project_card2_li3">Не е шумна реклама без стойност.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 class="h2" data-i18n="project_card3_h2">Цел</h2>
+          <p class="muted" data-i18n="project_card3_p">
+            Да се изгради доверие и стандарт около Cane Corso — чрез ясни правила, добра практика и видимост на качествените партньори.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2 class="h2" data-i18n="project_card4_h2">Кой стои зад проекта</h2>
+          <p class="muted" data-i18n="project_card4_p">
+            Проектът е създаден и ръководен от <strong>Stefano De Tanini</strong>.
+            Ако искаш да участваш като партньор — заяви интерес през формата.
+          </p>
+
+          <a class="btn btn-primary" href="./contact.html" data-i18n="project_card4_btn">Заяви интерес</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
+      <div class="footer-links">
+        <a href="./partners.html" data-i18n="footer_partners">Партньори</a>
+        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
