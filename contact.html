@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="contact_title">Контакт / Интерес — UNICO SUO GENERE</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">USG</span>
+        <span class="brand-text">UNICO SUO GENERE</span>
+      </a>
+
+      <nav class="nav">
+        <a href="./project.html" data-i18n="nav_project">Проектът</a>
+        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
+        <a class="btn btn-outline active" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+
+        <div class="lang">
+          <button type="button" class="lang-btn" data-lang="bg">BG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="container page-inner contact-hero">
+      <div class="badge" data-i18n="contact_badge">FOUNDATION • APPLICATION</div>
+
+      <h1 class="h1" data-i18n="contact_h1">Контакт / Интерес</h1>
+
+      <p class="lead" data-i18n="contact_lead">
+        Това е <strong>първият филтър</strong> за участие в UNICO SUO GENERE — Cane Corso Bulgaria.
+        Заявките се разглеждат <strong>поетапно</strong> и с <strong>подбор</strong>.
+      </p>
+
+      <div class="contact-layout">
+        <!-- LEFT -->
+        <aside class="trust-card">
+          <h2 class="h2" data-i18n="contact_benefits_h2">Какво получаваш</h2>
+          <ul class="trust-list">
+            <li><span class="dot"></span><span data-i18n="benefit_1">Премиум видимост за Cane Corso</span></li>
+            <li><span class="dot"></span><span data-i18n="benefit_2">Подбор и качество – без масовка</span></li>
+            <li><span class="dot"></span><span data-i18n="benefit_3">Ясна структура и доверие</span></li>
+          </ul>
+
+          <div class="trust-divider"></div>
+
+          <h3 class="h3" data-i18n="contact_accept_h3">Кого приемаме</h3>
+          <div class="chips">
+            <span class="chip" data-i18n="chip_owners">Любители</span>
+            <span class="chip" data-i18n="chip_breeders">Развъдници</span>
+            <span class="chip" data-i18n="chip_vets">Вет. клиники</span>
+            <span class="chip" data-i18n="chip_pharm">Вет. аптеки</span>
+            <span class="chip" data-i18n="chip_shops">Зоомагазини</span>
+            <span class="chip" data-i18n="chip_trainers">Дресьори</span>
+          </div>
+        </aside>
+
+        <!-- RIGHT -->
+        <div class="apply-card">
+          <h2 class="h2" data-i18n="contact_form_h2">Заявка за участие</h2>
+          <p class="muted" data-i18n="contact_form_p">
+            Попълваш за 30 секунди. После натискаш Submit в Google Form.
+          </p>
+
+          <form id="siteInterestForm" class="apply-form">
+            <div class="row">
+              <div class="field">
+                <label data-i18n="label_role">Тип заявка</label>
+                <select id="role" required>
+                  <option value="" data-i18n="opt_dash">—</option>
+                  <option value="Собственик / Любител" data-i18n="opt_owner">Собственик / Любител</option>
+                  <option value="Развъдник" data-i18n="opt_breeder">Развъдник</option>
+                  <option value="Ветеринарна клиника" data-i18n="opt_vet">Ветеринарна клиника</option>
+                  <option value="Ветеринарна аптека" data-i18n="opt_pharm">Ветеринарна аптека</option>
+                  <option value="Зоомагазин" data-i18n="opt_shop">Зоомагазин</option>
+                  <option value="Дресьор" data-i18n="opt_trainer">Дресьор</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label data-i18n="label_city">Град</label>
+                <input id="city" required data-ph="ph_city" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label data-i18n="label_name">Име / Организация</label>
+                <input id="name" required data-ph="ph_name" />
+              </div>
+
+              <div class="field">
+                <label data-i18n="label_contact">Телефон или имейл</label>
+                <input id="contact" required data-ph="ph_contact" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label data-i18n="label_message">Кратко съобщение</label>
+              <textarea id="message" data-ph="ph_message"></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-wide" type="submit" data-i18n="contact_btn">
+              Продължи към Google Form →
+            </button>
+
+            <!-- toast: няма да стои празен -->
+            <div class="toast" id="toast" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
+
+
