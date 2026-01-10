@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Manifesto | Cane Corso Registry – Bulgaria</title>
+  <title>Dog Profile | Cane Corso Registry – Bulgaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Existing styles (оставяш твоите) -->
@@ -22,7 +22,7 @@
 
       <ul class="nav-links">
         <li><a href="registry.html">Registry</a></li>
-        <li><a href="manifesto.html" class="active">Manifesto</a></li>
+        <li><a href="manifesto.html">Manifesto</a></li>
         <li><a href="standard.html">Standard</a></li>
 
         <li class="guest"><a href="login.html">Login</a></li>
@@ -35,43 +35,38 @@
     </nav>
   </header>
 
-  <!-- ===== MANIFESTO CONTENT ===== -->
+  <!-- ===== DOG PROFILE ===== -->
   <main>
-    <section class="content-section manifesto">
-      <div class="content-container">
-        <h1>Manifesto</h1>
+    <section class="dog-profile">
+      <div class="dog-header">
+        <h1 id="dogName">Dog Name</h1>
+        <p id="dogColor">Color</p>
+      </div>
 
-        <p>
-          This registry was not created to follow trends, titles, or paper.
-          It was created to protect the Cane Corso as a real dog — strong,
-          balanced, functional, and loyal.
-        </p>
+      <div class="dog-content">
+        <!-- Main image -->
+        <div class="dog-main-image">
+          <img id="dogMainImage" src="" alt="Dog photo" />
+        </div>
 
-        <p>
-          The Cane Corso Registry – Bulgaria is based on real experience,
-          real dogs, and real responsibility. Every dog here represents
-          years of work, knowledge, and respect for the breed.
-        </p>
+        <!-- Info -->
+        <div class="dog-info">
+          <h3>Profile Information</h3>
+          <ul>
+            <li><strong>Gender:</strong> <span id="dogGender"></span></li>
+            <li><strong>Birth date:</strong> <span id="dogBirth"></span></li>
+            <li><strong>Owner:</strong> <span id="dogOwner"></span></li>
+            <li><strong>Status:</strong> <span id="dogStatus"></span></li>
+          </ul>
+        </div>
+      </div>
 
-        <p>
-          We do not register dogs for prestige.
-          We register dogs for truth.
-        </p>
-
-        <p>
-          This is not an organization built for mass approval.
-          This is a standard built by a man who has lived with the breed,
-          raised it, tested it, and protected it.
-        </p>
-
-        <p>
-          Cane Corso is not a fashion.
-          Cane Corso is a duty.
-        </p>
-
-        <p class="manifesto-sign">
-          — Cane Corso Registry – Bulgaria
-        </p>
+      <!-- Gallery -->
+      <div class="dog-gallery">
+        <h3>Gallery</h3>
+        <div id="dogGallery" class="gallery-grid">
+          <!-- Images injected by JS -->
+        </div>
       </div>
     </section>
   </main>
@@ -83,5 +78,6 @@
 
   <!-- ===== MAIN JS ===== -->
   <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src/pages/dogPage.js"></script>
 </body>
 </html>

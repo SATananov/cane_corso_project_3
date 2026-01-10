@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Cane Corso Registry – Bulgaria</title>
+  <title>Register | Cane Corso Registry – Bulgaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Existing styles (оставяш твоите) -->
   <link rel="stylesheet" href="./src/styles/main.css" />
   <link rel="stylesheet" href="./src/styles/theme.css" />
 
-  <!-- Logo / favicon -->
   <link rel="icon" href="./public/favicon.ico" />
 </head>
 <body>
@@ -26,44 +25,57 @@
         <li><a href="manifesto.html">Manifesto</a></li>
         <li><a href="standard.html">Standard</a></li>
 
-        <!-- Guest -->
         <li class="guest"><a href="login.html">Login</a></li>
-        <li class="guest"><a href="register.html">Register</a></li>
+        <li class="guest"><a href="register.html" class="active">Register</a></li>
 
-        <!-- User -->
         <li class="user"><a href="add-dog.html">Add Dog</a></li>
         <li class="user"><a href="#" id="logoutBtn">Logout</a></li>
-
-        <!-- Admin -->
         <li class="user admin-only"><a href="admin.html">Admin</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- ===== REGISTER FORM ===== -->
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Cane Corso Registry – Bulgaria</h1>
-        <p>
-          The first Bulgarian Cane Corso registry, based on real experience,
-          real dogs, and a real standard.
-        </p>
+    <section class="auth-section">
+      <div class="auth-card">
+        <h2>Create Account</h2>
 
-        <div class="hero-buttons">
-          <a href="registry.html" class="btn primary">View Registry</a>
-          <a href="manifesto.html" class="btn secondary">Read Manifesto</a>
-        </div>
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="6"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn primary">Register</button>
+        </form>
+
+        <p class="auth-alt">
+          Already have an account?
+          <a href="login.html">Login here</a>
+        </p>
       </div>
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2026 Cane Corso Registry – Bulgaria</p>
-  </footer>
-
-  <!-- ===== MAIN JS (Vite entry) ===== -->
+  <!-- ===== MAIN JS ===== -->
   <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src/pages/registerPage.js"></script>
 </body>
 </html>

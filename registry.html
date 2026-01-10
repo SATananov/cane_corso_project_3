@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Cane Corso Registry – Bulgaria</title>
+  <title>Registry | Cane Corso Registry – Bulgaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Existing styles (оставяш твоите) -->
   <link rel="stylesheet" href="./src/styles/main.css" />
   <link rel="stylesheet" href="./src/styles/theme.css" />
 
-  <!-- Logo / favicon -->
   <link rel="icon" href="./public/favicon.ico" />
 </head>
 <body>
@@ -22,38 +21,30 @@
       </a>
 
       <ul class="nav-links">
-        <li><a href="registry.html">Registry</a></li>
+        <li><a href="registry.html" class="active">Registry</a></li>
         <li><a href="manifesto.html">Manifesto</a></li>
         <li><a href="standard.html">Standard</a></li>
 
-        <!-- Guest -->
         <li class="guest"><a href="login.html">Login</a></li>
         <li class="guest"><a href="register.html">Register</a></li>
 
-        <!-- User -->
         <li class="user"><a href="add-dog.html">Add Dog</a></li>
         <li class="user"><a href="#" id="logoutBtn">Logout</a></li>
-
-        <!-- Admin -->
         <li class="user admin-only"><a href="admin.html">Admin</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- ===== REGISTRY ===== -->
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Cane Corso Registry – Bulgaria</h1>
-        <p>
-          The first Bulgarian Cane Corso registry, based on real experience,
-          real dogs, and a real standard.
-        </p>
+    <section class="registry-section">
+      <div class="section-header">
+        <h1>Registered Cane Corso</h1>
+        <p>Approved dogs that meet the Cane Corso Registry – Bulgaria criteria.</p>
+      </div>
 
-        <div class="hero-buttons">
-          <a href="registry.html" class="btn primary">View Registry</a>
-          <a href="manifesto.html" class="btn secondary">Read Manifesto</a>
-        </div>
+      <div id="registryList" class="registry-grid">
+        <!-- Dogs injected by registryPage.js -->
       </div>
     </section>
   </main>
@@ -63,7 +54,8 @@
     <p>© 2026 Cane Corso Registry – Bulgaria</p>
   </footer>
 
-  <!-- ===== MAIN JS (Vite entry) ===== -->
+  <!-- ===== MAIN JS ===== -->
   <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src/pages/registryPage.js"></script>
 </body>
 </html>

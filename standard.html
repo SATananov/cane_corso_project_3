@@ -1,107 +1,100 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Breed Standard | Cane Corso Registry – Bulgaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="standard_title">Стандарт — UNICO SUO GENERE</title>
-  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Existing styles (оставяш твоите) -->
+  <link rel="stylesheet" href="./src/styles/main.css" />
+  <link rel="stylesheet" href="./src/styles/theme.css" />
+
+  <link rel="icon" href="./public/favicon.ico" />
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Home">
-        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE — Cane Corso" />
-        <span class="brand-text">UNICO SUO GENERE</span>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="./public/images/logo.png" alt="Cane Corso Registry Logo" />
       </a>
 
-      <nav class="nav">
-        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-        <a class="active" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-        <a href="./project.html" data-i18n="nav_project">Проектът</a>
-        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+      <ul class="nav-links">
+        <li><a href="registry.html">Registry</a></li>
+        <li><a href="manifesto.html">Manifesto</a></li>
+        <li><a href="standard.html" class="active">Standard</a></li>
 
-        <div class="lang">
-          <button type="button" class="lang-btn" data-lang="bg">BG</button>
-          <button type="button" class="lang-btn" data-lang="en">EN</button>
-        </div>
-      </nav>
-    </div>
+        <li class="guest"><a href="login.html">Login</a></li>
+        <li class="guest"><a href="register.html">Register</a></li>
+
+        <li class="user"><a href="add-dog.html">Add Dog</a></li>
+        <li class="user"><a href="#" id="logoutBtn">Logout</a></li>
+        <li class="user admin-only"><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="page">
-    <section class="container page-inner">
-      <h1 class="h1" data-i18n="standard_h1">Стандарт (Българско разклонение)</h1>
+  <!-- ===== STANDARD CONTENT ===== -->
+  <main>
+    <section class="content-section standard">
+      <div class="content-container">
+        <h1>Cane Corso Standard</h1>
 
-      <p class="lead" data-i18n="standard_lead">
-        Тук ще публикуваме <strong>реален стандарт</strong> за Cane Corso в България — изграден върху практика,
-        отговорност и експертна преценка.
-      </p>
-
-      <div class="grid">
-        <div class="card">
-          <h2 class="h2" data-i18n="standard_what_h2">Какво означава „стандарт“</h2>
-          <ul class="list">
-            <li data-i18n="standard_what_li1">Екстериор: пропорции, глава, костна система, движения.</li>
-            <li data-i18n="standard_what_li2">Темперамент: стабилен характер, контрол, социализация.</li>
-            <li data-i18n="standard_what_li3">Здраве: тестове, грижа, отговорно развъждане.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2 class="h2" data-i18n="standard_download_h2">Документ</h2>
-          <p class="muted" data-i18n="standard_download_p">
-            Финалният документ ще бъде наличен тук (PDF). До тогава можеш да изпратиш предложения/материали.
-          </p>
-          <a class="btn btn-outline" href="#upload-standard" data-i18n="standard_cta">Изпрати материал →</a>
-        </div>
-      </div>
-
-      <div class="card upload-card" id="upload-standard">
-        <h2 class="h2" data-i18n="upload_standard_h2">Качи материал за стандарта</h2>
-        <p class="muted" data-i18n="upload_standard_p">
-          PDF/DOCX/снимки — всичко, което подкрепя стандарта. Ще го прегледаме и ако е релевантно, ще го включим.
+        <p class="standard-intro">
+          This standard reflects a practical, functional interpretation
+          of the Cane Corso, based on real-life work, temperament,
+          and structural balance.
         </p>
 
-        <form class="apply-form" data-upload="standard" novalidate>
-          <div class="row">
-            <div class="field">
-              <label data-i18n="upload_label_name">Име</label>
-              <input name="name" required data-ph="upload_ph_name" />
-            </div>
-            <div class="field">
-              <label data-i18n="upload_label_contact">Имейл / Телефон</label>
-              <input name="contact" required data-ph="upload_ph_contact" />
-            </div>
-          </div>
+        <h2>General Appearance</h2>
+        <p>
+          Medium to large-sized molossoid dog. Strong, muscular,
+          well-proportioned, without exaggeration. The body must be
+          powerful but agile.
+        </p>
 
-          <div class="field">
-            <label data-i18n="upload_label_file">Файл</label>
-            <input name="file" type="file" required accept=".pdf,.doc,.docx,.txt,image/*" />
-          </div>
+        <h2>Head</h2>
+        <p>
+          Large and imposing, with a wide skull and well-defined stop.
+          The muzzle is strong and deep, not narrow or pointed.
+        </p>
 
-          <div class="field">
-            <label data-i18n="upload_label_message">Бележка</label>
-            <textarea name="message" data-ph="upload_ph_message"></textarea>
-          </div>
+        <h2>Temperament</h2>
+        <p>
+          Stable, confident, loyal. Naturally protective without
+          unnecessary aggression. A Cane Corso must be reliable
+          in family and working environments.
+        </p>
 
-          <button class="btn btn-primary btn-wide" type="submit" data-i18n="upload_btn_send">Изпрати →</button>
-          <div class="toast" hidden></div>
-        </form>
+        <h2>Movement</h2>
+        <p>
+          Free, powerful, and coordinated. Movement must reflect
+          endurance and balance, not heaviness.
+        </p>
+
+        <h2>Disqualifying Faults</h2>
+        <ul>
+          <li>Unstable or aggressive temperament</li>
+          <li>Extreme structural exaggerations</li>
+          <li>Lack of breed type</li>
+        </ul>
+
+        <p class="standard-note">
+          This standard is used as a reference point and assisted
+          by AI tools for evaluation, but final decisions are made
+          by experienced human review.
+        </p>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
-      <div class="footer-links">
-        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
-      </div>
-    </div>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2026 Cane Corso Registry – Bulgaria</p>
   </footer>
 
-  <script src="./app.js"></script>
+  <!-- ===== MAIN JS ===== -->
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
