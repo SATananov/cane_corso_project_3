@@ -20,17 +20,8 @@
         <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
         <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
-        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
-
-        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
-        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
-
-        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
@@ -41,68 +32,57 @@
   </header>
 
   <main class="page">
-    <section class="container page-inner">
-      <div class="form-split">
-        <!-- LEFT -->
-        <aside class="brand-panel">
-          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
+    <section class="container">
+      <div class="contact-layout">
+        <!-- LEFT: BRAND -->
+        <aside class="trust-card">
+          <img class="logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — by Stefano De Tanini" />
 
-          <div class="brand-lines">
-            <div class="t1">UNICO SUO GENERE</div>
-            <div class="t2">by Stefano De Tanini</div>
-            <div class="t3" data-i18n="notfound_brand_sub">
-              Пътят е важен — но понякога страницата липсва.
-            </div>
-          </div>
-
-          <div class="divider"></div>
+          <p class="h2" style="margin: 6px 0 10px;" data-i18n="notfound_brand_sub">
+            Пътят е важен — но понякога страницата липсва.
+          </p>
 
           <p class="muted" data-i18n="notfound_left_note">
             Ако смяташ, че това е грешка — свържи се с нас и ще я оправим.
           </p>
 
-          <div class="cta" style="margin-top: 12px;">
+          <div class="trust-divider"></div>
+
+          <div class="cta">
             <a class="btn btn-secondary" href="./contact.html" data-i18n="notfound_contact_btn">Контакт →</a>
             <a class="btn btn-outline" href="./registry.html" data-i18n="notfound_registry_btn">Регистър →</a>
           </div>
+
+          <p class="note" style="margin-top:14px;" data-i18n="notfound_note">
+            UNICO SUO GENERE — by Stefano De Tanini
+          </p>
         </aside>
 
-        <!-- RIGHT -->
-        <div class="form-panel">
-          <div class="card">
-            <h1 class="h1" style="margin: 0;" data-i18n="notfound_h1">404</h1>
-            <p class="lead" data-i18n="notfound_lead">
-              Страницата не е намерена.
-            </p>
-
-            <div class="divider"></div>
-
-            <p class="muted" data-i18n="notfound_tip">
-              Провери адреса или използвай бутоните по-долу.
-            </p>
-
-            <div class="cta" style="margin-top: 12px;">
-              <a class="btn btn-primary" href="./index.html" data-i18n="notfound_home_btn">Начало →</a>
-              <a class="btn btn-outline" href="./manifesto.html" data-i18n="notfound_manifesto_btn">Манифест →</a>
-              <a class="btn btn-outline" href="./standard.html" data-i18n="notfound_standard_btn">Стандарт →</a>
+        <!-- RIGHT: MESSAGE -->
+        <div class="apply-card">
+          <div class="apply-head">
+            <div>
+              <h1 class="h1" style="margin:0;">404</h1>
+              <p class="lead" data-i18n="notfound_tip">
+                Провери адреса или използвай бутоните по-долу.
+              </p>
             </div>
+            <div class="seal">USG</div>
           </div>
 
-          <p class="note" style="margin-top: 14px;" data-i18n="notfound_note">
-            UNICO SUO GENERE — by Stefano De Tanini
+          <div class="divider"></div>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="./index.html" data-i18n="notfound_home_btn">Начало →</a>
+            <a class="btn btn-secondary" href="./manifesto.html" data-i18n="notfound_manifesto_btn">Манифест →</a>
+            <a class="btn btn-outline" href="./standard.html" data-i18n="notfound_standard_btn">Стандарт →</a>
+          </div>
+
+          <p class="note" style="margin-top:16px;">
+            © <span id="y"></span> UNICO SUO GENERE
           </p>
         </div>
       </div>
-
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
     </section>
   </main>
 
@@ -110,12 +90,13 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
-        <a href="./terms.html" data-i18n="footer_terms">Условия</a>
-        <a href="./privacy.html" data-i18n="footer_privacy">Поверителност</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
