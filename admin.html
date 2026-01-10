@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="admin_title">Админ — UNICO SUO GENERE</title>
+  <link rel="icon" href="./images/brand-icon.png" />
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container header-inner">
@@ -19,17 +21,14 @@
         <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
-
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
 
-        <!-- Guest -->
         <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
         <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
 
-        <!-- User/Admin -->
         <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
         <a class="btn btn-outline admin-only active" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button type="button" class="btn btn-outline user-only" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
 
         <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
@@ -50,39 +49,14 @@
         </p>
       </div>
 
-      <!-- Pending list -->
-      <div class="card">
-        <div class="row" style="justify-content:space-between; gap:12px; flex-wrap:wrap;">
-          <h2 class="h2" data-i18n="admin_pending_h2" style="margin:0;">Чакащи заявки</h2>
-          <button class="btn btn-outline" type="button" id="btnRefresh" data-i18n="admin_refresh_btn">
-            Обнови
-          </button>
-        </div>
-
-        <div class="grid" id="adminList" style="margin-top:12px;">
-          <!-- injected by app.js -->
-          <!-- Example admin card:
-          <div class="card">
-            <h2 class="h2">Ares</h2>
-            <p class="muted">Пол: Мъжко • Цвят: Черен • Град: Пловдив</p>
-            <div class="row" style="gap:12px; flex-wrap:wrap;">
-              <a class="btn btn-outline" href="./dog.html?id=UUID">Профил →</a>
-              <button class="btn btn-primary" data-action="approve" data-id="UUID">Одобри</button>
-              <button class="btn btn-outline" data-action="reject" data-id="UUID">Отхвърли</button>
-            </div>
-          </div>
-          -->
-        </div>
-
-        <div class="toast" id="adminToast" hidden></div>
-
-        <div class="card" id="adminState" hidden style="margin-top:12px;">
-          <p class="muted" id="adminStateText"></p>
-        </div>
-      </div>
-
-      <!-- Optional: quick stats -->
       <div class="grid">
+        <div class="card">
+          <h2 class="h2" data-i18n="admin_pending_h2">Чакащи заявки</h2>
+          <div id="adminPendingList">
+            <!-- injected by logic -->
+          </div>
+        </div>
+
         <div class="card">
           <h2 class="h2" data-i18n="admin_stats_h2">Статус</h2>
           <ul class="list">
@@ -90,15 +64,29 @@
             <li><strong data-i18n="admin_stats_approved">Одобрени:</strong> <span id="statApproved">0</span></li>
             <li><strong data-i18n="admin_stats_rejected">Отхвърлени:</strong> <span id="statRejected">0</span></li>
           </ul>
-        </div>
 
-        <div class="card">
-          <h2 class="h2" data-i18n="admin_notes_h2">Бележки</h2>
-          <p class="muted" data-i18n="admin_notes_p">
-            Одобрените профили стават видими в “Регистър”. Отхвърлените остават скрити.
-          </p>
+          <button class="btn btn-outline" id="btnRefreshAdmin" type="button" data-i18n="admin_refresh_btn">
+            Обнови
+          </button>
         </div>
       </div>
+
+      <div class="card">
+        <h2 class="h2" data-i18n="admin_notes_h2">Бележки</h2>
+        <p class="muted" data-i18n="admin_notes_p">
+          Одобрените профили стават видими в “Регистър”. Отхвърлените профили остават скрити.
+        </p>
+      </div>
+
+      <section class="bottom-nav">
+        <div class="container bottom-nav-inner">
+          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
+          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
+          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -112,7 +100,8 @@
     </div>
   </footer>
 
-  <script src="./app.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
+
 

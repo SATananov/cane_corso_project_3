@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Партньори — UNICO SUO GENERE</title>
+  <title data-i18n="partners_title">Партньори — UNICO SUO GENERE</title>
+  <link rel="icon" href="./images/brand-icon.png" />
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container header-inner">
@@ -19,8 +21,17 @@
         <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a class="active" href="./partners.html" data-i18n="nav_partners">Партньори</a>
+        <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
+
+        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
+        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
+
+        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
+        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
+        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+
         <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
-        
+
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
           <button type="button" class="lang-btn" data-lang="en">EN</button>
@@ -31,44 +42,93 @@
 
   <main class="page">
     <section class="container page-inner">
-      <h1 class="h1" data-i18n="partners_h1">Партньори</h1>
-
-      <p class="lead" data-i18n="partners_lead">
-        Категориите са подбрани така, че да покриват реалните нужди на породата. <strong>Регистрацията е поетапна и с подбор.</strong>
-      </p>
+      <div class="card">
+        <h1 class="h1" data-i18n="partners_h1">Партньори</h1>
+        <p class="lead" data-i18n="partners_lead">
+          Работим с хора и организации, които уважават породата и споделят отговорен подход.
+        </p>
+      </div>
 
       <div class="grid">
         <div class="card">
-          <h2 class="h2" data-i18n="partners_breeders_h2">Развъдници</h2>
-          <p class="muted" data-i18n="partners_breeders_p">Фокус върху качество, отговорност и репутация.</p>
+          <h2 class="h2" data-i18n="partners_types_h2">Кого търсим</h2>
+          <ul class="list">
+            <li data-i18n="partners_types_li1">Развъдници и собственици, които работят по качество, не по количество.</li>
+            <li data-i18n="partners_types_li2">Ветеринарни клиники и специалисти по диагностика/ортопедия.</li>
+            <li data-i18n="partners_types_li3">Треньори и центрове за социализация и контрол.</li>
+            <li data-i18n="partners_types_li4">Брандове за храна, добавки и оборудване с доказано качество.</li>
+          </ul>
         </div>
 
         <div class="card">
-          <h2 class="h2" data-i18n="partners_vet_h2">Ветеринарни клиники</h2>
-          <p class="muted" data-i18n="partners_vet_p">Предимство за опит с едри породи и реална практика.</p>
-        </div>
-
-        <div class="card">
-          <h2 class="h2" data-i18n="partners_pharm_h2">Ветеринарни аптеки</h2>
-          <p class="muted" data-i18n="partners_pharm_p">Проверени продукти, коректни консултации и наличности.</p>
-        </div>
-
-        <div class="card">
-          <h2 class="h2" data-i18n="partners_shop_h2">Зоомагазини</h2>
-          <p class="muted" data-i18n="partners_shop_p">Качествена храна и екипировка, подходящи за едрите породи.</p>
-        </div>
-
-        <div class="card">
-          <h2 class="h2" data-i18n="partners_trainer_h2">Дресьори</h2>
-          <p class="muted" data-i18n="partners_trainer_p">Контрол, социализация, послушание — стабилен характер, не показност.</p>
-        </div>
-
-        <div class="card">
-          <h2 class="h2" data-i18n="partners_join_h2">Искаш да участваш?</h2>
-          <p class="muted" data-i18n="partners_join_p">Заяви интерес и ще се свържем с теб за следващи стъпки.</p>
-          <a class="btn btn-primary" href="./contact.html" data-i18n="partners_join_btn">Заяви интерес</a>
+          <h2 class="h2" data-i18n="partners_offer_h2">Какво предлагаме</h2>
+          <ul class="list">
+            <li data-i18n="partners_offer_li1">Публично присъствие в секция “Партньори”.</li>
+            <li data-i18n="partners_offer_li2">Съвместни инициативи и кампании в общността.</li>
+            <li data-i18n="partners_offer_li3">Ясни правила и нулева толерантност към подвеждащи практики.</li>
+          </ul>
         </div>
       </div>
+
+      <div class="card upload-card" id="partner-apply">
+        <h2 class="h2" data-i18n="partners_apply_h2">Заявка за партньорство</h2>
+        <p class="muted" data-i18n="partners_apply_p">
+          Опиши дейността си и как виждаш партньорството. Ще се свържем при интерес.
+        </p>
+
+        <form class="apply-form" id="partnerForm" novalidate>
+          <div class="row">
+            <div class="field">
+              <label data-i18n="partners_label_name">Име</label>
+              <input name="name" required data-ph="partners_ph_name" placeholder="име и фамилия" />
+            </div>
+
+            <div class="field">
+              <label data-i18n="partners_label_org">Организация</label>
+              <input name="org" required data-ph="partners_ph_org" placeholder="име на развъдник/клиника/бранд" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label data-i18n="partners_label_contact">Имейл / Телефон</label>
+              <input name="contact" required data-ph="partners_ph_contact" placeholder="контакт" />
+            </div>
+
+            <div class="field">
+              <label data-i18n="partners_label_site">Уебсайт / Профил</label>
+              <input name="site" data-ph="partners_ph_site" placeholder="линк (по желание)" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label data-i18n="partners_label_message">Кратко описание</label>
+            <textarea
+              name="message"
+              rows="5"
+              required
+              data-ph="partners_ph_message"
+              placeholder="какво правите и какво предлагате"
+            ></textarea>
+          </div>
+
+          <button class="btn btn-primary btn-wide" type="submit" data-i18n="partners_btn">
+            Изпрати →
+          </button>
+
+          <div class="toast" id="partnersToast" hidden></div>
+        </form>
+      </div>
+
+      <section class="bottom-nav">
+        <div class="container bottom-nav-inner">
+          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
+          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
+          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -76,12 +136,13 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
-        <a href="./project.html" data-i18n="footer_project">Проектът</a>
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
         <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
       </div>
     </div>
   </footer>
 
-  <script src="./app.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
+

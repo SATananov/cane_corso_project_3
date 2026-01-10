@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="home_title">UNICO SUO GENERE — Cane Corso</title>
+  <link rel="icon" href="./images/brand-icon.png" />
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container header-inner">
@@ -19,18 +21,16 @@
         <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
-
-        <!-- ✅ Capstone additions (публично) -->
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
 
-        <!-- ✅ Account (guest) -->
+        <!-- guest -->
         <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
         <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
 
-        <!-- ✅ Dashboard (user/admin) -->
+        <!-- user/admin -->
         <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
         <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button type="button" class="btn btn-outline user-only" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
 
         <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
@@ -44,28 +44,24 @@
 
   <main class="page">
     <section class="container page-inner">
-      <!-- HERO / INTRO -->
-      <div class="card">
+      <div class="card hero">
         <h1 class="h1" data-i18n="home_h1">UNICO SUO GENERE</h1>
-
         <p class="lead" data-i18n="home_lead">
           Платформа за Cane Corso в България — базирана на практика, отговорност и ясни критерии.
-          Тук се изгражда българското разклонение на породата.
         </p>
 
-        <div class="row" style="gap:12px; flex-wrap:wrap;">
+        <div class="row hero-actions">
           <a class="btn btn-primary" href="./manifesto.html" data-i18n="home_cta_manifesto">Прочети манифеста →</a>
           <a class="btn btn-outline" href="./registry.html" data-i18n="home_cta_registry">Виж регистъра →</a>
           <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="home_cta_add">Добави куче →</a>
         </div>
       </div>
 
-      <!-- INFO BLOCKS -->
       <div class="grid">
         <div class="card">
           <h2 class="h2" data-i18n="home_block1_h2">Регистър</h2>
           <p class="muted" data-i18n="home_block1_p">
-            Публичен списък с одобрени кучета. Всяко добавяне минава преглед преди публикуване.
+            Публичен списък с одобрени кучета. Всяка заявка се преглежда преди публикуване.
           </p>
           <a class="btn btn-outline" href="./registry.html" data-i18n="home_block1_cta">Отвори регистъра →</a>
         </div>
@@ -73,7 +69,7 @@
         <div class="card">
           <h2 class="h2" data-i18n="home_block2_h2">Стандарт</h2>
           <p class="muted" data-i18n="home_block2_p">
-            Реален стандарт за Cane Corso в България — структура, характер, здраве и функционалност.
+            Българско разклонение на стандарта: екстериор, темперамент, здраве и функционалност.
           </p>
           <a class="btn btn-outline" href="./standard.html" data-i18n="home_block2_cta">Отвори стандарта →</a>
         </div>
@@ -81,7 +77,7 @@
         <div class="card">
           <h2 class="h2" data-i18n="home_block3_h2">Участие</h2>
           <p class="muted" data-i18n="home_block3_p">
-            Искаш да добавиш куче или да изпратиш материали? Влез в профила си и подай заявка.
+            Влез в профила си, за да подаваш заявки и да качваш материали.
           </p>
           <div class="row" style="gap:12px; flex-wrap:wrap;">
             <a class="btn btn-outline guest-only" href="./login.html" data-i18n="home_block3_login">Вход →</a>
@@ -90,6 +86,16 @@
           </div>
         </div>
       </div>
+
+      <section class="bottom-nav">
+        <div class="container bottom-nav-inner">
+          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
+          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
+          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -103,6 +109,6 @@
     </div>
   </footer>
 
-  <script src="./app.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>

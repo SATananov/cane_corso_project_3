@@ -3,136 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="contact_title">Контакт / Интерес — UNICO SUO GENERE</title>
+  <title data-i18n="contact_title">Контакт — UNICO SUO GENERE</title>
+  <link rel="icon" href="./images/brand-icon.png" />
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Home">
-  <img
-    src="./images/brand-icon.png"
-    alt="UNICO SUO GENERE — Cane Corso"
-    class="brand-logo"
-  />
-  <span class="brand-text">UNICO SUO GENERE</span>
-</a>
-
+      <a class="brand" href="./index.html">
+        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE — Cane Corso" />
+        <span class="brand-text">UNICO SUO GENERE</span>
+      </a>
 
       <nav class="nav">
         <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
         <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
+        <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
+
+        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
+        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
+
+        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
+        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
+        <button class="btn btn-outline user-only" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+
         <a class="btn btn-outline active" href="./contact.html" data-i18n="nav_contact">Контакт</a>
-        
+
         <div class="lang">
-          <button type="button" class="lang-btn" data-lang="bg">BG</button>
-          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="bg">BG</button>
+          <button class="lang-btn" data-lang="en">EN</button>
         </div>
       </nav>
     </div>
   </header>
 
   <main class="page">
-    <section class="container page-inner contact-hero">
-      <div class="badge" data-i18n="contact_badge">FOUNDATION • APPLICATION</div>
+    <section class="container page-inner">
+      <div class="card">
+        <h1 class="h1" data-i18n="contact_h1">Контакт</h1>
+        <p class="lead" data-i18n="contact_lead">
+          Свържи се с нас за въпроси, партньорства или предложения.
+        </p>
 
-      <h1 class="h1" data-i18n="contact_h1">Контакт / Интерес</h1>
-
-      <p class="lead" data-i18n="contact_lead">
-        Това е <strong>първият филтър</strong> за участие в UNICO SUO GENERE — Cane Corso Bulgaria.
-        Заявките се разглеждат <strong>поетапно</strong> и с <strong>подбор</strong>.
-      </p>
-
-      <div class="contact-layout">
-        <!-- LEFT -->
-        <aside class="trust-card">
-          <h2 class="h2" data-i18n="contact_benefits_h2">Какво получаваш</h2>
-          <ul class="trust-list">
-            <li><span class="dot"></span><span data-i18n="benefit_1">Премиум видимост за Cane Corso</span></li>
-            <li><span class="dot"></span><span data-i18n="benefit_2">Подбор и качество – без масовка</span></li>
-            <li><span class="dot"></span><span data-i18n="benefit_3">Ясна структура и доверие</span></li>
-          </ul>
-
-          <div class="trust-divider"></div>
-
-          <h3 class="h3" data-i18n="contact_accept_h3">Кого приемаме</h3>
-          <div class="chips">
-            <span class="chip" data-i18n="chip_owners">Любители</span>
-            <span class="chip" data-i18n="chip_breeders">Развъдници</span>
-            <span class="chip" data-i18n="chip_vets">Вет. клиники</span>
-            <span class="chip" data-i18n="chip_pharm">Вет. аптеки</span>
-            <span class="chip" data-i18n="chip_shops">Зоомагазини</span>
-            <span class="chip" data-i18n="chip_trainers">Дресьори</span>
+        <form class="apply-form" id="contactForm" novalidate>
+          <div class="field">
+            <label data-i18n="contact_label_name">Име</label>
+            <input name="name" required data-ph="contact_ph_name" placeholder="твоето име" />
           </div>
-        </aside>
 
-        <!-- RIGHT -->
-        <div class="apply-card">
-          <h2 class="h2" data-i18n="contact_form_h2">Заявка за участие</h2>
-          <p class="muted" data-i18n="contact_form_p">
-            Попълваш за 30 секунди. После натискаш Submit в Google Form.
-          </p>
+          <div class="field">
+            <label data-i18n="contact_label_email">Имейл</label>
+            <input
+              name="email"
+              type="email"
+              required
+              data-ph="contact_ph_email"
+              placeholder="name@example.com"
+            />
+          </div>
 
-          <form id="siteInterestForm" class="apply-form">
-            <div class="row">
-              <div class="field">
-                <label data-i18n="label_role">Тип заявка</label>
-                <select id="role" required>
-                  <option value="" data-i18n="opt_dash">—</option>
-                  <option value="Собственик / Любител" data-i18n="opt_owner">Собственик / Любител</option>
-                  <option value="Развъдник" data-i18n="opt_breeder">Развъдник</option>
-                  <option value="Ветеринарна клиника" data-i18n="opt_vet">Ветеринарна клиника</option>
-                  <option value="Ветеринарна аптека" data-i18n="opt_pharm">Ветеринарна аптека</option>
-                  <option value="Зоомагазин" data-i18n="opt_shop">Зоомагазин</option>
-                  <option value="Дресьор" data-i18n="opt_trainer">Дресьор</option>
-                </select>
-              </div>
+          <div class="field">
+            <label data-i18n="contact_label_message">Съобщение</label>
+            <textarea
+              name="message"
+              rows="5"
+              required
+              data-ph="contact_ph_message"
+              placeholder="напиши твоето съобщение"
+            ></textarea>
+          </div>
 
-              <div class="field">
-                <label data-i18n="label_city">Град</label>
-                <input id="city" required data-ph="ph_city" />
-              </div>
-            </div>
+          <button class="btn btn-primary btn-wide" type="submit" data-i18n="contact_btn">
+            Изпрати →
+          </button>
 
-            <div class="row">
-              <div class="field">
-                <label data-i18n="label_name">Име и фамилия / Организация</label>
-                <input id="name" required data-ph="ph_name" />
-              </div>
-
-              <div class="field">
-                <label data-i18n="label_contact">Телефон или имейл</label>
-                <input id="contact" required data-ph="ph_contact" />
-              </div>
-            </div>
-
-            <div class="field">
-              <label data-i18n="label_message">Кратко съобщение</label>
-              <textarea id="message" data-ph="ph_message"></textarea>
-            </div>
-
-            <button class="btn btn-primary btn-wide" type="submit" data-i18n="contact_btn">
-              Продължи към Google Form →
-            </button>
-
-            <!-- toast: няма да стои празен -->
-            <div class="toast" id="toast" hidden></div>
-          </form>
-        </div>
+          <div class="toast" id="contactToast" hidden></div>
+        </form>
       </div>
+
+      <section class="bottom-nav">
+        <div class="container bottom-nav-inner">
+          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
+          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
+          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
+        </div>
+      </section>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
+      <div class="footer-links">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
+      </div>
     </div>
   </footer>
 
-  <script src="./app.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
-
-

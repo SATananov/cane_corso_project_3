@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="manifesto_title">Манифест — UNICO SUO GENERE</title>
+  <link rel="icon" href="./images/brand-icon.png" />
   <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container header-inner">
@@ -19,6 +21,15 @@
         <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
+        <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
+
+        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
+        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
+
+        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
+        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
+        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+
         <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
         <div class="lang">
@@ -31,11 +42,12 @@
 
   <main class="page">
     <section class="container page-inner">
-      <h1 class="h1" data-i18n="manifesto_h1">Манифест</h1>
-
-      <p class="lead" data-i18n="manifesto_lead">
-        UNICO SUO GENERE е позиция. Не е мода. Не е “харесване”. Това е отговорност към породата Cane Corso.
-      </p>
+      <div class="card">
+        <h1 class="h1" data-i18n="manifesto_h1">Манифест</h1>
+        <p class="lead" data-i18n="manifesto_lead">
+          UNICO SUO GENERE е позиция. Не е мода. Това е отговорност към породата Cane Corso.
+        </p>
+      </div>
 
       <div class="grid">
         <div class="card">
@@ -63,48 +75,19 @@
           Cane Corso не е за всеки. Това е куче със сила, интелект и инстинкт — и изисква човек със стабилен характер.
         </p>
         <p class="muted" data-i18n="manifesto_statement_p2">
-          Тук не “събираме бройки”. Тук изграждаме качество. Поставяме граници. Носим отговорност за всяко име, което стои зад тази марка.
+          Тук не “събираме бройки”. Тук изграждаме качество. Поставяме граници. Носим отговорност.
         </p>
       </div>
 
-      <div class="card upload-card" id="upload-manifesto">
-        <h2 class="h2" data-i18n="upload_manifesto_h2">Изпрати материал / история</h2>
-        <p class="muted" data-i18n="upload_manifesto_p">
-          Ако имаш история, архив, снимки, документи или наблюдения, които подкрепят мисията — изпрати ги.
-        </p>
-
-        <form class="apply-form" data-upload="manifesto" novalidate>
-          <div class="row">
-            <div class="field">
-              <label data-i18n="upload_label_name">Име</label>
-              <input name="name" required data-ph="upload_ph_name" />
-            </div>
-            <div class="field">
-              <label data-i18n="upload_label_contact">Имейл / Телефон</label>
-              <input name="contact" required data-ph="upload_ph_contact" />
-            </div>
-          </div>
-
-          <div class="field">
-            <label data-i18n="upload_label_file">Файл</label>
-            <input name="file" type="file" accept=".pdf,.doc,.docx,.txt,image/*" />
-          </div>
-
-          <div class="field">
-            <label data-i18n="upload_label_message">Бележка</label>
-            <textarea name="message" data-ph="upload_ph_message"></textarea>
-          </div>
-
-          <button class="btn btn-primary btn-wide" type="submit" data-i18n="upload_btn_send">Изпрати →</button>
-          <div class="toast" hidden></div>
-        </form>
-      </div>
-
-      <div class="card">
-        <p class="muted" data-i18n="manifesto_signature">
-          UNICO SUO GENERE — by Stefano De Tanini
-        </p>
-      </div>
+      <section class="bottom-nav">
+        <div class="container bottom-nav-inner">
+          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
+          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
+          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -118,7 +101,6 @@
     </div>
   </footer>
 
-  <script src="./app.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
-
