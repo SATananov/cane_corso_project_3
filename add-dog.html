@@ -42,77 +42,110 @@
 
   <main class="page">
     <section class="container page-inner">
-      <div class="card">
-        <h1 class="h1" data-i18n="add_dog_h1">Добави куче</h1>
-        <p class="lead" data-i18n="add_dog_lead">
-          Подай заявка за включване в регистъра. Всяка заявка се преглежда преди публикуване.
-        </p>
+      <div class="form-split">
+        <!-- LEFT: brand panel -->
+        <aside class="brand-panel">
+          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
 
-        <form class="apply-form" id="addDogForm" novalidate>
-          <div class="row">
-            <div class="field">
-              <label data-i18n="add_dog_label_name">Име на кучето</label>
-              <input name="name" required data-ph="add_dog_ph_name" placeholder="например: Ares" />
-            </div>
-
-            <div class="field">
-              <label data-i18n="add_dog_label_gender">Пол</label>
-              <select name="gender" required>
-                <option value="" data-i18n="add_dog_gender_choose">Избери</option>
-                <option value="male" data-i18n="add_dog_gender_male">Мъжко</option>
-                <option value="female" data-i18n="add_dog_gender_female">Женско</option>
-              </select>
+          <div class="brand-lines">
+            <div class="t1">UNICO SUO GENERE</div>
+            <div class="t2">by Stefano De Tanini</div>
+            <div class="t3" data-i18n="add_dog_brand_sub">
+              Подай заявка за включване в регистъра. Всяка заявка се преглежда.
             </div>
           </div>
 
-          <div class="row">
-            <div class="field">
-              <label data-i18n="add_dog_label_color">Цвят</label>
-              <input name="color" required data-ph="add_dog_ph_color" placeholder="например: black" />
+          <ul class="brand-bullets">
+            <li data-i18n="brand_b1">Cane Corso само.</li>
+            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
+            <li data-i18n="brand_b3">Одобрение преди публикуване.</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <p class="muted" data-i18n="add_dog_brand_note">
+            Снимки: препоръчително — стойка, профил и лице. Колкото по-ясни са данните, толкова по-бърза е верификацията.
+          </p>
+
+          <div class="cta" style="margin-top: 12px;">
+            <a class="btn btn-secondary" href="./registry.html" data-i18n="add_dog_brand_registry_btn">Регистър →</a>
+            <a class="btn btn-outline" href="./standard.html" data-i18n="add_dog_brand_standard_btn">Стандарт →</a>
+          </div>
+        </aside>
+
+        <!-- RIGHT: form panel -->
+        <div class="form-panel">
+          <h1 class="h1" data-i18n="add_dog_h1">Добави куче</h1>
+          <p class="lead" data-i18n="add_dog_lead">
+            Подай заявка за включване в регистъра. Всяка заявка се преглежда преди публикуване.
+          </p>
+
+          <form class="apply-form" id="addDogForm" novalidate>
+            <div class="row">
+              <div class="field">
+                <label data-i18n="add_dog_label_name">Име на кучето</label>
+                <input name="name" required data-ph="add_dog_ph_name" placeholder="например: Ares" />
+              </div>
+
+              <div class="field">
+                <label data-i18n="add_dog_label_gender">Пол</label>
+                <select name="gender" required>
+                  <option value="" data-i18n="add_dog_gender_choose">Избери</option>
+                  <option value="male" data-i18n="add_dog_gender_male">Мъжко</option>
+                  <option value="female" data-i18n="add_dog_gender_female">Женско</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label data-i18n="add_dog_label_color">Цвят</label>
+                <input name="color" required data-ph="add_dog_ph_color" placeholder="например: black" />
+              </div>
+
+              <div class="field">
+                <label data-i18n="add_dog_label_birth">Рождена дата</label>
+                <input name="birthDate" type="date" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label data-i18n="add_dog_label_city">Град</label>
+                <input name="city" data-ph="add_dog_ph_city" placeholder="например: Plovdiv" />
+              </div>
+
+              <div class="field">
+                <label data-i18n="add_dog_label_owner">Собственик</label>
+                <input name="ownerName" data-ph="add_dog_ph_owner" placeholder="име на собственик" />
+              </div>
             </div>
 
             <div class="field">
-              <label data-i18n="add_dog_label_birth">Рождена дата</label>
-              <input name="birthDate" type="date" />
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="field">
-              <label data-i18n="add_dog_label_city">Град</label>
-              <input name="city" data-ph="add_dog_ph_city" placeholder="например: Plovdiv" />
+              <label data-i18n="add_dog_label_kennel">Развъдник (ако има)</label>
+              <input name="kennel" data-ph="add_dog_ph_kennel" placeholder="име на развъдник" />
             </div>
 
             <div class="field">
-              <label data-i18n="add_dog_label_owner">Собственик</label>
-              <input name="ownerName" data-ph="add_dog_ph_owner" placeholder="име на собственик" />
+              <label data-i18n="add_dog_label_desc">Описание / бележка</label>
+              <textarea name="description" data-ph="add_dog_ph_desc" placeholder="кратко описание"></textarea>
             </div>
-          </div>
 
-          <div class="field">
-            <label data-i18n="add_dog_label_kennel">Развъдник (ако има)</label>
-            <input name="kennel" data-ph="add_dog_ph_kennel" placeholder="име на развъдник" />
-          </div>
+            <div class="field">
+              <label data-i18n="add_dog_label_photos">Снимки</label>
+              <input name="photos" type="file" accept="image/*" multiple />
+              <p class="note" data-i18n="add_dog_photos_hint">
+                Препоръчително: поне 3 снимки (стойка, профил, лице).
+              </p>
+            </div>
 
-          <div class="field">
-            <label data-i18n="add_dog_label_desc">Описание / бележка</label>
-            <textarea name="description" data-ph="add_dog_ph_desc" placeholder="кратко описание"></textarea>
-          </div>
+            <button class="btn btn-primary btn-wide" type="submit" data-i18n="add_dog_btn">
+              Изпрати заявка →
+            </button>
 
-          <div class="field">
-            <label data-i18n="add_dog_label_photos">Снимки</label>
-            <input name="photos" type="file" accept="image/*" multiple />
-            <p class="muted" data-i18n="add_dog_photos_hint" style="margin-top:8px;">
-              Препоръчително: поне 3 снимки (стойка, профил, лице).
-            </p>
-          </div>
-
-          <button class="btn btn-primary btn-wide" type="submit" data-i18n="add_dog_btn">
-            Изпрати заявка →
-          </button>
-
-          <div class="toast" id="addDogToast" hidden></div>
-        </form>
+            <div class="toast" id="addDogToast" hidden></div>
+          </form>
+        </div>
       </div>
 
       <section class="bottom-nav">
@@ -140,4 +173,5 @@
   <script type="module" src="./src/main.js"></script>
 </body>
 </html>
+
 

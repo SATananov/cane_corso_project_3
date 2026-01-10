@@ -149,10 +149,15 @@ brand_b3: 'Одобрение преди публикуване.',
     register_btn: 'Регистрация →',
     register_have_account: 'Имаш профил?',
     register_go_login: 'Вход →',
+    register_brand_sub: 'Регистрация за собственици, развъдници и партньори.',
+register_brand_note: 'След регистрация ще можеш да подадеш заявка и да качиш снимки за профил в регистъра.',
+register_brand_login_btn: 'Вход →',
+register_brand_registry_btn: 'Регистър →',
 
-    // ADD DOG
-    add_dog_title: 'Добави куче — UNICO SUO GENERE',
-    add_dog_h1: 'Добави куче',
+
+// ADD DOG
+add_dog_title: 'Добави куче — UNICO SUO GENERE',
+add_dog_h1: 'Добави куче',
     add_dog_lead: 'Подай заявка за включване в регистъра. Всяка заявка се преглежда преди публикуване.',
     add_dog_label_name: 'Име на кучето',
     add_dog_ph_name: 'например: Ares',
@@ -174,6 +179,11 @@ brand_b3: 'Одобрение преди публикуване.',
     add_dog_label_photos: 'Снимки',
     add_dog_photos_hint: 'Препоръчително: поне 3 снимки (стойка, профил, лице).',
     add_dog_btn: 'Изпрати заявка →',
+    add_dog_brand_sub: 'Подай заявка за включване в регистъра. Всяка заявка се преглежда.',
+add_dog_brand_note: 'Снимки: препоръчително — стойка, профил и лице. Колкото по-ясни са данните, толкова по-бърза е верификацията.',
+add_dog_brand_registry_btn: 'Регистър →',
+add_dog_brand_standard_btn: 'Стандарт →',
+
 
     // ADMIN
     admin_title: 'Админ — UNICO SUO GENERE',
@@ -413,6 +423,10 @@ brand_b3: 'Approval before publishing.',
     register_btn: 'Register →',
     register_have_account: 'Already have an account?',
     register_go_login: 'Login →',
+    register_brand_sub: 'Registration for owners, kennels and partners.',
+register_brand_note: 'After registering you can submit a request and upload photos for a registry profile.',
+register_brand_login_btn: 'Login →',
+    register_brand_registry_btn: 'Registry →',
 
     // ADD DOG
     add_dog_title: 'Add Dog — UNICO SUO GENERE',
@@ -438,9 +452,16 @@ brand_b3: 'Approval before publishing.',
     add_dog_label_photos: 'Photos',
     add_dog_photos_hint: 'Recommended: at least 3 photos (stance, profile, face).',
     add_dog_btn: 'Submit →',
+    add_dog_brand_sub: 'Submit a registry request. Every request is reviewed.',
+add_dog_brand_note: 'Photos: recommended — stance, profile and face. The clearer the data, the faster the verification.',
+add_dog_brand_registry_btn: 'Registry →',
+add_dog_brand_standard_btn: 'Standard →',
 
-    // ADMIN
-    admin_title: 'Admin — UNICO SUO GENERE',
+
+
+
+// ADMIN
+admin_title: 'Admin — UNICO SUO GENERE',
     admin_h1: 'Admin panel',
     admin_lead: 'Review submissions and decide which profiles to publish in the registry.',
     admin_pending_h2: 'Pending submissions',

@@ -42,62 +42,95 @@
 
   <main class="page">
     <section class="container page-inner">
-      <div class="card">
-        <h1 class="h1" data-i18n="register_h1">Регистрация</h1>
-        <p class="lead" data-i18n="register_lead">
-          Създай профил, за да подаваш заявки и да качваш материали.
-        </p>
+      <div class="form-split">
+        <!-- LEFT: brand panel -->
+        <aside class="brand-panel">
+          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
 
-        <form class="apply-form" id="registerForm" novalidate>
-          <div class="field">
-            <label for="email" data-i18n="register_label_email">Имейл</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              data-ph="register_ph_email"
-              placeholder="name@example.com"
-            />
+          <div class="brand-lines">
+            <div class="t1">UNICO SUO GENERE</div>
+            <div class="t2">by Stefano De Tanini</div>
+            <div class="t3" data-i18n="register_brand_sub">
+              Регистрация за собственици, развъдници и партньори.
+            </div>
           </div>
 
-          <div class="field">
-            <label for="password" data-i18n="register_label_password">Парола</label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-              required
-              minlength="6"
-              data-ph="register_ph_password"
-              placeholder="******"
-            />
-          </div>
+          <ul class="brand-bullets">
+            <li data-i18n="brand_b1">Cane Corso само.</li>
+            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
+            <li data-i18n="brand_b3">Одобрение преди публикуване.</li>
+          </ul>
 
-          <div class="field">
-            <label for="repass" data-i18n="register_label_repass">Повтори парола</label>
-            <input
-              id="repass"
-              name="repass"
-              type="password"
-              required
-              minlength="6"
-              data-ph="register_ph_repass"
-              placeholder="******"
-            />
-          </div>
+          <div class="divider"></div>
 
-          <button class="btn btn-primary btn-wide" type="submit" data-i18n="register_btn">
-            Регистрация →
-          </button>
-
-          <div class="toast" id="registerToast" hidden></div>
-
-          <p class="muted" style="margin-top:12px;">
-            <span data-i18n="register_have_account">Имаш профил?</span>
-            <a href="./login.html" data-i18n="register_go_login">Вход →</a>
+          <p class="muted" data-i18n="register_brand_note">
+            След регистрация ще можеш да подадеш заявка и да качиш снимки за профил в регистъра.
           </p>
-        </form>
+
+          <div class="cta" style="margin-top: 12px;">
+            <a class="btn btn-secondary" href="./login.html" data-i18n="register_brand_login_btn">Вход →</a>
+            <a class="btn btn-outline" href="./registry.html" data-i18n="register_brand_registry_btn">Регистър →</a>
+          </div>
+        </aside>
+
+        <!-- RIGHT: form panel -->
+        <div class="form-panel">
+          <h1 class="h1" data-i18n="register_h1">Регистрация</h1>
+          <p class="lead" data-i18n="register_lead">
+            Създай профил, за да подаваш заявки и да качваш материали.
+          </p>
+
+          <form class="apply-form" id="registerForm" novalidate>
+            <div class="field">
+              <label for="email" data-i18n="register_label_email">Имейл</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                data-ph="register_ph_email"
+                placeholder="name@example.com"
+              />
+            </div>
+
+            <div class="field">
+              <label for="password" data-i18n="register_label_password">Парола</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                required
+                minlength="6"
+                data-ph="register_ph_password"
+                placeholder="******"
+              />
+            </div>
+
+            <div class="field">
+              <label for="repass" data-i18n="register_label_repass">Повтори парола</label>
+              <input
+                id="repass"
+                name="repass"
+                type="password"
+                required
+                minlength="6"
+                data-ph="register_ph_repass"
+                placeholder="******"
+              />
+            </div>
+
+            <button class="btn btn-primary btn-wide" type="submit" data-i18n="register_btn">
+              Регистрация →
+            </button>
+
+            <div class="toast" id="registerToast" hidden></div>
+
+            <p class="muted" style="margin-top: 10px;">
+              <span data-i18n="register_have_account">Имаш профил?</span>
+              <a class="link" href="./login.html" data-i18n="register_go_login">Вход →</a>
+            </p>
+          </form>
+        </div>
       </div>
 
       <section class="bottom-nav">
@@ -125,3 +158,4 @@
   <script type="module" src="./src/main.js"></script>
 </body>
 </html>
+
