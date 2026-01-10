@@ -21,16 +21,10 @@
         <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
-        <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
+        <a class="active" href="./registry.html" data-i18n="nav_registry">Регистър</a>
+        <a href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
-        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
-        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
-
-        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a class="btn btn-outline" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
 
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
@@ -41,104 +35,163 @@
   </header>
 
   <main class="page">
-    <section class="container page-inner">
-      <div class="form-split">
-        <!-- LEFT: brand/status panel -->
-        <aside class="brand-panel">
-          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
+    <section class="container">
+      <div class="contact-hero contact-title">
+        <span class="badge">UNICO SUO GENERE</span>
+        <h1 class="h1" id="dogName">—</h1>
+        <p class="lead" data-i18n="dog_subtitle">Профил в регистъра UNICO SUO GENERE</p>
+      </div>
 
-          <div class="brand-lines">
-            <div class="t1">UNICO SUO GENERE</div>
-            <div class="t2">by Stefano De Tanini</div>
-            <div class="t3" data-i18n="dog_subtitle">
-              Профил в регистъра UNICO SUO GENERE
-            </div>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="card" style="padding: 14px; background: rgba(0,0,0,0.18);">
-            <div class="h3" style="margin: 0 0 6px;" data-i18n="dog_status_h2">Статус</div>
-            <p class="muted" id="dogStatusText" style="margin: 0;" data-i18n="dog_status_loading">
-              Зареждане...
-            </p>
-          </div>
-
-          <div class="divider"></div>
+      <div class="contact-layout">
+        <!-- LEFT: BRAND / STATUS / ACTIONS -->
+        <aside class="trust-card">
+          <img class="logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — by Stefano De Tanini" />
 
           <p class="muted" data-i18n="dog_left_note">
             Само одобрени профили са публични. Админ може да одобрява/отхвърля заявки.
           </p>
 
-          <div class="cta" style="margin-top: 12px;">
+          <div class="trust-divider"></div>
+
+          <div class="mini-item" style="grid-template-columns: 44px 1fr;">
+            <div class="mini-ico" style="width:44px;height:44px;">CC</div>
+            <div>
+              <div class="mini-title" data-i18n="dog_status_h2">Статус</div>
+              <div class="mini-text" id="dogStatusText" data-i18n="dog_status_loading">Зареждане...</div>
+            </div>
+          </div>
+
+          <div class="trust-divider"></div>
+
+          <div class="cta">
             <a class="btn btn-secondary" href="./registry.html" data-i18n="dog_back_btn">← Назад към регистъра</a>
             <a class="btn btn-outline" href="./standard.html" data-i18n="dog_left_standard_btn">Стандарт →</a>
           </div>
+
+          <div class="trust-divider"></div>
+
+          <!-- ADMIN ACTIONS (JS can show/hide) -->
+          <div id="adminActions" hidden>
+            <p class="muted" data-i18n="dog_admin_note">
+              Одобрение/отхвърляне влияе на видимостта в регистъра.
+            </p>
+
+            <div class="cta">
+              <button class="btn btn-primary" type="button" id="approveBtn" data-i18n="dog_approve_btn">Одобри</button>
+              <button class="btn btn-secondary" type="button" id="rejectBtn" data-i18n="dog_reject_btn">Отхвърли</button>
+            </div>
+          </div>
+
+          <p class="note" style="margin-top:14px;" data-i18n="dog_photos_note">
+            Ако няма снимки, профилът не е завършен.
+          </p>
         </aside>
 
-        <!-- RIGHT: profile panel -->
-        <div class="form-panel">
-          <div class="card" style="margin-bottom: 14px;">
-            <h1 class="h1" id="dogName">—</h1>
-            <p class="lead" id="dogShortInfo">—</p>
+        <!-- RIGHT: PROFILE -->
+        <div class="apply-card">
+          <div class="apply-head">
+            <div>
+              <h2 class="h2" style="margin:0;" data-i18n="dog_details_h2">Детайли</h2>
+              <p class="muted" style="margin-top:6px;" id="dogShortLine">—</p>
+            </div>
+            <div class="seal">USG</div>
           </div>
 
-          <div class="grid">
-            <div class="card">
-              <h2 class="h2" data-i18n="dog_photos_h2">Снимки</h2>
-              <div id="dogPhotos" class="grid" style="grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px;">
-                <!-- images injected -->
-              </div>
-              <p class="note" data-i18n="dog_photos_note">
-                Ако няма снимки, профилът не е завършен.
-              </p>
+          <!-- PHOTOS -->
+          <div class="card" style="margin-top: 12px;">
+            <h3 class="h3" style="margin:0 0 10px;" data-i18n="dog_photos_h2">Снимки</h3>
+
+            <!-- Gallery container for JS -->
+            <div id="dogGallery" class="grid" style="grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;">
+              <!-- JS renders images here -->
+              <!-- Example:
+              <a class="card" href="full.jpg" target="_blank">
+                <img src="thumb.jpg" style="width:100%; border-radius:14px; display:block;">
+              </a>
+              -->
             </div>
 
-            <div class="card">
-              <h2 class="h2" data-i18n="dog_details_h2">Детайли</h2>
-
-              <div class="divider"></div>
-
-              <p class="muted"><strong data-i18n="dog_field_gender">Пол:</strong> <span id="dogGender">—</span></p>
-              <p class="muted"><strong data-i18n="dog_field_color">Цвят:</strong> <span id="dogColor">—</span></p>
-              <p class="muted"><strong data-i18n="dog_field_birth">Рождена дата:</strong> <span id="dogBirth">—</span></p>
-              <p class="muted"><strong data-i18n="dog_field_city">Град:</strong> <span id="dogCity">—</span></p>
-              <p class="muted"><strong data-i18n="dog_field_owner">Собственик:</strong> <span id="dogOwner">—</span></p>
-              <p class="muted"><strong data-i18n="dog_field_kennel">Развъдник:</strong> <span id="dogKennel">—</span></p>
-
-              <div class="divider"></div>
-
-              <div class="cta admin-only" style="margin-top: 0;">
-                <button class="btn btn-primary" type="button" id="btnApprove" data-i18n="dog_approve_btn">Одобри</button>
-                <button class="btn btn-outline" type="button" id="btnReject" data-i18n="dog_reject_btn">Отхвърли</button>
-              </div>
-
-              <p class="note admin-only" data-i18n="dog_admin_note">
-                Одобрение/отхвърляне влияе на видимостта в регистъра.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h2 class="h2" data-i18n="dog_notes_h2">Описание</h2>
-            <p class="muted" id="dogDescription" style="margin-top: 10px;">
-              —
+            <p class="note" data-i18n="dog_photos_note" style="margin-top:12px;">
+              Ако няма снимки, профилът не е завършен.
             </p>
           </div>
 
-          <div class="toast" id="dogToast" hidden></div>
+          <!-- DETAILS GRID -->
+          <div class="card" style="margin-top: 14px;">
+            <h3 class="h3" style="margin:0 0 12px;" data-i18n="dog_details_h2">Детайли</h3>
+
+            <div class="grid" style="grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+              <div class="mini-item">
+                <div class="mini-ico">G</div>
+                <div>
+                  <div class="mini-title" data-i18n="dog_field_gender">Пол:</div>
+                  <div class="mini-text" id="dogGender">—</div>
+                </div>
+              </div>
+
+              <div class="mini-item">
+                <div class="mini-ico">C</div>
+                <div>
+                  <div class="mini-title" data-i18n="dog_field_color">Цвят:</div>
+                  <div class="mini-text" id="dogColor">—</div>
+                </div>
+              </div>
+
+              <div class="mini-item">
+                <div class="mini-ico">B</div>
+                <div>
+                  <div class="mini-title" data-i18n="dog_field_birth">Рождена дата:</div>
+                  <div class="mini-text" id="dogBirth">—</div>
+                </div>
+              </div>
+
+              <div class="mini-item">
+                <div class="mini-ico">📍</div>
+                <div>
+                  <div class="mini-title" data-i18n="dog_field_city">Град:</div>
+                  <div class="mini-text" id="dogCity">—</div>
+                </div>
+              </div>
+
+              <div class="mini-item">
+                <div class="mini-ico">O</div>
+                <div>
+                  <div class="mini-title" data-i18n="dog_field_owner">Собственик:</div>
+                  <div class="mini-text" id="dogOwner">—</div>
+                </div>
+              </div>
+
+              <div class="mini-item">
+                <div class="mini-ico">K</div>
+                <div>
+                  <div class="mini-title" data-i18n="dog_field_kennel">Развъдник:</div>
+                  <div class="mini-text" id="dogKennel">—</div>
+                </div>
+              </div>
+
+              <div class="mini-item" style="grid-column: 1 / -1;">
+                <div class="mini-ico">S</div>
+                <div>
+                  <div class="mini-title" data-i18n="dog_field_status">Статус:</div>
+                  <div class="mini-text" id="dogStatus">—</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NOTES / DESCRIPTION -->
+          <div class="card" style="margin-top: 14px;">
+            <h3 class="h3" style="margin:0 0 10px;" data-i18n="dog_notes_h2">Описание</h3>
+            <p class="muted" id="dogNotes" data-i18n="dog_notes_p">
+              (Тук ще се визуализира описанието/бележката към профила.)
+            </p>
+          </div>
+
+          <p class="note" style="margin-top:14px;">
+            © <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini
+          </p>
         </div>
       </div>
-
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
     </section>
   </main>
 
@@ -146,13 +199,14 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
-        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
         <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
-
