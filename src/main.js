@@ -209,8 +209,12 @@ add_dog_brand_standard_btn: 'Стандарт →',
     contact_ph_name: 'твоето име',
     contact_ph_email: 'name@example.com',
     contact_ph_message: 'напиши твоето съобщение',
+contact_brand_sub: 'Свържи се с нас за въпроси, партньорства или предложения.',
+contact_brand_note: 'Пишеш директно до екипа на UNICO SUO GENERE. Всеки сигнал и предложение се разглеждат лично.',
+contact_brand_partners_btn: 'Партньори →',
+contact_brand_registry_btn: 'Регистър →',
 
-    // PARTNERS
+// PARTNERS
     partners_title: 'Партньори — UNICO SUO GENERE',
     partners_h1: 'Партньори',
     partners_lead: 'Работим с хора и организации, които уважават породата и споделят отговорен подход.',
@@ -236,6 +240,11 @@ add_dog_brand_standard_btn: 'Стандарт →',
     partners_ph_contact: 'контакт',
     partners_ph_site: 'линк (по желание)',
     partners_ph_message: 'какво правите и какво предлагате',
+    partners_brand_sub: 'Партньорства, основани на реално качество и отговорност.',
+partners_brand_note: 'Търсим хора и организации, които работят дългосрочно и споделят същите ценности.',
+partners_brand_contact_btn: 'Контакт →',
+partners_brand_project_btn: 'Проектът →',
+
 
     // PROJECT
     project_title: 'Проектът — UNICO SUO GENERE',
@@ -484,6 +493,11 @@ admin_title: 'Admin — UNICO SUO GENERE',
     contact_ph_name: 'your name',
     contact_ph_email: 'name@example.com',
     contact_ph_message: 'write your message',
+    contact_brand_sub: 'Свържи се с нас за въпроси, партньорства или предложения.',
+contact_brand_note: 'Пишеш директно до екипа на UNICO SUO GENERE. Всеки сигнал и предложение се разглеждат лично.',
+contact_brand_partners_btn: 'Партньори →',
+contact_brand_registry_btn: 'Регистър →',
+
 
     // PARTNERS
     partners_title: 'Partners — UNICO SUO GENERE',
@@ -511,6 +525,11 @@ admin_title: 'Admin — UNICO SUO GENERE',
     partners_ph_contact: 'contact',
     partners_ph_site: 'link (optional)',
     partners_ph_message: 'what you do and what you offer',
+partners_brand_sub: 'Partnerships built on real quality and responsibility.',
+partners_brand_note: 'We are looking for people and organizations who think long-term and share the same values.',
+partners_brand_contact_btn: 'Contact →',
+partners_brand_project_btn: 'Project →',
+
 
     // PROJECT
     project_title: 'Project — UNICO SUO GENERE',
