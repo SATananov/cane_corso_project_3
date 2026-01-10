@@ -22,15 +22,7 @@
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
-
-        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
-        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
-
-        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline active" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a class="active" href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
@@ -41,91 +33,117 @@
   </header>
 
   <main class="page">
-    <section class="container page-inner">
-      <div class="form-split">
-        <!-- LEFT: brand panel -->
-        <aside class="brand-panel">
-          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
+    <section class="container">
+      <div class="contact-hero contact-title">
+        <span class="badge">UNICO SUO GENERE</span>
+        <h1 class="h1" data-i18n="contact_h1">Контакт</h1>
+        <p class="lead" data-i18n="contact_lead">
+          Свържи се с нас за въпроси, партньорства или предложения.
+        </p>
+      </div>
 
-          <div class="brand-lines">
-            <div class="t1">UNICO SUO GENERE</div>
-            <div class="t2">by Stefano De Tanini</div>
-            <div class="t3" data-i18n="contact_brand_sub">
-              Свържи се с нас за въпроси, партньорства или предложения.
-            </div>
-          </div>
+      <div class="contact-layout">
+        <!-- LEFT: BRAND / TRUST -->
+        <aside class="trust-card">
+          <img class="logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — by Stefano De Tanini" />
 
-          <ul class="brand-bullets">
-            <li data-i18n="brand_b1">Cane Corso само.</li>
-            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
-            <li data-i18n="brand_b3">Одобрение преди публикуване.</li>
-          </ul>
-
-          <div class="divider"></div>
+          <p class="h2" style="margin: 6px 0 10px;" data-i18n="contact_brand_sub">
+            Свържи се с нас за въпроси, партньорства или предложения.
+          </p>
 
           <p class="muted" data-i18n="contact_brand_note">
             Пишеш директно до екипа на UNICO SUO GENERE. Всеки сигнал и предложение се разглеждат лично.
           </p>
 
-          <div class="cta" style="margin-top: 12px;">
-            <a class="btn btn-secondary" href="./partners.html" data-i18n="contact_brand_partners_btn">Партньори →</a>
-            <a class="btn btn-outline" href="./registry.html" data-i18n="contact_brand_registry_btn">Регистър →</a>
+          <div class="trust-divider"></div>
+
+          <ul class="trust-list">
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b1">Cane Corso само.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b2">Качество, здраве, темперамент.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b3">Одобрение преди публикуване.</span>
+            </li>
+          </ul>
+
+          <div class="trust-divider"></div>
+
+          <div class="chips">
+            <span class="chip">UNICO SUO GENERE</span>
+            <span class="chip">Cane Corso</span>
+            <span class="chip">Bulgaria</span>
+            <span class="chip">Standard</span>
+          </div>
+
+          <div class="cta" style="margin-top: 14px;">
+            <a class="btn btn-outline" href="./partners.html" data-i18n="contact_brand_partners_btn">Партньори →</a>
+            <a class="btn btn-secondary" href="./registry.html" data-i18n="contact_brand_registry_btn">Регистър →</a>
           </div>
         </aside>
 
-        <!-- RIGHT: form panel -->
-        <div class="form-panel">
-          <h1 class="h1" data-i18n="contact_h1">Контакт</h1>
-          <p class="lead" data-i18n="contact_lead">
-            Изпрати ни съобщение и ще се свържем с теб при нужда.
-          </p>
-
-          <form class="apply-form" id="contactForm" novalidate>
-            <div class="field">
-              <label data-i18n="contact_label_name">Име</label>
-              <input name="name" required data-ph="contact_ph_name" placeholder="твоето име" />
+        <!-- RIGHT: FORM -->
+        <div class="apply-card">
+          <div class="apply-head">
+            <div>
+              <h2 class="h2" style="margin:0;" data-i18n="contact_h1">Контакт</h2>
+              <p class="muted" style="margin-top:6px;" data-i18n="contact_lead">
+                Свържи се с нас за въпроси, партньорства или предложения.
+              </p>
             </div>
+            <div class="seal">USG</div>
+          </div>
 
-            <div class="field">
-              <label data-i18n="contact_label_email">Имейл</label>
-              <input
-                name="email"
-                type="email"
-                required
-                data-ph="contact_ph_email"
-                placeholder="name@example.com"
-              />
+          <form class="apply-form" novalidate>
+            <div class="row">
+              <div class="field">
+                <label data-i18n="contact_label_name">Име</label>
+                <input name="name" required data-ph="contact_ph_name" />
+              </div>
+
+              <div class="field">
+                <label data-i18n="contact_label_email">Имейл</label>
+                <input name="email" type="email" required data-ph="contact_ph_email" />
+              </div>
             </div>
 
             <div class="field">
               <label data-i18n="contact_label_message">Съобщение</label>
-              <textarea
-                name="message"
-                rows="5"
-                required
-                data-ph="contact_ph_message"
-                placeholder="напиши твоето съобщение"
-              ></textarea>
+              <textarea name="message" required data-ph="contact_ph_message"></textarea>
             </div>
 
             <button class="btn btn-primary btn-wide" type="submit" data-i18n="contact_btn">
               Изпрати →
             </button>
 
-            <div class="toast" id="contactToast" hidden></div>
+            <div class="toast" hidden></div>
+
+            <p class="apply-note">
+              © <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini
+            </p>
           </form>
+
+          <div class="apply-foot">
+            <div class="foot-item">
+              <span class="k">USG</span>
+              <span>Contact</span>
+            </div>
+            <div class="foot-item">
+              <span class="k">CC</span>
+              <span>Quality</span>
+            </div>
+            <div class="foot-item">
+              <span class="k">BG</span>
+              <span>Standard</span>
+            </div>
+          </div>
         </div>
       </div>
-
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
     </section>
   </main>
 
@@ -133,12 +151,14 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
+        <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
         <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
