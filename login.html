@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="login_title">Вход — UNICO SUO GENERE</title>
-  <link rel="icon" href="./images/brand-icon.png" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -12,7 +11,7 @@
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="./index.html" aria-label="Home">
-        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE — Cane Corso" />
+        <img class="brand-logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — Cane Corso" />
         <span class="brand-text">UNICO SUO GENERE</span>
       </a>
 
@@ -22,15 +21,9 @@
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
-
-        <a class="btn btn-outline guest-only active" href="./login.html" data-i18n="nav_login">Вход</a>
-        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
-
-        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a class="active" href="./login.html" data-i18n="nav_login">Вход</a>
+        <a class="btn btn-outline" href="./register.html" data-i18n="nav_register">Регистрация</a>
 
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
@@ -41,94 +34,116 @@
   </header>
 
   <main class="page">
-    <section class="container page-inner">
-      <div class="form-split">
-        <!-- LEFT: brand panel -->
-        <aside class="brand-panel">
-          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
+    <section class="container">
+      <div class="contact-hero contact-title">
+        <span class="badge">UNICO SUO GENERE</span>
+        <h1 class="h1" data-i18n="login_h1">Вход</h1>
+        <p class="lead" data-i18n="login_lead">
+          Влез в профила си, за да управляваш заявки и съдържание.
+        </p>
+      </div>
 
-          <div class="brand-lines">
-            <div class="t1">UNICO SUO GENERE</div>
-            <div class="t2">by Stefano De Tanini</div>
-            <div class="t3" data-i18n="login_brand_sub">
-              Вход за собственици и партньори на Cane Corso в България.
-            </div>
-          </div>
+      <div class="contact-layout">
+        <!-- LEFT: BRAND / LOGO -->
+        <aside class="trust-card">
+          <img class="logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — by Stefano De Tanini" />
 
-          <ul class="brand-bullets">
-            <li data-i18n="brand_b1">Cane Corso само.</li>
-            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
-            <li data-i18n="brand_b3">Одобрение преди публикуване.</li>
-          </ul>
-
-          <div class="divider"></div>
+          <p class="h2" style="margin: 6px 0 10px;" data-i18n="login_brand_sub">
+            Вход за собственици и партньори на Cane Corso в България.
+          </p>
 
           <p class="muted" data-i18n="login_brand_note">
             Ако нямаш профил — направи регистрация и подай заявка за включване.
           </p>
 
-          <div class="cta" style="margin-top: 12px;">
-            <a class="btn btn-secondary" href="./register.html" data-i18n="login_brand_register_btn">Регистрация →</a>
-            <a class="btn btn-outline" href="./registry.html" data-i18n="login_brand_registry_btn">Регистър →</a>
+          <div class="trust-divider"></div>
+
+          <ul class="trust-list">
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b1">Cane Corso само.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b2">Качество, здраве, темперамент.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b3">Одобрение преди публикуване.</span>
+            </li>
+          </ul>
+
+          <div class="trust-mini">
+            <div class="mini-item">
+              <div class="mini-ico">USG</div>
+              <div>
+                <div class="mini-title">UNICO SUO GENERE</div>
+                <div class="mini-text">by Stefano De Tanini</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta" style="margin-top: 14px;">
+            <a class="btn btn-outline" href="./register.html" data-i18n="login_brand_register_btn">Регистрация →</a>
+            <a class="btn btn-secondary" href="./registry.html" data-i18n="login_brand_registry_btn">Регистър →</a>
           </div>
         </aside>
 
-        <!-- RIGHT: form panel -->
-        <div class="form-panel">
-          <h1 class="h1" data-i18n="login_h1">Вход</h1>
-          <p class="lead" data-i18n="login_lead">
-            Влез в профила си, за да управляваш заявки и съдържание.
-          </p>
+        <!-- RIGHT: FORM -->
+        <div class="apply-card">
+          <div class="apply-head">
+            <div>
+              <h2 class="h2" style="margin:0;" data-i18n="login_h1">Вход</h2>
+              <p class="muted" style="margin-top:6px;" data-i18n="login_lead">
+                Влез в профила си, за да управляваш заявки и съдържание.
+              </p>
+            </div>
+            <div class="seal">CC</div>
+          </div>
 
-          <form class="apply-form" id="loginForm" novalidate>
+          <form class="apply-form" novalidate>
             <div class="field">
               <label for="email" data-i18n="login_label_email">Имейл</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                data-ph="login_ph_email"
-                placeholder="name@example.com"
-              />
+              <input id="email" name="email" type="email" required placeholder="name@example.com" data-ph="login_ph_email" />
             </div>
 
             <div class="field">
               <label for="password" data-i18n="login_label_password">Парола</label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                required
-                minlength="6"
-                data-ph="login_ph_password"
-                placeholder="******"
-              />
+              <input id="password" name="password" type="password" required placeholder="******" data-ph="login_ph_password" />
             </div>
 
             <button class="btn btn-primary btn-wide" type="submit" data-i18n="login_btn">
               Вход →
             </button>
 
-            <div class="toast" id="loginToast" hidden></div>
-
-            <p class="muted" style="margin-top: 10px;">
+            <p class="apply-note">
               <span data-i18n="login_no_account">Нямаш профил?</span>
               <a class="link" href="./register.html" data-i18n="login_go_register">Регистрация →</a>
             </p>
+
+            <div class="toast" hidden></div>
           </form>
+
+          <div class="apply-foot">
+            <div class="foot-item">
+              <span class="k">USG</span>
+              <span>Registry</span>
+            </div>
+            <div class="foot-item">
+              <span class="k">BG</span>
+              <span>Standard</span>
+            </div>
+            <div class="foot-item">
+              <span class="k">CC</span>
+              <span>Quality</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
+      <p class="note" style="margin-top:18px;">
+        © <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini
+      </p>
     </section>
   </main>
 
@@ -136,12 +151,13 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
-        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
         <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script src="./src/main.js"></script>
 </body>
 </html>
