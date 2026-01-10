@@ -301,7 +301,17 @@ partners_brand_project_btn: 'Проектът →',
     project_cta_register: 'Регистрация →',
     project_cta_login: 'Вход →',
     project_cta_add: 'Добави куче →',
-    project_cta_registry: 'Регистър →'
+    project_cta_registry: 'Регистър →',
+    project_brand_sub: 'Платформа за българската общност на Cane Corso — стандарт, регистър и отговорност.',
+project_b1: 'Ясни правила и критерии',
+project_b2: 'Проверка и одобрение',
+project_b3: 'Общност и партньорства',
+project_left_note: 'Проектът е създаден, за да защити породата от компромиси и да изгради култура на качество.',
+project_left_registry_btn: 'Регистър →',
+project_left_standard_btn: 'Стандарт →',
+project_cta_join: 'Регистрация →',
+project_note: 'UNICO SUO GENERE — by Stefano De Tanini'
+
   },
 
   en: {
@@ -365,6 +375,21 @@ home_note: 'Every profile is published after review and approval.',
       'Cane Corso is not for everyone. It is powerful, intelligent and instinct-driven — and requires a stable handler.',
     manifesto_statement_p2:
       'We do not “collect numbers”. We build quality. We set boundaries. We take responsibility.',
+      manifesto_brand_sub: 'A position. Not a trend. Responsibility to the Cane Corso breed.',
+manifesto_left_note: 'We are not chasing “likes”. We set a standard and take responsibility.',
+manifesto_left_standard_btn: 'Standard →',
+manifesto_left_registry_btn: 'Registry →',
+manifesto_cta_registry: 'View registry →',
+manifesto_cta_standard: 'Read the standard →',
+manifesto_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+manifesto_brand_sub: 'Позиция. Не тенденция. Отговорност към породата Cane Corso.',
+manifesto_left_note: 'Тук не търсим “харесвания”. Тук поставяме стандарт и носим отговорност.',
+manifesto_left_standard_btn: 'Стандарт →',
+manifesto_left_registry_btn: 'Регистър →',
+manifesto_cta_registry: 'Виж регистъра →',
+manifesto_cta_standard: 'Прочети стандарта →',
+manifesto_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+
 
     // STANDARD
     standard_title: 'Standard — UNICO SUO GENERE',
@@ -606,7 +631,17 @@ partners_brand_project_btn: 'Project →',
     project_cta_register: 'Register →',
     project_cta_login: 'Login →',
     project_cta_add: 'Add a dog →',
-    project_cta_registry: 'Registry →'
+    project_cta_registry: 'Registry →',
+    project_brand_sub: 'A platform for the Bulgarian Cane Corso community — standard, registry and responsibility.',
+project_b1: 'Clear rules and criteria',
+project_b2: 'Review and approval',
+project_b3: 'Community and partnerships',
+project_left_note: 'The project exists to protect the breed from compromises and to build a culture of quality.',
+project_left_registry_btn: 'Registry →',
+project_left_standard_btn: 'Standard →',
+project_cta_join: 'Register →',
+project_note: 'UNICO SUO GENERE — by Stefano De Tanini'
+
   }
 };
 

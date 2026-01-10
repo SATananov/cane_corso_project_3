@@ -11,8 +11,8 @@
 <body>
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Home">
-        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE — Cane Corso" />
+      <a class="brand" href="./index.html">
+        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE" />
         <span class="brand-text">UNICO SUO GENERE</span>
       </a>
 
@@ -27,14 +27,11 @@
         <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
 
         <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <button class="btn btn-outline user-only" id="logoutBtn" data-i18n="nav_logout">Изход</button>
 
         <div class="lang">
-          <button type="button" class="lang-btn" data-lang="bg">BG</button>
-          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="bg">BG</button>
+          <button class="lang-btn" data-lang="en">EN</button>
         </div>
       </nav>
     </div>
@@ -42,88 +39,118 @@
 
   <main class="page">
     <section class="container page-inner">
-      <h1 class="h1" data-i18n="standard_h1">Стандарт (Българско разклонение)</h1>
 
-      <p class="lead" data-i18n="standard_lead">
-        Тук ще публикуваме <strong>реален стандарт</strong> за Cane Corso в България — изграден върху практика,
-        отговорност и експертна преценка.
-      </p>
+      <div class="form-split">
+        <!-- LEFT BRAND -->
+        <aside class="brand-panel">
+          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
 
-      <div class="grid">
-        <div class="card">
-          <h2 class="h2" data-i18n="standard_what_h2">Какво означава „стандарт“</h2>
-          <ul class="list">
-            <li data-i18n="standard_what_li1">Екстериор: пропорции, глава, костна система, движения.</li>
-            <li data-i18n="standard_what_li2">Темперамент: стабилен характер, контрол, социализация.</li>
-            <li data-i18n="standard_what_li3">Здраве: тестове, грижа, отговорно развъждане.</li>
+          <div class="brand-lines">
+            <div class="t1">UNICO SUO GENERE</div>
+            <div class="t2">by Stefano De Tanini</div>
+            <div class="t3" data-i18n="standard_brand_sub">
+              Реален стандарт за Cane Corso — изграден от практика, не от теория.
+            </div>
+          </div>
+
+          <ul class="brand-bullets">
+            <li data-i18n="standard_b1">Породен тип и функционалност</li>
+            <li data-i18n="standard_b2">Темперамент и стабилност</li>
+            <li data-i18n="standard_b3">Здраве и дълголетие</li>
           </ul>
-        </div>
 
-        <div class="card">
-          <h2 class="h2" data-i18n="standard_download_h2">Документ</h2>
-          <p class="muted" data-i18n="standard_download_p">
-            Финалният документ ще бъде наличен тук (PDF). До тогава можеш да изпратиш предложения/материали.
+          <div class="divider"></div>
+
+          <p class="muted" data-i18n="standard_left_note">
+            Този стандарт е българско разклонение, създадено от реален опит с породата.
           </p>
-          <a class="btn btn-outline" href="#upload-standard" data-i18n="standard_cta">Изпрати материал →</a>
+        </aside>
+
+        <!-- RIGHT CONTENT -->
+        <div class="form-panel">
+
+          <h1 class="h1" data-i18n="standard_h1">Стандарт (Българско разклонение)</h1>
+          <p class="lead" data-i18n="standard_lead">
+            Тук е описан реалният стандарт на Cane Corso според UNICO SUO GENERE.
+          </p>
+
+          <div class="card">
+            <h2 class="h2" data-i18n="standard_what_h2">Какво означава „стандарт“</h2>
+            <ul class="list">
+              <li data-i18n="standard_what_1">Ясен породен тип и пропорции</li>
+              <li data-i18n="standard_what_2">Работещо тяло, не изложбена крайност</li>
+              <li data-i18n="standard_what_3">Контролируем и стабилен характер</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2 class="h2" data-i18n="standard_core_h2">Основни критерии</h2>
+            <ul class="list">
+              <li data-i18n="standard_core_1">Глава: масивна, балансирана, без преекспониране</li>
+              <li data-i18n="standard_core_2">Костна система: здрава, суха, стабилна</li>
+              <li data-i18n="standard_core_3">Движения: свободни, мощни, ефективни</li>
+              <li data-i18n="standard_core_4">Темперамент: уверен, защитен, но управляем</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2 class="h2" data-i18n="standard_doc_h2">Официален документ</h2>
+            <p class="muted" data-i18n="standard_doc_p">
+              Пълният стандарт ще бъде публикуван като официален PDF документ.
+            </p>
+          </div>
+
+          <!-- UPLOAD AT THE BOTTOM -->
+          <div class="divider"></div>
+
+          <div class="card">
+            <h2 class="h2" data-i18n="standard_upload_h2">Изпрати материал</h2>
+            <p class="muted" data-i18n="standard_upload_p">
+              Ако имаш материали или предложения, можеш да ги изпратиш за преглед.
+            </p>
+
+            <form class="apply-form" id="standardUploadForm">
+              <div class="row">
+                <div class="field">
+                  <label data-i18n="upload_label_name">Име</label>
+                  <input name="name" required />
+                </div>
+                <div class="field">
+                  <label data-i18n="upload_label_contact">Имейл / Телефон</label>
+                  <input name="contact" required />
+                </div>
+              </div>
+
+              <div class="field">
+                <label data-i18n="upload_label_file">Файл</label>
+                <input type="file" accept=".pdf,.doc,.docx,image/*" required />
+              </div>
+
+              <div class="field">
+                <label data-i18n="upload_label_message">Бележка</label>
+                <textarea></textarea>
+              </div>
+
+              <button class="btn btn-primary btn-wide" type="submit" data-i18n="upload_btn">
+                Изпрати →
+              </button>
+
+              <div class="toast" hidden></div>
+            </form>
+          </div>
+
         </div>
       </div>
 
-      <div class="card upload-card" id="upload-standard">
-        <h2 class="h2" data-i18n="upload_standard_h2">Качи материал за стандарта</h2>
-        <p class="muted" data-i18n="upload_standard_p">
-          PDF/DOCX/снимки — всичко, което подкрепя стандарта. Ще го прегледаме и ако е релевантно, ще го включим.
-        </p>
-
-        <form class="apply-form" data-upload="standard" novalidate>
-          <div class="row">
-            <div class="field">
-              <label data-i18n="upload_label_name">Име</label>
-              <input name="name" required data-ph="upload_ph_name" placeholder="например: Иван Иванов" />
-            </div>
-            <div class="field">
-              <label data-i18n="upload_label_contact">Имейл / Телефон</label>
-              <input name="contact" required data-ph="upload_ph_contact" placeholder="имейл или телефон" />
-            </div>
-          </div>
-
-          <div class="field">
-            <label data-i18n="upload_label_file">Файл</label>
-            <input name="file" type="file" required accept=".pdf,.doc,.docx,.txt,image/*" />
-          </div>
-
-          <div class="field">
-            <label data-i18n="upload_label_message">Бележка</label>
-            <textarea name="message" data-ph="upload_ph_message" placeholder="кратка бележка (по желание)"></textarea>
-          </div>
-
-          <button class="btn btn-primary btn-wide" type="submit" data-i18n="upload_btn_send">Изпрати →</button>
-          <div class="toast" hidden></div>
-        </form>
-      </div>
-
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
-      <div class="footer-links">
-        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
-      </div>
     </div>
   </footer>
 
   <script type="module" src="./src/main.js"></script>
 </body>
 </html>
-
