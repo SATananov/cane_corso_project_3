@@ -121,9 +121,16 @@ registry_hint: 'Натисни върху профил, за да видиш д�
     dog_reject_btn: 'Отхвърли',
     dog_notes_h2: 'Описание',
     dog_notes_p: '(Тук ще се визуализира описанието/бележката към профила.)',
+    dog_status_h2: 'Статус',
+dog_status_loading: 'Зареждане...',
+dog_left_note: 'Само одобрени профили са публични. Админ може да одобрява/отхвърля заявки.',
+dog_left_standard_btn: 'Стандарт →',
+dog_photos_note: 'Ако няма снимки, профилът не е завършен.',
+dog_admin_note: 'Одобрение/отхвърляне влияе на видимостта в регистъра.',
 
-    // LOGIN
-    login_title: 'Вход — UNICO SUO GENERE',
+
+// LOGIN
+login_title: 'Вход — UNICO SUO GENERE',
     login_h1: 'Вход',
     login_lead: 'Влез в профила си, за да управляваш заявки и съдържание.',
     login_label_email: 'Имейл',
@@ -410,9 +417,16 @@ dog_title: 'Profile — UNICO SUO GENERE',
     dog_reject_btn: 'Reject',
     dog_notes_h2: 'Description',
     dog_notes_p: '(The description/note will appear here.)',
+    dog_status_h2: 'Status',
+dog_status_loading: 'Loading...',
+dog_left_note: 'Only approved profiles are public. Admin can approve/reject submissions.',
+dog_left_standard_btn: 'Standard →',
+dog_photos_note: 'If there are no photos, the profile is not complete.',
+dog_admin_note: 'Approve/reject affects visibility in the registry.',
 
-    // LOGIN
-    login_title: 'Login — UNICO SUO GENERE',
+
+// LOGIN
+login_title: 'Login — UNICO SUO GENERE',
     login_h1: 'Login',
     login_lead: 'Sign in to manage submissions and content.',
     login_label_email: 'Email',

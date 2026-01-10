@@ -42,64 +42,92 @@
 
   <main class="page">
     <section class="container page-inner">
-      <div class="card">
-        <h1 class="h1" id="dogName">—</h1>
-        <p class="lead" id="dogSubtitle" data-i18n="dog_subtitle">
-          Профил в регистъра UNICO SUO GENERE
-        </p>
-      </div>
+      <div class="form-split">
+        <!-- LEFT: brand/status panel -->
+        <aside class="brand-panel">
+          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
 
-      <div class="grid">
-        <div class="card">
-          <h2 class="h2" data-i18n="dog_photos_h2">Снимки</h2>
-
-          <div style="margin-top:12px;">
-            <img
-              id="dogMainPhoto"
-              src="./images/placeholder-dog.jpg"
-              alt="Cane Corso"
-              style="width:100%; height:auto; border-radius:12px; display:block;"
-            />
+          <div class="brand-lines">
+            <div class="t1">UNICO SUO GENERE</div>
+            <div class="t2">by Stefano De Tanini</div>
+            <div class="t3" data-i18n="dog_subtitle">
+              Профил в регистъра UNICO SUO GENERE
+            </div>
           </div>
 
-          <div class="grid" id="dogGallery" style="margin-top:12px;">
-            <!-- thumbnails injected later -->
+          <div class="divider"></div>
+
+          <div class="card" style="padding: 14px; background: rgba(0,0,0,0.18);">
+            <div class="h3" style="margin: 0 0 6px;" data-i18n="dog_status_h2">Статус</div>
+            <p class="muted" id="dogStatusText" style="margin: 0;" data-i18n="dog_status_loading">
+              Зареждане...
+            </p>
           </div>
-        </div>
 
-        <div class="card">
-          <h2 class="h2" data-i18n="dog_details_h2">Детайли</h2>
+          <div class="divider"></div>
 
-          <ul class="list" style="margin-top:12px;">
-            <li><strong data-i18n="dog_field_gender">Пол:</strong> <span id="dogGender">—</span></li>
-            <li><strong data-i18n="dog_field_color">Цвят:</strong> <span id="dogColor">—</span></li>
-            <li><strong data-i18n="dog_field_birth">Рождена дата:</strong> <span id="dogBirth">—</span></li>
-            <li><strong data-i18n="dog_field_city">Град:</strong> <span id="dogCity">—</span></li>
-            <li><strong data-i18n="dog_field_owner">Собственик:</strong> <span id="dogOwner">—</span></li>
-            <li><strong data-i18n="dog_field_kennel">Развъдник:</strong> <span id="dogKennel">—</span></li>
-            <li><strong data-i18n="dog_field_status">Статус:</strong> <span id="dogStatus">—</span></li>
-          </ul>
+          <p class="muted" data-i18n="dog_left_note">
+            Само одобрени профили са публични. Админ може да одобрява/отхвърля заявки.
+          </p>
 
-          <div class="row" style="gap:12px; flex-wrap:wrap; margin-top:16px;">
-            <a class="btn btn-outline" href="./registry.html" data-i18n="dog_back_btn">← Назад към регистъра</a>
+          <div class="cta" style="margin-top: 12px;">
+            <a class="btn btn-secondary" href="./registry.html" data-i18n="dog_back_btn">← Назад към регистъра</a>
+            <a class="btn btn-outline" href="./standard.html" data-i18n="dog_left_standard_btn">Стандарт →</a>
+          </div>
+        </aside>
 
-            <button class="btn btn-outline admin-only" id="btnApprove" type="button" data-i18n="dog_approve_btn">
-              Одобри
-            </button>
-            <button class="btn btn-outline admin-only" id="btnReject" type="button" data-i18n="dog_reject_btn">
-              Отхвърли
-            </button>
+        <!-- RIGHT: profile panel -->
+        <div class="form-panel">
+          <div class="card" style="margin-bottom: 14px;">
+            <h1 class="h1" id="dogName">—</h1>
+            <p class="lead" id="dogShortInfo">—</p>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <h2 class="h2" data-i18n="dog_photos_h2">Снимки</h2>
+              <div id="dogPhotos" class="grid" style="grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px;">
+                <!-- images injected -->
+              </div>
+              <p class="note" data-i18n="dog_photos_note">
+                Ако няма снимки, профилът не е завършен.
+              </p>
+            </div>
+
+            <div class="card">
+              <h2 class="h2" data-i18n="dog_details_h2">Детайли</h2>
+
+              <div class="divider"></div>
+
+              <p class="muted"><strong data-i18n="dog_field_gender">Пол:</strong> <span id="dogGender">—</span></p>
+              <p class="muted"><strong data-i18n="dog_field_color">Цвят:</strong> <span id="dogColor">—</span></p>
+              <p class="muted"><strong data-i18n="dog_field_birth">Рождена дата:</strong> <span id="dogBirth">—</span></p>
+              <p class="muted"><strong data-i18n="dog_field_city">Град:</strong> <span id="dogCity">—</span></p>
+              <p class="muted"><strong data-i18n="dog_field_owner">Собственик:</strong> <span id="dogOwner">—</span></p>
+              <p class="muted"><strong data-i18n="dog_field_kennel">Развъдник:</strong> <span id="dogKennel">—</span></p>
+
+              <div class="divider"></div>
+
+              <div class="cta admin-only" style="margin-top: 0;">
+                <button class="btn btn-primary" type="button" id="btnApprove" data-i18n="dog_approve_btn">Одобри</button>
+                <button class="btn btn-outline" type="button" id="btnReject" data-i18n="dog_reject_btn">Отхвърли</button>
+              </div>
+
+              <p class="note admin-only" data-i18n="dog_admin_note">
+                Одобрение/отхвърляне влияе на видимостта в регистъра.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="h2" data-i18n="dog_notes_h2">Описание</h2>
+            <p class="muted" id="dogDescription" style="margin-top: 10px;">
+              —
+            </p>
           </div>
 
           <div class="toast" id="dogToast" hidden></div>
         </div>
-      </div>
-
-      <div class="card">
-        <h2 class="h2" data-i18n="dog_notes_h2">Описание</h2>
-        <p class="muted" id="dogDescription" data-i18n="dog_notes_p">
-          (Тук ще се визуализира описанието/бележката към профила.)
-        </p>
       </div>
 
       <section class="bottom-nav">
