@@ -96,6 +96,13 @@ const translations = {
     registry_filter_female: 'Женско',
     registry_filter_btn: 'Приложи →',
     registry_clear_btn: 'Изчисти',
+registry_brand_sub: 'Публичен регистър с одобрени Cane Corso в България.',
+registry_brand_note: 'Видими са само одобрени профили. За включване — направи регистрация и подай заявка.',
+registry_brand_register_btn: 'Регистрация →',
+registry_brand_add_btn: 'Добави куче →',
+registry_brand_standard_btn: 'Стандарт →',
+registry_hint: 'Натисни върху профил, за да видиш детайли.',
+
 
     // DOG
     dog_title: 'Профил — UNICO SUO GENERE',
@@ -378,9 +385,16 @@ partners_brand_project_btn: 'Проектът →',
     registry_filter_female: 'Female',
     registry_filter_btn: 'Apply →',
     registry_clear_btn: 'Clear',
+    registry_brand_sub: 'A public registry of approved Cane Corso in Bulgaria.',
+registry_brand_note: 'Only approved profiles are visible. To join — register and submit a request.',
+registry_brand_register_btn: 'Register →',
+registry_brand_add_btn: 'Add dog →',
+registry_brand_standard_btn: 'Standard →',
+registry_hint: 'Click a profile to view details.',
 
-    // DOG
-    dog_title: 'Profile — UNICO SUO GENERE',
+
+// DOG
+dog_title: 'Profile — UNICO SUO GENERE',
     dog_subtitle: 'Profile in the UNICO SUO GENERE registry',
     dog_photos_h2: 'Photos',
     dog_details_h2: 'Details',

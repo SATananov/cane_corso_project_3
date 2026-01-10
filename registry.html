@@ -42,42 +42,85 @@
 
   <main class="page">
     <section class="container page-inner">
-      <h1 class="h1" data-i18n="registry_h1">Регистър</h1>
-      <p class="lead" data-i18n="registry_lead">
-        Публичен списък с одобрени Cane Corso. Всяка заявка се преглежда преди публикуване.
-      </p>
+      <div class="form-split">
+        <!-- LEFT: brand panel -->
+        <aside class="brand-panel">
+          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
 
-      <div class="card">
-        <div class="row" style="gap:12px; flex-wrap:wrap; align-items:flex-end;">
-          <div class="field" style="min-width:240px;">
-            <label data-i18n="registry_search_label">Търси по име</label>
-            <input id="searchName" data-ph="registry_search_ph" placeholder="например: Ares" />
+          <div class="brand-lines">
+            <div class="t1">UNICO SUO GENERE</div>
+            <div class="t2">by Stefano De Tanini</div>
+            <div class="t3" data-i18n="registry_brand_sub">
+              Публичен регистър с одобрени Cane Corso в България.
+            </div>
           </div>
 
-          <div class="field" style="min-width:220px;">
-            <label data-i18n="registry_filter_label">Филтър</label>
-            <select id="filterGender">
-              <option value="" data-i18n="registry_filter_all">Всички</option>
-              <option value="male" data-i18n="registry_filter_male">Мъжко</option>
-              <option value="female" data-i18n="registry_filter_female">Женско</option>
-            </select>
+          <ul class="brand-bullets">
+            <li data-i18n="brand_b1">Cane Corso само.</li>
+            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
+            <li data-i18n="brand_b3">Одобрение преди публикуване.</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <p class="muted" data-i18n="registry_brand_note">
+            Видими са само одобрени профили. За включване — направи регистрация и подай заявка.
+          </p>
+
+          <div class="cta" style="margin-top: 12px;">
+            <a class="btn btn-secondary guest-only" href="./register.html" data-i18n="registry_brand_register_btn">Регистрация →</a>
+            <a class="btn btn-secondary user-only" href="./add-dog.html" data-i18n="registry_brand_add_btn">Добави куче →</a>
+            <a class="btn btn-outline" href="./standard.html" data-i18n="registry_brand_standard_btn">Стандарт →</a>
+          </div>
+        </aside>
+
+        <!-- RIGHT: content panel -->
+        <div class="form-panel">
+          <h1 class="h1" data-i18n="registry_h1">Регистър</h1>
+          <p class="lead" data-i18n="registry_lead">
+            Публичен списък с одобрени Cane Corso. Всяка заявка се преглежда преди публикуване.
+          </p>
+
+          <div class="card" style="padding: 0; margin-top: 10px;">
+            <div class="apply-form" style="padding: 18px;">
+              <div class="row">
+                <div class="field">
+                  <label data-i18n="registry_search_label">Търси по име</label>
+                  <input id="searchName" data-ph="registry_search_ph" placeholder="например: Ares" />
+                </div>
+
+                <div class="field">
+                  <label data-i18n="registry_filter_label">Филтър</label>
+                  <select id="filterGender">
+                    <option value="all" data-i18n="registry_filter_all">Всички</option>
+                    <option value="male" data-i18n="registry_filter_male">Мъжко</option>
+                    <option value="female" data-i18n="registry_filter_female">Женско</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="cta" style="margin-top: 6px;">
+                <button class="btn btn-primary" id="btnApplyFilter" type="button" data-i18n="registry_filter_btn">
+                  Приложи →
+                </button>
+                <button class="btn btn-outline" id="btnClearFilter" type="button" data-i18n="registry_clear_btn">
+                  Изчисти
+                </button>
+              </div>
+            </div>
           </div>
 
-          <button class="btn btn-outline" id="btnApplyFilters" type="button" data-i18n="registry_filter_btn">
-            Приложи →
-          </button>
+          <div class="divider"></div>
 
-          <button class="btn btn-outline" id="btnClearFilters" type="button" data-i18n="registry_clear_btn">
-            Изчисти
-          </button>
+          <!-- Cards list -->
+          <div id="registryList" class="grid">
+            <!-- injected by logic -->
+          </div>
+
+          <p class="note" data-i18n="registry_hint">
+            Натисни върху профил, за да видиш детайли.
+          </p>
         </div>
-      </div>
-
-      <!-- Injected by later logic (Supabase). The container stays the same -->
-      <div class="grid" id="registryList"></div>
-
-      <div class="card" id="registryState" hidden>
-        <p class="muted" id="registryStateText"></p>
       </div>
 
       <section class="bottom-nav">
@@ -105,4 +148,5 @@
   <script type="module" src="./src/main.js"></script>
 </body>
 </html>
+
 
