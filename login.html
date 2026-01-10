@@ -42,49 +42,82 @@
 
   <main class="page">
     <section class="container page-inner">
-      <div class="card">
-        <h1 class="h1" data-i18n="login_h1">Вход</h1>
-        <p class="lead" data-i18n="login_lead">
-          Влез в профила си, за да управляваш заявки и съдържание.
-        </p>
+      <div class="form-split">
+        <!-- LEFT: brand panel -->
+        <aside class="brand-panel">
+          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
 
-        <form class="apply-form" id="loginForm" novalidate>
-          <div class="field">
-            <label for="email" data-i18n="login_label_email">Имейл</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              data-ph="login_ph_email"
-              placeholder="name@example.com"
-            />
+          <div class="brand-lines">
+            <div class="t1">UNICO SUO GENERE</div>
+            <div class="t2">by Stefano De Tanini</div>
+            <div class="t3" data-i18n="login_brand_sub">
+              Вход за собственици и партньори на Cane Corso в България.
+            </div>
           </div>
 
-          <div class="field">
-            <label for="password" data-i18n="login_label_password">Парола</label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-              required
-              minlength="6"
-              data-ph="login_ph_password"
-              placeholder="******"
-            />
-          </div>
+          <ul class="brand-bullets">
+            <li data-i18n="brand_b1">Cane Corso само.</li>
+            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
+            <li data-i18n="brand_b3">Одобрение преди публикуване.</li>
+          </ul>
 
-          <button class="btn btn-primary btn-wide" type="submit" data-i18n="login_btn">
-            Вход →
-          </button>
+          <div class="divider"></div>
 
-          <div class="toast" id="loginToast" hidden></div>
-
-          <p class="muted" style="margin-top:12px;">
-            <span data-i18n="login_no_account">Нямаш профил?</span>
-            <a href="./register.html" data-i18n="login_go_register">Регистрация →</a>
+          <p class="muted" data-i18n="login_brand_note">
+            Ако нямаш профил — направи регистрация и подай заявка за включване.
           </p>
-        </form>
+
+          <div class="cta" style="margin-top: 12px;">
+            <a class="btn btn-secondary" href="./register.html" data-i18n="login_brand_register_btn">Регистрация →</a>
+            <a class="btn btn-outline" href="./registry.html" data-i18n="login_brand_registry_btn">Регистър →</a>
+          </div>
+        </aside>
+
+        <!-- RIGHT: form panel -->
+        <div class="form-panel">
+          <h1 class="h1" data-i18n="login_h1">Вход</h1>
+          <p class="lead" data-i18n="login_lead">
+            Влез в профила си, за да управляваш заявки и съдържание.
+          </p>
+
+          <form class="apply-form" id="loginForm" novalidate>
+            <div class="field">
+              <label for="email" data-i18n="login_label_email">Имейл</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                data-ph="login_ph_email"
+                placeholder="name@example.com"
+              />
+            </div>
+
+            <div class="field">
+              <label for="password" data-i18n="login_label_password">Парола</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                required
+                minlength="6"
+                data-ph="login_ph_password"
+                placeholder="******"
+              />
+            </div>
+
+            <button class="btn btn-primary btn-wide" type="submit" data-i18n="login_btn">
+              Вход →
+            </button>
+
+            <div class="toast" id="loginToast" hidden></div>
+
+            <p class="muted" style="margin-top: 10px;">
+              <span data-i18n="login_no_account">Нямаш профил?</span>
+              <a class="link" href="./register.html" data-i18n="login_go_register">Регистрация →</a>
+            </p>
+          </form>
+        </div>
       </div>
 
       <section class="bottom-nav">

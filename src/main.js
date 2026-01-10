@@ -126,6 +126,15 @@ const translations = {
     login_btn: 'Вход →',
     login_no_account: 'Нямаш профил?',
     login_go_register: 'Регистрация →',
+    login_brand_sub: 'Вход за собственици и партньори на Cane Corso в България.',
+login_brand_note: 'Ако нямаш профил — направи регистрация и подай заявка за включване.',
+login_brand_register_btn: 'Регистрация →',
+    login_brand_registry_btn: 'Регистър →',
+
+brand_b1: 'Cane Corso само.',
+brand_b2: 'Качество, здраве, темперамент.',
+brand_b3: 'Одобрение преди публикуване.',
+
 
     // REGISTER
     register_title: 'Регистрация — UNICO SUO GENERE',
@@ -380,6 +389,16 @@ const translations = {
     login_btn: 'Login →',
     login_no_account: "Don't have an account?",
     login_go_register: 'Register →',
+    login_brand_sub: 'Sign in for Cane Corso owners and partners in Bulgaria.',
+login_brand_note: 'No account yet? Register and submit a request to be included.',
+login_brand_register_btn: 'Register →',
+    login_brand_registry_btn: 'Registry →',
+
+
+brand_b1: 'Cane Corso only.',
+brand_b2: 'Quality, health, temperament.',
+brand_b3: 'Approval before publishing.',
+
 
     // REGISTER
     register_title: 'Register — UNICO SUO GENERE',
