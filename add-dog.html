@@ -6,6 +6,7 @@
   <title data-i18n="add_dog_title">Добави куче — UNICO SUO GENERE</title>
   <link rel="icon" href="./images/brand-icon.png" />
   <link rel="stylesheet" href="./style.css" />
+
 </head>
 
 <body>
@@ -22,15 +23,8 @@
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
-
-        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
-        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
-
-        <a class="btn btn-outline user-only active" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a class="active btn btn-outline" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
 
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
@@ -41,50 +35,68 @@
   </header>
 
   <main class="page">
-    <section class="container page-inner">
-      <div class="form-split">
-        <!-- LEFT: brand panel -->
-        <aside class="brand-panel">
-          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
+    <section class="container">
+      <div class="contact-hero contact-title">
+        <span class="badge">UNICO SUO GENERE</span>
+        <h1 class="h1" data-i18n="add_dog_h1">Добави куче</h1>
+        <p class="lead" data-i18n="add_dog_lead">
+          Подай заявка за включване в регистъра. Всяка заявка се преглежда преди публикуване.
+        </p>
+      </div>
 
-          <div class="brand-lines">
-            <div class="t1">UNICO SUO GENERE</div>
-            <div class="t2">by Stefano De Tanini</div>
-            <div class="t3" data-i18n="add_dog_brand_sub">
-              Подай заявка за включване в регистъра. Всяка заявка се преглежда.
-            </div>
-          </div>
+      <div class="contact-layout">
+        <!-- LEFT: BRAND / INFO -->
+        <aside class="trust-card">
+          <img class="logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — by Stefano De Tanini" />
 
-          <ul class="brand-bullets">
-            <li data-i18n="brand_b1">Cane Corso само.</li>
-            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
-            <li data-i18n="brand_b3">Одобрение преди публикуване.</li>
-          </ul>
-
-          <div class="divider"></div>
+          <p class="h2" style="margin: 6px 0 10px;" data-i18n="add_dog_brand_sub">
+            Подай заявка за включване в регистъра. Всяка заявка се преглежда.
+          </p>
 
           <p class="muted" data-i18n="add_dog_brand_note">
             Снимки: препоръчително — стойка, профил и лице. Колкото по-ясни са данните, толкова по-бърза е верификацията.
           </p>
 
-          <div class="cta" style="margin-top: 12px;">
+          <div class="trust-divider"></div>
+
+          <ul class="trust-list">
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b1">Cane Corso само.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b2">Качество, здраве, темперамент.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b3">Одобрение преди публикуване.</span>
+            </li>
+          </ul>
+
+          <div class="cta" style="margin-top: 14px;">
             <a class="btn btn-secondary" href="./registry.html" data-i18n="add_dog_brand_registry_btn">Регистър →</a>
             <a class="btn btn-outline" href="./standard.html" data-i18n="add_dog_brand_standard_btn">Стандарт →</a>
           </div>
         </aside>
 
-        <!-- RIGHT: form panel -->
-        <div class="form-panel">
-          <h1 class="h1" data-i18n="add_dog_h1">Добави куче</h1>
-          <p class="lead" data-i18n="add_dog_lead">
-            Подай заявка за включване в регистъра. Всяка заявка се преглежда преди публикуване.
-          </p>
+        <!-- RIGHT: FORM -->
+        <div class="apply-card">
+          <div class="apply-head">
+            <div>
+              <h2 class="h2" style="margin:0;" data-i18n="add_dog_h1">Добави куче</h2>
+              <p class="muted" style="margin-top:6px;" data-i18n="add_dog_lead">
+                Подай заявка за включване в регистъра.
+              </p>
+            </div>
+            <div class="seal">USG</div>
+          </div>
 
-          <form class="apply-form" id="addDogForm" novalidate>
+          <form class="apply-form" novalidate>
             <div class="row">
               <div class="field">
                 <label data-i18n="add_dog_label_name">Име на кучето</label>
-                <input name="name" required data-ph="add_dog_ph_name" placeholder="например: Ares" />
+                <input name="name" required data-ph="add_dog_ph_name" />
               </div>
 
               <div class="field">
@@ -100,41 +112,41 @@
             <div class="row">
               <div class="field">
                 <label data-i18n="add_dog_label_color">Цвят</label>
-                <input name="color" required data-ph="add_dog_ph_color" placeholder="например: black" />
+                <input name="color" required data-ph="add_dog_ph_color" />
               </div>
 
               <div class="field">
                 <label data-i18n="add_dog_label_birth">Рождена дата</label>
-                <input name="birthDate" type="date" />
+                <input type="date" name="birth" required />
               </div>
             </div>
 
             <div class="row">
               <div class="field">
                 <label data-i18n="add_dog_label_city">Град</label>
-                <input name="city" data-ph="add_dog_ph_city" placeholder="например: Plovdiv" />
+                <input name="city" required data-ph="add_dog_ph_city" />
               </div>
 
               <div class="field">
                 <label data-i18n="add_dog_label_owner">Собственик</label>
-                <input name="ownerName" data-ph="add_dog_ph_owner" placeholder="име на собственик" />
+                <input name="owner" required data-ph="add_dog_ph_owner" />
               </div>
             </div>
 
             <div class="field">
               <label data-i18n="add_dog_label_kennel">Развъдник (ако има)</label>
-              <input name="kennel" data-ph="add_dog_ph_kennel" placeholder="име на развъдник" />
+              <input name="kennel" data-ph="add_dog_ph_kennel" />
             </div>
 
             <div class="field">
               <label data-i18n="add_dog_label_desc">Описание / бележка</label>
-              <textarea name="description" data-ph="add_dog_ph_desc" placeholder="кратко описание"></textarea>
+              <textarea name="desc" data-ph="add_dog_ph_desc"></textarea>
             </div>
 
             <div class="field">
               <label data-i18n="add_dog_label_photos">Снимки</label>
-              <input name="photos" type="file" accept="image/*" multiple />
-              <p class="note" data-i18n="add_dog_photos_hint">
+              <input type="file" multiple accept="image/*" />
+              <p class="muted" data-i18n="add_dog_photos_hint">
                 Препоръчително: поне 3 снимки (стойка, профил, лице).
               </p>
             </div>
@@ -143,20 +155,14 @@
               Изпрати заявка →
             </button>
 
-            <div class="toast" id="addDogToast" hidden></div>
+            <div class="toast" hidden></div>
           </form>
         </div>
       </div>
 
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
+      <p class="note" style="margin-top:18px;">
+        © <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini
+      </p>
     </section>
   </main>
 
@@ -164,14 +170,14 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
-        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
         <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script src="./src/main.js"></script>
 </body>
 </html>
-
 
