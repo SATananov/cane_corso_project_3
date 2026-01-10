@@ -23,11 +23,9 @@
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
 
-        <!-- guest -->
         <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
         <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
 
-        <!-- user/admin -->
         <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
         <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
         <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
@@ -42,61 +40,91 @@
     </div>
   </header>
 
-  <main class="page">
-    <section class="container page-inner">
-      <div class="card hero">
-        <h1 class="h1" data-i18n="home_h1">UNICO SUO GENERE</h1>
-        <p class="lead" data-i18n="home_lead">
-          Платформа за Cane Corso в България — базирана на практика, отговорност и ясни критерии.
-        </p>
+  <main class="hero">
+    <div class="container">
+      <div class="form-split">
+        <!-- LEFT: brand panel -->
+        <aside class="brand-panel">
+          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
 
-        <div class="row hero-actions">
-          <a class="btn btn-primary" href="./manifesto.html" data-i18n="home_cta_manifesto">Прочети манифеста →</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="home_cta_registry">Виж регистъра →</a>
-          <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="home_cta_add">Добави куче →</a>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h2 class="h2" data-i18n="home_block1_h2">Регистър</h2>
-          <p class="muted" data-i18n="home_block1_p">
-            Публичен списък с одобрени кучета. Всяка заявка се преглежда преди публикуване.
-          </p>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="home_block1_cta">Отвори регистъра →</a>
-        </div>
-
-        <div class="card">
-          <h2 class="h2" data-i18n="home_block2_h2">Стандарт</h2>
-          <p class="muted" data-i18n="home_block2_p">
-            Българско разклонение на стандарта: екстериор, темперамент, здраве и функционалност.
-          </p>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="home_block2_cta">Отвори стандарта →</a>
-        </div>
-
-        <div class="card">
-          <h2 class="h2" data-i18n="home_block3_h2">Участие</h2>
-          <p class="muted" data-i18n="home_block3_p">
-            Влез в профила си, за да подаваш заявки и да качваш материали.
-          </p>
-          <div class="row" style="gap:12px; flex-wrap:wrap;">
-            <a class="btn btn-outline guest-only" href="./login.html" data-i18n="home_block3_login">Вход →</a>
-            <a class="btn btn-outline guest-only" href="./register.html" data-i18n="home_block3_register">Регистрация →</a>
-            <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="home_block3_add">Добави куче →</a>
+          <div class="brand-lines">
+            <div class="t1">UNICO SUO GENERE</div>
+            <div class="t2">by Stefano De Tanini</div>
+            <div class="t3" data-i18n="home_brand_sub">
+              Българският стандарт и регистър за Cane Corso — качество, контрол, отговорност.
+            </div>
           </div>
+
+          <ul class="brand-bullets">
+            <li data-i18n="brand_b1">Cane Corso само.</li>
+            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
+            <li data-i18n="brand_b3">Одобрение преди публикуване.</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <p class="muted" data-i18n="home_brand_note">
+            Това е платформа за собственици, развъдници и общност, която държи на породния тип и истината.
+          </p>
+
+          <div class="cta" style="margin-top: 12px;">
+            <a class="btn btn-secondary" href="./manifesto.html" data-i18n="home_cta_manifesto">Прочети манифеста →</a>
+            <a class="btn btn-outline" href="./standard.html" data-i18n="home_brand_standard_btn">Стандарт →</a>
+          </div>
+        </aside>
+
+        <!-- RIGHT: hero panel -->
+        <div class="form-panel">
+          <h1 class="h1" data-i18n="home_h1">UNICO SUO GENERE</h1>
+          <p class="lead" data-i18n="home_lead">
+            Платформа за Cane Corso в България — по стандарт UNICO SUO GENERE.
+          </p>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="./registry.html" data-i18n="home_cta_registry">Виж регистъра →</a>
+            <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="home_cta_add">Добави куче →</a>
+            <a class="btn btn-outline guest-only" href="./register.html" data-i18n="home_cta_join">Стани част →</a>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="grid">
+            <div class="card">
+              <h2 class="h2" data-i18n="home_block1_h2">Регистър</h2>
+              <p class="muted" data-i18n="home_block1_p">
+                Публичен списък с одобрени кучета. Всяка заявка се преглежда преди публикуване.
+              </p>
+              <a class="link" href="./registry.html" data-i18n="home_block1_cta">Отвори регистъра →</a>
+            </div>
+
+            <div class="card">
+              <h2 class="h2" data-i18n="home_block2_h2">Стандарт</h2>
+              <p class="muted" data-i18n="home_block2_p">
+                Българско разклонение на стандарта: екстериор, темперамент, здраве и функционалност.
+              </p>
+              <a class="link" href="./standard.html" data-i18n="home_block2_cta">Отвори стандарта →</a>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top: 16px;">
+            <h2 class="h2" data-i18n="home_block3_h2">Участие</h2>
+            <p class="muted" data-i18n="home_block3_p">
+              Влез в профила си, за да подаваш заявки и да качваш материали.
+            </p>
+
+            <div class="cta" style="margin-top: 10px;">
+              <a class="btn btn-secondary guest-only" href="./login.html" data-i18n="home_block3_login">Вход →</a>
+              <a class="btn btn-outline guest-only" href="./register.html" data-i18n="home_block3_register">Регистрация →</a>
+              <a class="btn btn-primary user-only" href="./add-dog.html" data-i18n="home_block3_add">Добави куче →</a>
+            </div>
+          </div>
+
+          <p class="note" data-i18n="home_note">
+            Всеки профил се публикува след преглед и одобрение.
+          </p>
         </div>
       </div>
-
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">

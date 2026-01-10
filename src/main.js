@@ -39,6 +39,12 @@ const translations = {
     home_block3_login: 'Вход →',
     home_block3_register: 'Регистрация →',
     home_block3_add: 'Добави куче →',
+home_brand_sub: 'Българският стандарт и регистър за Cane Corso — качество, контрол, отговорност.',
+home_brand_note: 'Това е платформа за собственици, развъдници и общност, която държи на породния тип и истината.',
+home_brand_standard_btn: 'Стандарт →',
+home_cta_join: 'Стани част →',
+home_note: 'Всеки профил се публикува след преглед и одобрение.',
+
 
     // MANIFESTO
     manifesto_title: 'Манифест — UNICO SUO GENERE',
@@ -335,6 +341,12 @@ partners_brand_project_btn: 'Проектът →',
     home_block3_login: 'Login →',
     home_block3_register: 'Register →',
     home_block3_add: 'Add dog →',
+    home_brand_sub: 'The Bulgarian standard and registry for Cane Corso — quality, control, responsibility.',
+home_brand_note: 'A platform for owners, kennels and a community that values breed type and truth.',
+home_brand_standard_btn: 'Standard →',
+home_cta_join: 'Join →',
+home_note: 'Every profile is published after review and approval.',
+
 
     // MANIFESTO
     manifesto_title: 'Manifesto — UNICO SUO GENERE',
