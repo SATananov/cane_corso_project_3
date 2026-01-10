@@ -25,12 +25,15 @@ const translations = {
     home_cta_manifesto: 'Прочети манифеста →',
     home_cta_registry: 'Виж регистъра →',
     home_cta_add: 'Добави куче →',
+
     home_block1_h2: 'Регистър',
     home_block1_p: 'Публичен списък с одобрени кучета. Всяка заявка се преглежда преди публикуване.',
     home_block1_cta: 'Отвори регистъра →',
+
     home_block2_h2: 'Стандарт',
     home_block2_p: 'Българско разклонение на стандарта: екстериор, темперамент, здраве и функционалност.',
     home_block2_cta: 'Отвори стандарта →',
+
     home_block3_h2: 'Участие',
     home_block3_p: 'Влез в профила си, за да подаваш заявки и да качваш материали.',
     home_block3_login: 'Вход →',
@@ -55,7 +58,7 @@ const translations = {
     manifesto_statement_p2:
       'Тук не “събираме бройки”. Тук изграждаме качество. Поставяме граници. Носим отговорност.',
 
-    // STANDARD (твоята страница)
+    // STANDARD
     standard_title: 'Стандарт — UNICO SUO GENERE',
     standard_h1: 'Стандарт (Българско разклонение)',
     standard_lead:
@@ -65,10 +68,13 @@ const translations = {
     standard_what_li2: 'Темперамент: стабилен характер, контрол, социализация.',
     standard_what_li3: 'Здраве: тестове, грижа, отговорно развъждане.',
     standard_download_h2: 'Документ',
-    standard_download_p: 'Финалният документ ще бъде наличен тук (PDF). До тогава можеш да изпратиш предложения/материали.',
+    standard_download_p:
+      'Финалният документ ще бъде наличен тук (PDF). До тогава можеш да изпратиш предложения/материали.',
     standard_cta: 'Изпрати материал →',
+
     upload_standard_h2: 'Качи материал за стандарта',
-    upload_standard_p: 'PDF/DOCX/снимки — всичко, което подкрепя стандарта. Ще го прегледаме и ако е релевантно, ще го включим.',
+    upload_standard_p:
+      'PDF/DOCX/снимки — всичко, което подкрепя стандарта. Ще го прегледаме и ако е релевантно, ще го включим.',
     upload_label_name: 'Име',
     upload_label_contact: 'Имейл / Телефон',
     upload_label_file: 'Файл',
@@ -171,7 +177,83 @@ const translations = {
     admin_stats_approved: 'Одобрени:',
     admin_stats_rejected: 'Отхвърлени:',
     admin_notes_h2: 'Бележки',
-    admin_notes_p: 'Одобрените профили стават видими в “Регистър”. Отхвърлените остават скрити.'
+    admin_notes_p: 'Одобрените профили стават видими в “Регистър”. Отхвърлените профили остават скрити.',
+
+    // CONTACT
+    contact_title: 'Контакт — UNICO SUO GENERE',
+    contact_h1: 'Контакт',
+    contact_lead: 'Свържи се с нас за въпроси, партньорства или предложения.',
+    contact_label_name: 'Име',
+    contact_label_email: 'Имейл',
+    contact_label_message: 'Съобщение',
+    contact_btn: 'Изпрати →',
+    contact_ph_name: 'твоето име',
+    contact_ph_email: 'name@example.com',
+    contact_ph_message: 'напиши твоето съобщение',
+
+    // PARTNERS
+    partners_title: 'Партньори — UNICO SUO GENERE',
+    partners_h1: 'Партньори',
+    partners_lead: 'Работим с хора и организации, които уважават породата и споделят отговорен подход.',
+    partners_types_h2: 'Кого търсим',
+    partners_types_li1: 'Развъдници и собственици, които работят по качество, не по количество.',
+    partners_types_li2: 'Ветеринарни клиники и специалисти по диагностика/ортопедия.',
+    partners_types_li3: 'Треньори и центрове за социализация и контрол.',
+    partners_types_li4: 'Брандове за храна, добавки и оборудване с доказано качество.',
+    partners_offer_h2: 'Какво предлагаме',
+    partners_offer_li1: 'Публично присъствие в секция “Партньори”.',
+    partners_offer_li2: 'Съвместни инициативи и кампании в общността.',
+    partners_offer_li3: 'Ясни правила и нулева толерантност към подвеждащи практики.',
+    partners_apply_h2: 'Заявка за партньорство',
+    partners_apply_p: 'Опиши дейността си и как виждаш партньорството. Ще се свържем при интерес.',
+    partners_label_name: 'Име',
+    partners_label_org: 'Организация',
+    partners_label_contact: 'Имейл / Телефон',
+    partners_label_site: 'Уебсайт / Профил',
+    partners_label_message: 'Кратко описание',
+    partners_btn: 'Изпрати →',
+    partners_ph_name: 'име и фамилия',
+    partners_ph_org: 'име на развъдник/клиника/бранд',
+    partners_ph_contact: 'контакт',
+    partners_ph_site: 'линк (по желание)',
+    partners_ph_message: 'какво правите и какво предлагате',
+
+    // PROJECT
+    project_title: 'Проектът — UNICO SUO GENERE',
+    project_h1: 'Проектът',
+    project_lead:
+      'UNICO SUO GENERE е платформа за Cane Corso в България — регистър, стандарт и ясни правила за качество.',
+    project_goal_h2: 'Цел',
+    project_goal_p:
+      'Да създадем единна точка за доверие: регистър на одобрени кучета, публикуван стандарт и общност, която поставя здраве, темперамент и породен тип на първо място.',
+    project_audience_h2: 'За кого е',
+    project_audience_li1: 'Собственици на Cane Corso, които искат ясно признание и коректност.',
+    project_audience_li2: 'Развъдници, които работят отговорно и търсят качествена среда.',
+    project_audience_li3: 'Хора, които търсят реална информация, а не рекламен шум.',
+    project_features_h2: 'Основни функционалности',
+    project_feat1_h3: 'Публичен регистър',
+    project_feat1_p: 'Видими са само одобрени профили. Всеки профил има снимки и основни данни за кучето.',
+    project_feat2_h3: 'Подаване на заявка',
+    project_feat2_p: 'Регистрирани потребители могат да подават заявка за включване и да качват снимки.',
+    project_feat3_h3: 'Админ одобрение',
+    project_feat3_p: 'Админ панел за преглед, одобрение и отхвърляне на заявки преди публикуване в регистъра.',
+    project_feat4_h3: 'Документи и материали',
+    project_feat4_p: 'В секция “Стандарт” потребителите могат да изпращат материали (документи/снимки) за преглед и включване.',
+    project_feat5_h3: 'Двуезичен интерфейс',
+    project_feat5_p: 'Сайтът поддържа BG/EN, за да е достъпен и за международна аудитория.',
+    project_feat6_h3: 'Ясна идентичност',
+    project_feat6_p: 'Премиум визия в черно/злато и ясна марка: UNICO SUO GENERE — by Stefano De Tanini.',
+    project_rules_h2: 'Правила за включване',
+    project_rules_li1: 'Регистърът е само за Cane Corso.',
+    project_rules_li2: 'Допускат се и кучета без родословие, ако са реални представители на породата.',
+    project_rules_li3: 'Всяка заявка подлежи на експертна верификация и одобрение.',
+    project_cta_h2: 'Следваща стъпка',
+    project_cta_p:
+      'Ако имаш Cane Corso и искаш профил в регистъра — създай акаунт и подай заявка с коректни данни и снимки.',
+    project_cta_register: 'Регистрация →',
+    project_cta_login: 'Вход →',
+    project_cta_add: 'Добави куче →',
+    project_cta_registry: 'Регистър →'
   },
 
   en: {
@@ -195,19 +277,22 @@ const translations = {
     home_h1: 'UNICO SUO GENERE',
     home_lead: 'A Cane Corso platform in Bulgaria — built on the UNICO SUO GENERE standard.',
     home_cta_manifesto: 'Read the manifesto →',
-    home_cta_registry: 'View the registry →',
-    home_cta_add: 'Add a dog →',
+    home_cta_registry: 'View registry →',
+    home_cta_add: 'Add dog →',
+
     home_block1_h2: 'Registry',
     home_block1_p: 'Public list of approved dogs. Every submission is reviewed before publishing.',
     home_block1_cta: 'Open registry →',
+
     home_block2_h2: 'Standard',
-    home_block2_p: 'Bulgarian branch: structure, temperament, health, and functionality.',
+    home_block2_p: 'Bulgarian branch: structure, temperament, health and functionality.',
     home_block2_cta: 'Open standard →',
+
     home_block3_h2: 'Participation',
     home_block3_p: 'Sign in to submit requests and upload materials.',
     home_block3_login: 'Login →',
     home_block3_register: 'Register →',
-    home_block3_add: 'Add a dog →',
+    home_block3_add: 'Add dog →',
 
     // MANIFESTO
     manifesto_title: 'Manifesto — UNICO SUO GENERE',
@@ -237,10 +322,13 @@ const translations = {
     standard_what_li2: 'Temperament: stable character, control, socialization.',
     standard_what_li3: 'Health: tests, care, responsible breeding.',
     standard_download_h2: 'Document',
-    standard_download_p: 'The final document will be available here (PDF). Until then, you can send proposals/materials.',
+    standard_download_p:
+      'The final document will be available here (PDF). Until then, you can send proposals/materials.',
     standard_cta: 'Send material →',
+
     upload_standard_h2: 'Upload material for the standard',
-    upload_standard_p: 'PDF/DOCX/photos — anything that supports the standard. We review and include what is relevant.',
+    upload_standard_p:
+      'PDF/DOCX/photos — anything that supports the standard. We review and include what is relevant.',
     upload_label_name: 'Name',
     upload_label_contact: 'Email / Phone',
     upload_label_file: 'File',
@@ -343,7 +431,83 @@ const translations = {
     admin_stats_approved: 'Approved:',
     admin_stats_rejected: 'Rejected:',
     admin_notes_h2: 'Notes',
-    admin_notes_p: 'Approved profiles become visible in “Registry”. Rejected profiles remain hidden.'
+    admin_notes_p: 'Approved profiles become visible in “Registry”. Rejected profiles remain hidden.',
+
+    // CONTACT
+    contact_title: 'Contact — UNICO SUO GENERE',
+    contact_h1: 'Contact',
+    contact_lead: 'Contact us for questions, partnerships or proposals.',
+    contact_label_name: 'Name',
+    contact_label_email: 'Email',
+    contact_label_message: 'Message',
+    contact_btn: 'Send →',
+    contact_ph_name: 'your name',
+    contact_ph_email: 'name@example.com',
+    contact_ph_message: 'write your message',
+
+    // PARTNERS
+    partners_title: 'Partners — UNICO SUO GENERE',
+    partners_h1: 'Partners',
+    partners_lead: 'We work with people and organizations who respect the breed and share a responsible approach.',
+    partners_types_h2: 'Who we are looking for',
+    partners_types_li1: 'Kennels and owners focused on quality, not quantity.',
+    partners_types_li2: 'Veterinary clinics and diagnostic/orthopedic specialists.',
+    partners_types_li3: 'Trainers and centers for socialization and control.',
+    partners_types_li4: 'Food/supplement/equipment brands with proven quality.',
+    partners_offer_h2: 'What we offer',
+    partners_offer_li1: 'Public presence in the “Partners” section.',
+    partners_offer_li2: 'Joint initiatives and community campaigns.',
+    partners_offer_li3: 'Clear rules and zero tolerance for misleading practices.',
+    partners_apply_h2: 'Partnership request',
+    partners_apply_p: 'Describe what you do and how you see the partnership. We will contact you if interested.',
+    partners_label_name: 'Name',
+    partners_label_org: 'Organization',
+    partners_label_contact: 'Email / Phone',
+    partners_label_site: 'Website / Profile',
+    partners_label_message: 'Short description',
+    partners_btn: 'Send →',
+    partners_ph_name: 'full name',
+    partners_ph_org: 'kennel/clinic/brand name',
+    partners_ph_contact: 'contact',
+    partners_ph_site: 'link (optional)',
+    partners_ph_message: 'what you do and what you offer',
+
+    // PROJECT
+    project_title: 'Project — UNICO SUO GENERE',
+    project_h1: 'Project',
+    project_lead:
+      'UNICO SUO GENERE is a Cane Corso platform in Bulgaria — registry, standard and clear quality rules.',
+    project_goal_h2: 'Goal',
+    project_goal_p:
+      'Build a trusted single point: a registry of approved dogs, a published standard, and a community that puts health, temperament and breed type first.',
+    project_audience_h2: 'Who it is for',
+    project_audience_li1: 'Cane Corso owners who want clarity and fairness.',
+    project_audience_li2: 'Responsible kennels seeking a quality environment.',
+    project_audience_li3: 'People looking for real information, not marketing noise.',
+    project_features_h2: 'Core features',
+    project_feat1_h3: 'Public registry',
+    project_feat1_p: 'Only approved profiles are visible. Each profile has photos and essential dog data.',
+    project_feat2_h3: 'Submission flow',
+    project_feat2_p: 'Registered users can submit a request and upload photos.',
+    project_feat3_h3: 'Admin approval',
+    project_feat3_p: 'Admin panel to review, approve or reject submissions before publishing.',
+    project_feat4_h3: 'Documents and materials',
+    project_feat4_p: 'In “Standard”, users can send materials (docs/photos) for review and possible inclusion.',
+    project_feat5_h3: 'Bilingual UI',
+    project_feat5_p: 'BG/EN language support for international accessibility.',
+    project_feat6_h3: 'Clear identity',
+    project_feat6_p: 'Premium black/gold look and a clear brand: UNICO SUO GENERE — by Stefano De Tanini.',
+    project_rules_h2: 'Inclusion rules',
+    project_rules_li1: 'Registry is only for Cane Corso.',
+    project_rules_li2: 'Dogs without pedigree can be included if they are true representatives of the breed.',
+    project_rules_li3: 'Every submission is reviewed and approved by expert verification.',
+    project_cta_h2: 'Next step',
+    project_cta_p:
+      'If you have a Cane Corso and want a registry profile — create an account and submit a request with correct data and photos.',
+    project_cta_register: 'Register →',
+    project_cta_login: 'Login →',
+    project_cta_add: 'Add a dog →',
+    project_cta_registry: 'Registry →'
   }
 };
 
@@ -397,4 +561,5 @@ document.addEventListener('DOMContentLoaded', () => {
   applyTranslations(getLang());
   setYear();
 });
+
 
