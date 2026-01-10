@@ -22,15 +22,9 @@
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
         <a class="active" href="./registry.html" data-i18n="nav_registry">Регистър</a>
+        <a href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
-        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
-        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
-
-        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a class="btn btn-outline" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
 
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
@@ -41,97 +35,128 @@
   </header>
 
   <main class="page">
-    <section class="container page-inner">
-      <div class="form-split">
-        <!-- LEFT: brand panel -->
-        <aside class="brand-panel">
-          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
+    <section class="container">
+      <div class="contact-hero contact-title">
+        <span class="badge">UNICO SUO GENERE</span>
+        <h1 class="h1" data-i18n="registry_h1">Регистър</h1>
+        <p class="lead" data-i18n="registry_lead">
+          Публичен списък с одобрени Cane Corso. Всяка заявка се преглежда преди публикуване.
+        </p>
+      </div>
 
-          <div class="brand-lines">
-            <div class="t1">UNICO SUO GENERE</div>
-            <div class="t2">by Stefano De Tanini</div>
-            <div class="t3" data-i18n="registry_brand_sub">
-              Публичен регистър с одобрени Cane Corso в България.
-            </div>
-          </div>
+      <div class="contact-layout">
+        <!-- LEFT: BRAND / INFO -->
+        <aside class="trust-card">
+          <img class="logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — by Stefano De Tanini" />
 
-          <ul class="brand-bullets">
-            <li data-i18n="brand_b1">Cane Corso само.</li>
-            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
-            <li data-i18n="brand_b3">Одобрение преди публикуване.</li>
-          </ul>
-
-          <div class="divider"></div>
+          <p class="h2" style="margin: 6px 0 10px;" data-i18n="registry_brand_sub">
+            Публичен регистър с одобрени Cane Corso в България.
+          </p>
 
           <p class="muted" data-i18n="registry_brand_note">
             Видими са само одобрени профили. За включване — направи регистрация и подай заявка.
           </p>
 
-          <div class="cta" style="margin-top: 12px;">
-            <a class="btn btn-secondary guest-only" href="./register.html" data-i18n="registry_brand_register_btn">Регистрация →</a>
-            <a class="btn btn-secondary user-only" href="./add-dog.html" data-i18n="registry_brand_add_btn">Добави куче →</a>
+          <div class="trust-divider"></div>
+
+          <ul class="trust-list">
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b1">Cane Corso само.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b2">Качество, здраве, темперамент.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b3">Одобрение преди публикуване.</span>
+            </li>
+          </ul>
+
+          <div class="cta" style="margin-top: 14px;">
+            <a class="btn btn-outline" href="./register.html" data-i18n="registry_brand_register_btn">Регистрация →</a>
+            <a class="btn btn-secondary" href="./add-dog.html" data-i18n="registry_brand_add_btn">Добави куче →</a>
             <a class="btn btn-outline" href="./standard.html" data-i18n="registry_brand_standard_btn">Стандарт →</a>
           </div>
+
+          <p class="note" data-i18n="registry_hint" style="margin-top:14px;">
+            Натисни върху профил, за да видиш детайли.
+          </p>
         </aside>
 
-        <!-- RIGHT: content panel -->
-        <div class="form-panel">
-          <h1 class="h1" data-i18n="registry_h1">Регистър</h1>
-          <p class="lead" data-i18n="registry_lead">
-            Публичен списък с одобрени Cane Corso. Всяка заявка се преглежда преди публикуване.
-          </p>
+        <!-- RIGHT: REGISTRY CONTENT -->
+        <div class="apply-card">
+          <div class="apply-head">
+            <div>
+              <h2 class="h2" style="margin:0;" data-i18n="registry_h1">Регистър</h2>
+              <p class="muted" style="margin-top:6px;" data-i18n="registry_lead">
+                Публичен списък с одобрени Cane Corso.
+              </p>
+            </div>
+            <div class="seal">CC</div>
+          </div>
 
-          <div class="card" style="padding: 0; margin-top: 10px;">
-            <div class="apply-form" style="padding: 18px;">
+          <!-- FILTER BAR -->
+          <div class="card" style="margin-top: 12px;">
+            <form class="apply-form" id="registryFilters" novalidate>
               <div class="row">
                 <div class="field">
                   <label data-i18n="registry_search_label">Търси по име</label>
-                  <input id="searchName" data-ph="registry_search_ph" placeholder="например: Ares" />
+                  <input
+                    id="searchInput"
+                    name="q"
+                    data-ph="registry_search_ph"
+                    placeholder="например: Ares"
+                  />
                 </div>
 
                 <div class="field">
                   <label data-i18n="registry_filter_label">Филтър</label>
-                  <select id="filterGender">
-                    <option value="all" data-i18n="registry_filter_all">Всички</option>
+                  <select id="genderFilter" name="gender">
+                    <option value="" data-i18n="registry_filter_all">Всички</option>
                     <option value="male" data-i18n="registry_filter_male">Мъжко</option>
                     <option value="female" data-i18n="registry_filter_female">Женско</option>
                   </select>
                 </div>
               </div>
 
-              <div class="cta" style="margin-top: 6px;">
-                <button class="btn btn-primary" id="btnApplyFilter" type="button" data-i18n="registry_filter_btn">
-                  Приложи →
-                </button>
-                <button class="btn btn-outline" id="btnClearFilter" type="button" data-i18n="registry_clear_btn">
-                  Изчисти
-                </button>
+              <div class="cta" style="margin-top: 12px;">
+                <button class="btn btn-primary" type="submit" data-i18n="registry_filter_btn">Приложи →</button>
+                <button class="btn btn-secondary" type="button" id="clearBtn" data-i18n="registry_clear_btn">Изчисти</button>
               </div>
-            </div>
+
+              <div class="toast" hidden></div>
+            </form>
           </div>
 
+          <!-- RESULTS -->
           <div class="divider"></div>
 
-          <!-- Cards list -->
-          <div id="registryList" class="grid">
-            <!-- injected by logic -->
+          <div class="card">
+            <h3 class="h3" style="margin:0 0 10px;">UNICO SUO GENERE — Registry</h3>
+            <p class="muted" data-i18n="registry_hint">
+              Натисни върху профил, за да видиш детайли.
+            </p>
           </div>
 
-          <p class="note" data-i18n="registry_hint">
-            Натисни върху профил, за да видиш детайли.
+          <!-- LIST -->
+          <div id="registryList" class="grid" style="margin-top: 16px;">
+            <!-- JS renders cards here -->
+            <!-- Example card structure reminder (JS can create similar):
+              <a class="card" href="./dog.html?id=123">
+                <h3 class="h3">Ares</h3>
+                <p class="muted">Male • Black • Plovdiv</p>
+                <span class="link">View →</span>
+              </a>
+            -->
+          </div>
+
+          <p class="note" style="margin-top:14px;">
+            © <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini
           </p>
         </div>
       </div>
-
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
     </section>
   </main>
 
@@ -139,14 +164,35 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
-        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
         <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script src="./src/main.js"></script>
+
+  <!-- Ако имаш app.js, който рендерира регистъра, остави и него -->
+  <script src="./app.js"></script>
+
+  <script>
+    // Малък UX helper за "Изчисти" (не чупи нищо — само reset на полетата)
+    (function () {
+      const form = document.getElementById('registryFilters');
+      const clearBtn = document.getElementById('clearBtn');
+      if (!form || !clearBtn) return;
+
+      clearBtn.addEventListener('click', () => {
+        const search = document.getElementById('searchInput');
+        const gender = document.getElementById('genderFilter');
+        if (search) search.value = '';
+        if (gender) gender.value = '';
+        // ако твоя app.js слуша submit, това ще му задейства "празно търсене"
+        form.dispatchEvent(new Event('submit', { cancelable: true, bubbles: true }));
+      });
+    })();
+  </script>
 </body>
 </html>
-
 
