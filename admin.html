@@ -22,15 +22,9 @@
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
+        <a href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
-        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
-        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
-
-        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only active" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a class="active btn btn-outline" href="./admin.html" data-i18n="nav_admin">Админ</a>
 
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
@@ -41,113 +35,136 @@
   </header>
 
   <main class="page">
-    <section class="container page-inner">
-      <div class="form-split">
-        <!-- LEFT: admin summary -->
-        <aside class="brand-panel">
-          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
+    <section class="container">
+      <div class="contact-hero contact-title">
+        <span class="badge">UNICO SUO GENERE</span>
+        <h1 class="h1" data-i18n="admin_h1">Админ панел</h1>
+        <p class="lead" data-i18n="admin_lead">
+          Прегледай заявките и реши кои профили да се публикуват в регистъра.
+        </p>
+      </div>
 
-          <div class="brand-lines">
-            <div class="t1">UNICO SUO GENERE</div>
-            <div class="t2">by Stefano De Tanini</div>
-            <div class="t3" data-i18n="admin_brand_sub">
-              Админ панел — преглед и одобрение на заявки.
-            </div>
-          </div>
+      <div class="contact-layout">
+        <!-- LEFT: BRAND / RULES / QUICK LINKS -->
+        <aside class="trust-card">
+          <img class="logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — by Stefano De Tanini" />
 
-          <div class="divider"></div>
-
-          <div class="card" style="padding: 14px; background: rgba(0,0,0,0.18);">
-            <h2 class="h3" style="margin: 0 0 10px;" data-i18n="admin_stats_h2">Статистика</h2>
-
-            <div class="apply-foot" style="grid-template-columns: 1fr; gap: 10px;">
-              <div class="foot-item">
-                <span class="k" data-i18n="admin_stat_pending">Чакащи</span>
-                <span id="statPending">0</span>
-              </div>
-              <div class="foot-item">
-                <span class="k" data-i18n="admin_stat_approved">Одобрени</span>
-                <span id="statApproved">0</span>
-              </div>
-              <div class="foot-item">
-                <span class="k" data-i18n="admin_stat_rejected">Отхвърлени</span>
-                <span id="statRejected">0</span>
-              </div>
-            </div>
-
-            <p class="note" data-i18n="admin_stats_note" style="margin-top: 12px;">
-              Статистиката се обновява автоматично при действия.
-            </p>
-          </div>
-
-          <div class="divider"></div>
+          <p class="h2" style="margin: 6px 0 10px;" data-i18n="admin_brand_sub">
+            Админ панел — преглед и одобрение на заявки.
+          </p>
 
           <p class="muted" data-i18n="admin_left_note">
             Одобрение → профилът става публичен в регистъра. Отхвърляне → остава скрит.
           </p>
 
-          <div class="cta" style="margin-top: 12px;">
+          <div class="trust-divider"></div>
+
+          <ul class="trust-list">
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b1">Cane Corso само.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b2">Качество, здраве, темперамент.</span>
+            </li>
+            <li>
+              <span class="dot"></span>
+              <span data-i18n="brand_b3">Одобрение преди публикуване.</span>
+            </li>
+          </ul>
+
+          <div class="trust-divider"></div>
+
+          <div class="cta">
             <a class="btn btn-secondary" href="./registry.html" data-i18n="admin_left_registry_btn">Регистър →</a>
             <a class="btn btn-outline" href="./standard.html" data-i18n="admin_left_standard_btn">Стандарт →</a>
           </div>
+
+          <p class="note" style="margin-top:14px;" data-i18n="admin_hint">
+            Отвори профил, за да видиш детайли и снимки. Одобри/отхвърли директно от картата или от профила.
+          </p>
         </aside>
 
-        <!-- RIGHT: admin actions -->
-        <div class="form-panel">
-          <h1 class="h1" data-i18n="admin_h1">Админ панел</h1>
-          <p class="lead" data-i18n="admin_lead">
-            Управлявай заявки за регистрация на кучета и видимостта им в регистъра.
-          </p>
+        <!-- RIGHT: ADMIN CONTENT -->
+        <div class="apply-card">
+          <div class="apply-head">
+            <div>
+              <h2 class="h2" style="margin:0;" data-i18n="admin_pending_h2">Чакащи заявки</h2>
+              <p class="muted" style="margin-top:6px;" data-i18n="admin_notes_p">
+                Одобрените профили стават видими в “Регистър”. Отхвърлените профили остават скрити.
+              </p>
+            </div>
+            <div class="seal">ADM</div>
+          </div>
 
-          <div class="card" style="padding: 0; margin-top: 10px;">
-            <div class="apply-form" style="padding: 18px;">
-              <div class="row">
-                <div class="field">
-                  <label data-i18n="admin_filter_label">Покажи</label>
-                  <select id="adminFilter">
-                    <option value="pending" data-i18n="admin_filter_pending">Чакащи</option>
-                    <option value="approved" data-i18n="admin_filter_approved">Одобрени</option>
-                    <option value="rejected" data-i18n="admin_filter_rejected">Отхвърлени</option>
-                    <option value="all" data-i18n="admin_filter_all">Всички</option>
-                  </select>
+          <!-- TOP BAR: STATS + REFRESH -->
+          <div class="grid" style="margin-top: 12px; grid-template-columns: 1.2fr 0.8fr;">
+            <div class="card">
+              <h3 class="h3" style="margin:0 0 10px;" data-i18n="admin_stats_h2">Статистика</h3>
+
+              <div class="apply-foot" style="grid-template-columns: repeat(3, 1fr); margin-top: 0;">
+                <div class="foot-item">
+                  <span class="k" data-i18n="admin_stat_pending">Чакащи</span>
+                  <span id="statPending">0</span>
                 </div>
-
-                <div class="field">
-                  <label data-i18n="admin_search_label">Търси (име/град/собственик)</label>
-                  <input id="adminSearch" data-ph="admin_search_ph" placeholder="например: Ares / Plovdiv" />
+                <div class="foot-item">
+                  <span class="k" data-i18n="admin_stat_approved">Одобрени</span>
+                  <span id="statApproved">0</span>
+                </div>
+                <div class="foot-item">
+                  <span class="k" data-i18n="admin_stat_rejected">Отхвърлени</span>
+                  <span id="statRejected">0</span>
                 </div>
               </div>
 
-              <div class="cta" style="margin-top: 6px;">
-                <button class="btn btn-primary" type="button" id="adminApply" data-i18n="admin_apply_btn">Приложи →</button>
-                <button class="btn btn-outline" type="button" id="adminClear" data-i18n="admin_clear_btn">Изчисти</button>
-              </div>
+              <p class="note" style="margin-top:12px;" data-i18n="admin_stats_note">
+                Статистиката се обновява автоматично при действия.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3 class="h3" style="margin:0 0 10px;" data-i18n="admin_refresh_btn">Обнови</h3>
+              <p class="muted" style="margin:0 0 12px;">
+                USG Admin
+              </p>
+              <button class="btn btn-primary btn-wide" type="button" id="refreshBtn" data-i18n="admin_refresh_btn">
+                Обнови
+              </button>
+              <div class="toast" hidden></div>
             </div>
           </div>
 
           <div class="divider"></div>
 
-          <div id="adminList" class="grid">
-            <!-- injected cards -->
+          <!-- PENDING LIST -->
+          <div class="card">
+            <h3 class="h3" style="margin:0 0 10px;" data-i18n="admin_pending_h2">Чакащи заявки</h3>
+            <p class="muted" data-i18n="admin_lead" style="margin:0;">
+              Прегледай заявките и реши кои профили да се публикуват в регистъра.
+            </p>
           </div>
 
-          <div class="toast" id="adminToast" hidden></div>
+          <div id="pendingList" class="grid" style="margin-top: 16px;">
+            <!-- JS renders request cards here -->
+            <!-- Example:
+              <div class="card">
+                <h3 class="h3">Ares</h3>
+                <p class="muted">Male • Black • Plovdiv</p>
+                <div class="cta">
+                  <a class="btn btn-outline" href="./dog.html?id=123">View →</a>
+                  <button class="btn btn-primary">Approve</button>
+                  <button class="btn btn-secondary">Reject</button>
+                </div>
+              </div>
+            -->
+          </div>
 
-          <p class="note" data-i18n="admin_hint">
-            Отвори профил, за да видиш детайли и снимки. Одобри/отхвърли директно от картата или от профила.
+          <p class="note" style="margin-top:14px;">
+            © <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini
           </p>
         </div>
       </div>
-
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
     </section>
   </main>
 
@@ -155,14 +172,27 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
-        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
         <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./app.js"></script>
+
+  <script>
+    // UX: refresh button triggers your logic (if app.js listens to click / custom events)
+    (function () {
+      const btn = document.getElementById('refreshBtn');
+      if (!btn) return;
+      btn.addEventListener('click', () => {
+        // If your app.js has a global refresh function, it can hook here.
+        // Otherwise this event is harmless.
+        window.dispatchEvent(new CustomEvent('usg-admin-refresh'));
+      });
+    })();
+  </script>
 </body>
 </html>
-
-
