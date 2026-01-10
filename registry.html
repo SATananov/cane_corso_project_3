@@ -1,61 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
   <meta charset="UTF-8" />
-  <title>Registry | Cane Corso Registry – Bulgaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Existing styles (оставяш твоите) -->
-  <link rel="stylesheet" href="./src/styles/main.css" />
-  <link rel="stylesheet" href="./src/styles/theme.css" />
-
-  <link rel="icon" href="./public/favicon.ico" />
+  <title data-i18n="registry_title">Регистър — UNICO SUO GENERE</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-
-  <!-- ===== NAVIGATION ===== -->
-  <header>
-    <nav class="nav">
-      <a href="index.html" class="logo">
-        <img src="./public/images/logo.png" alt="Cane Corso Registry Logo" />
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE — Cane Corso" />
+        <span class="brand-text">UNICO SUO GENERE</span>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="registry.html" class="active">Registry</a></li>
-        <li><a href="manifesto.html">Manifesto</a></li>
-        <li><a href="standard.html">Standard</a></li>
+      <nav class="nav">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+        <a href="./project.html" data-i18n="nav_project">Проектът</a>
+        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
 
-        <li class="guest"><a href="login.html">Login</a></li>
-        <li class="guest"><a href="register.html">Register</a></li>
+        <a class="active" href="./registry.html" data-i18n="nav_registry">Регистър</a>
 
-        <li class="user"><a href="add-dog.html">Add Dog</a></li>
-        <li class="user"><a href="#" id="logoutBtn">Logout</a></li>
-        <li class="user admin-only"><a href="admin.html">Admin</a></li>
-      </ul>
-    </nav>
+        <!-- Guest -->
+        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
+        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
+
+        <!-- User/Admin -->
+        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
+        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
+        <button type="button" class="btn btn-outline user-only" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+
+        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+
+        <div class="lang">
+          <button type="button" class="lang-btn" data-lang="bg">BG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- ===== REGISTRY ===== -->
-  <main>
-    <section class="registry-section">
-      <div class="section-header">
-        <h1>Registered Cane Corso</h1>
-        <p>Approved dogs that meet the Cane Corso Registry – Bulgaria criteria.</p>
+  <main class="page">
+    <section class="container page-inner">
+      <h1 class="h1" data-i18n="registry_h1">Регистър</h1>
+      <p class="lead" data-i18n="registry_lead">
+        Публичен списък с одобрени Cane Corso. Всяка заявка се преглежда преди публикуване.
+      </p>
+
+      <!-- Filters (по желание) -->
+      <div class="card">
+        <div class="row" style="gap:12px; flex-wrap:wrap; align-items:flex-end;">
+          <div class="field" style="min-width:240px;">
+            <label data-i18n="registry_search_label">Търси по име</label>
+            <input id="searchName" data-ph="registry_search_ph" placeholder="например: Ares" />
+          </div>
+
+          <div class="field" style="min-width:220px;">
+            <label data-i18n="registry_filter_label">Филтър</label>
+            <select id="filterGender">
+              <option value="" data-i18n="registry_filter_all">Всички</option>
+              <option value="male" data-i18n="registry_filter_male">Мъжко</option>
+              <option value="female" data-i18n="registry_filter_female">Женско</option>
+            </select>
+          </div>
+
+          <button class="btn btn-outline" id="btnApplyFilters" type="button" data-i18n="registry_filter_btn">
+            Приложи →
+          </button>
+
+          <button class="btn btn-outline" id="btnClearFilters" type="button" data-i18n="registry_clear_btn">
+            Изчисти
+          </button>
+        </div>
       </div>
 
-      <div id="registryList" class="registry-grid">
-        <!-- Dogs injected by registryPage.js -->
+      <!-- List -->
+      <div class="grid" id="registryList">
+        <!-- Inject cards here from app.js -->
+        <!-- Example card template (for reference only):
+        <a class="card" href="./dog.html?id=UUID">
+          <h2 class="h2">Ares</h2>
+          <p class="muted">Цвят: Черен</p>
+          <p class="muted">Пол: Мъжко</p>
+        </a>
+        -->
+      </div>
+
+      <!-- Empty / Loading messages -->
+      <div class="card" id="registryState" hidden>
+        <p class="muted" id="registryStateText"></p>
       </div>
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2026 Cane Corso Registry – Bulgaria</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
+      <div class="footer-links">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- ===== MAIN JS ===== -->
-  <script type="module" src="./src/main.js"></script>
-  <script type="module" src="./src/pages/registryPage.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>

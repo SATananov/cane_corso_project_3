@@ -1,105 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
   <meta charset="UTF-8" />
-  <title>Add Dog | Cane Corso Registry – Bulgaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Existing styles (оставяш твоите) -->
-  <link rel="stylesheet" href="./src/styles/main.css" />
-  <link rel="stylesheet" href="./src/styles/theme.css" />
-
-  <link rel="icon" href="./public/favicon.ico" />
+  <title data-i18n="add_dog_title">Добави куче — UNICO SUO GENERE</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-
-  <!-- ===== NAVIGATION ===== -->
-  <header>
-    <nav class="nav">
-      <a href="index.html" class="logo">
-        <img src="./public/images/logo.png" alt="Cane Corso Registry Logo" />
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE — Cane Corso" />
+        <span class="brand-text">UNICO SUO GENERE</span>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="registry.html">Registry</a></li>
-        <li><a href="manifesto.html">Manifesto</a></li>
-        <li><a href="standard.html">Standard</a></li>
+      <nav class="nav">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+        <a href="./project.html" data-i18n="nav_project">Проектът</a>
+        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
 
-        <li class="guest"><a href="login.html">Login</a></li>
-        <li class="guest"><a href="register.html">Register</a></li>
+        <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
 
-        <li class="user"><a href="add-dog.html" class="active">Add Dog</a></li>
-        <li class="user"><a href="#" id="logoutBtn">Logout</a></li>
-        <li class="user admin-only"><a href="admin.html">Admin</a></li>
-      </ul>
-    </nav>
+        <!-- Guest -->
+        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
+        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
+
+        <!-- User/Admin -->
+        <a class="btn btn-outline user-only active" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
+        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
+        <button type="button" class="btn btn-outline user-only" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+
+        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+
+        <div class="lang">
+          <button type="button" class="lang-btn" data-lang="bg">BG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- ===== ADD DOG ===== -->
-  <main>
-    <section class="form-section">
-      <div class="form-card">
-        <h2>Submit a Dog for Registration</h2>
-        <p>Your submission will be reviewed by an admin before it appears in the registry.</p>
+  <main class="page">
+    <section class="container page-inner">
+      <div class="card">
+        <h1 class="h1" data-i18n="add_dog_h1">Добави куче</h1>
+        <p class="lead" data-i18n="add_dog_lead">
+          Подай заявка за включване в регистъра. Всяка заявка се преглежда преди публикуване.
+        </p>
 
-        <form id="addDogForm">
-          <div class="form-group">
-            <label for="name">Dog Name</label>
-            <input type="text" id="name" name="name" required />
+        <form class="apply-form" id="addDogForm" novalidate>
+          <div class="row">
+            <div class="field">
+              <label data-i18n="add_dog_label_name">Име на кучето</label>
+              <input name="name" required data-ph="add_dog_ph_name" placeholder="например: Ares" />
+            </div>
+
+            <div class="field">
+              <label data-i18n="add_dog_label_gender">Пол</label>
+              <select name="gender" required>
+                <option value="" data-i18n="add_dog_gender_choose">Избери</option>
+                <option value="male" data-i18n="add_dog_gender_male">Мъжко</option>
+                <option value="female" data-i18n="add_dog_gender_female">Женско</option>
+              </select>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="color">Color</label>
-            <input type="text" id="color" name="color" required />
+          <div class="row">
+            <div class="field">
+              <label data-i18n="add_dog_label_color">Цвят</label>
+              <input name="color" required data-ph="add_dog_ph_color" placeholder="например: black" />
+            </div>
+
+            <div class="field">
+              <label data-i18n="add_dog_label_birth">Рождена дата</label>
+              <input name="birthDate" type="date" />
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="gender">Gender</label>
-            <select id="gender" name="gender" required>
-              <option value="">Select</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
+          <div class="row">
+            <div class="field">
+              <label data-i18n="add_dog_label_city">Град</label>
+              <input name="city" data-ph="add_dog_ph_city" placeholder="например: Plovdiv" />
+            </div>
+
+            <div class="field">
+              <label data-i18n="add_dog_label_owner">Собственик</label>
+              <input name="ownerName" data-ph="add_dog_ph_owner" placeholder="име на собственик" />
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="birthDate">Birth Date</label>
-            <input type="date" id="birthDate" name="birthDate" />
+          <div class="field">
+            <label data-i18n="add_dog_label_kennel">Развъдник (ако има)</label>
+            <input name="kennel" data-ph="add_dog_ph_kennel" placeholder="име на развъдник" />
           </div>
 
-          <div class="form-group">
-            <label for="ownerName">Owner Name</label>
-            <input type="text" id="ownerName" name="ownerName" />
+          <div class="field">
+            <label data-i18n="add_dog_label_desc">Описание / бележка</label>
+            <textarea name="description" data-ph="add_dog_ph_desc" placeholder="кратко описание"></textarea>
           </div>
 
-          <!-- Upload -->
-          <div class="form-group">
-            <label for="photos">Upload Photos</label>
-            <input
-              type="file"
-              id="photos"
-              name="photos"
-              accept="image/*"
-              multiple
-            />
-            <small>You can upload multiple photos (recommended).</small>
+          <div class="field">
+            <label data-i18n="add_dog_label_photos">Снимки</label>
+            <input name="photos" type="file" accept="image/*" multiple />
+            <p class="muted" data-i18n="add_dog_photos_hint" style="margin-top:8px;">
+              Препоръчително: поне 3 снимки (стойка, профил, лице).
+            </p>
           </div>
 
-          <button type="submit" class="btn primary">Submit Dog</button>
+          <button class="btn btn-primary btn-wide" type="submit" data-i18n="add_dog_btn">
+            Изпрати заявка →
+          </button>
+
+          <div class="toast" id="addDogToast" hidden></div>
         </form>
-
-        <p id="formMsg" class="form-msg" style="display:none;"></p>
       </div>
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2026 Cane Corso Registry – Bulgaria</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
+      <div class="footer-links">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- ===== MAIN JS ===== -->
-  <script type="module" src="./src/main.js"></script>
-  <script type="module" src="./src/pages/addDogPage.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>

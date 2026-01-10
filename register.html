@@ -1,81 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
   <meta charset="UTF-8" />
-  <title>Register | Cane Corso Registry – Bulgaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Existing styles (оставяш твоите) -->
-  <link rel="stylesheet" href="./src/styles/main.css" />
-  <link rel="stylesheet" href="./src/styles/theme.css" />
-
-  <link rel="icon" href="./public/favicon.ico" />
+  <title data-i18n="register_title">Регистрация — UNICO SUO GENERE</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-
-  <!-- ===== NAVIGATION ===== -->
-  <header>
-    <nav class="nav">
-      <a href="index.html" class="logo">
-        <img src="./public/images/logo.png" alt="Cane Corso Registry Logo" />
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE — Cane Corso" />
+        <span class="brand-text">UNICO SUO GENERE</span>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="registry.html">Registry</a></li>
-        <li><a href="manifesto.html">Manifesto</a></li>
-        <li><a href="standard.html">Standard</a></li>
+      <nav class="nav">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+        <a href="./project.html" data-i18n="nav_project">Проектът</a>
+        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
 
-        <li class="guest"><a href="login.html">Login</a></li>
-        <li class="guest"><a href="register.html" class="active">Register</a></li>
+        <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
 
-        <li class="user"><a href="add-dog.html">Add Dog</a></li>
-        <li class="user"><a href="#" id="logoutBtn">Logout</a></li>
-        <li class="user admin-only"><a href="admin.html">Admin</a></li>
-      </ul>
-    </nav>
+        <!-- Guest -->
+        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
+        <a class="btn btn-outline guest-only active" href="./register.html" data-i18n="nav_register">Регистрация</a>
+
+        <!-- User/Admin -->
+        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
+        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
+        <button type="button" class="btn btn-outline user-only" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+
+        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+
+        <div class="lang">
+          <button type="button" class="lang-btn" data-lang="bg">BG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- ===== REGISTER FORM ===== -->
-  <main>
-    <section class="auth-section">
-      <div class="auth-card">
-        <h2>Create Account</h2>
+  <main class="page">
+    <section class="container page-inner">
+      <div class="card">
+        <h1 class="h1" data-i18n="register_h1">Регистрация</h1>
+        <p class="lead" data-i18n="register_lead">Създай профил, за да подаваш заявки и да качваш материали.</p>
 
-        <form id="registerForm">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-            />
+        <form class="apply-form" id="registerForm" novalidate>
+          <div class="field">
+            <label for="email" data-i18n="register_label_email">Имейл</label>
+            <input id="email" name="email" type="email" required data-ph="register_ph_email" placeholder="name@example.com" />
           </div>
 
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              minlength="6"
-              required
-            />
+          <div class="field">
+            <label for="password" data-i18n="register_label_password">Парола</label>
+            <input id="password" name="password" type="password" required minlength="6" data-ph="register_ph_password" placeholder="******" />
           </div>
 
-          <button type="submit" class="btn primary">Register</button>
+          <div class="field">
+            <label for="repass" data-i18n="register_label_repass">Повтори парола</label>
+            <input id="repass" name="repass" type="password" required minlength="6" data-ph="register_ph_repass" placeholder="******" />
+          </div>
+
+          <button class="btn btn-primary btn-wide" type="submit" data-i18n="register_btn">
+            Регистрация →
+          </button>
+
+          <div class="toast" id="registerToast" hidden></div>
+
+          <p class="muted" style="margin-top:12px;">
+            <span data-i18n="register_have_account">Имаш профил?</span>
+            <a href="./login.html" data-i18n="register_go_login">Вход →</a>
+          </p>
         </form>
-
-        <p class="auth-alt">
-          Already have an account?
-          <a href="login.html">Login here</a>
-        </p>
       </div>
     </section>
   </main>
 
-  <!-- ===== MAIN JS ===== -->
-  <script type="module" src="./src/main.js"></script>
-  <script type="module" src="./src/pages/registerPage.js"></script>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
+      <div class="footer-links">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
 </body>
 </html>

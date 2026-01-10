@@ -1,69 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
   <meta charset="UTF-8" />
-  <title>Cane Corso Registry – Bulgaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Existing styles (оставяш твоите) -->
-  <link rel="stylesheet" href="./src/styles/main.css" />
-  <link rel="stylesheet" href="./src/styles/theme.css" />
-
-  <!-- Logo / favicon -->
-  <link rel="icon" href="./public/favicon.ico" />
+  <title data-i18n="home_title">UNICO SUO GENERE — Cane Corso</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-
-  <!-- ===== NAVIGATION ===== -->
-  <header>
-    <nav class="nav">
-      <a href="index.html" class="logo">
-        <img src="./public/images/logo.png" alt="Cane Corso Registry Logo" />
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE — Cane Corso" />
+        <span class="brand-text">UNICO SUO GENERE</span>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="registry.html">Registry</a></li>
-        <li><a href="manifesto.html">Manifesto</a></li>
-        <li><a href="standard.html">Standard</a></li>
+      <nav class="nav">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+        <a href="./project.html" data-i18n="nav_project">Проектът</a>
+        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
 
-        <!-- Guest -->
-        <li class="guest"><a href="login.html">Login</a></li>
-        <li class="guest"><a href="register.html">Register</a></li>
+        <!-- ✅ Capstone additions (публично) -->
+        <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
 
-        <!-- User -->
-        <li class="user"><a href="add-dog.html">Add Dog</a></li>
-        <li class="user"><a href="#" id="logoutBtn">Logout</a></li>
+        <!-- ✅ Account (guest) -->
+        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
+        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
 
-        <!-- Admin -->
-        <li class="user admin-only"><a href="admin.html">Admin</a></li>
-      </ul>
-    </nav>
+        <!-- ✅ Dashboard (user/admin) -->
+        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
+        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
+        <button type="button" class="btn btn-outline user-only" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+
+        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+
+        <div class="lang">
+          <button type="button" class="lang-btn" data-lang="bg">BG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Cane Corso Registry – Bulgaria</h1>
-        <p>
-          The first Bulgarian Cane Corso registry, based on real experience,
-          real dogs, and a real standard.
+  <main class="page">
+    <section class="container page-inner">
+      <!-- HERO / INTRO -->
+      <div class="card">
+        <h1 class="h1" data-i18n="home_h1">UNICO SUO GENERE</h1>
+
+        <p class="lead" data-i18n="home_lead">
+          Платформа за Cane Corso в България — базирана на практика, отговорност и ясни критерии.
+          Тук се изгражда българското разклонение на породата.
         </p>
 
-        <div class="hero-buttons">
-          <a href="registry.html" class="btn primary">View Registry</a>
-          <a href="manifesto.html" class="btn secondary">Read Manifesto</a>
+        <div class="row" style="gap:12px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="./manifesto.html" data-i18n="home_cta_manifesto">Прочети манифеста →</a>
+          <a class="btn btn-outline" href="./registry.html" data-i18n="home_cta_registry">Виж регистъра →</a>
+          <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="home_cta_add">Добави куче →</a>
+        </div>
+      </div>
+
+      <!-- INFO BLOCKS -->
+      <div class="grid">
+        <div class="card">
+          <h2 class="h2" data-i18n="home_block1_h2">Регистър</h2>
+          <p class="muted" data-i18n="home_block1_p">
+            Публичен списък с одобрени кучета. Всяко добавяне минава преглед преди публикуване.
+          </p>
+          <a class="btn btn-outline" href="./registry.html" data-i18n="home_block1_cta">Отвори регистъра →</a>
+        </div>
+
+        <div class="card">
+          <h2 class="h2" data-i18n="home_block2_h2">Стандарт</h2>
+          <p class="muted" data-i18n="home_block2_p">
+            Реален стандарт за Cane Corso в България — структура, характер, здраве и функционалност.
+          </p>
+          <a class="btn btn-outline" href="./standard.html" data-i18n="home_block2_cta">Отвори стандарта →</a>
+        </div>
+
+        <div class="card">
+          <h2 class="h2" data-i18n="home_block3_h2">Участие</h2>
+          <p class="muted" data-i18n="home_block3_p">
+            Искаш да добавиш куче или да изпратиш материали? Влез в профила си и подай заявка.
+          </p>
+          <div class="row" style="gap:12px; flex-wrap:wrap;">
+            <a class="btn btn-outline guest-only" href="./login.html" data-i18n="home_block3_login">Вход →</a>
+            <a class="btn btn-outline guest-only" href="./register.html" data-i18n="home_block3_register">Регистрация →</a>
+            <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="home_block3_add">Добави куче →</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2026 Cane Corso Registry – Bulgaria</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
+      <div class="footer-links">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- ===== MAIN JS (Vite entry) ===== -->
-  <script type="module" src="./src/main.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>

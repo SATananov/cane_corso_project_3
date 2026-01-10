@@ -1,67 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
   <meta charset="UTF-8" />
-  <title>Admin Panel | Cane Corso Registry – Bulgaria</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Existing styles (оставяш твоите) -->
-  <link rel="stylesheet" href="./src/styles/main.css" />
-  <link rel="stylesheet" href="./src/styles/theme.css" />
-
-  <link rel="icon" href="./public/favicon.ico" />
+  <title data-i18n="admin_title">Админ — UNICO SUO GENERE</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-
-  <!-- ===== NAVIGATION ===== -->
-  <header>
-    <nav class="nav">
-      <a href="index.html" class="logo">
-        <img src="./public/images/logo.png" alt="Cane Corso Registry Logo" />
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <img class="brand-logo" src="./images/brand-icon.png" alt="UNICO SUO GENERE — Cane Corso" />
+        <span class="brand-text">UNICO SUO GENERE</span>
       </a>
 
-      <ul class="nav-links">
-        <li><a href="registry.html">Registry</a></li>
-        <li><a href="manifesto.html">Manifesto</a></li>
-        <li><a href="standard.html">Standard</a></li>
+      <nav class="nav">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
+        <a href="./project.html" data-i18n="nav_project">Проектът</a>
+        <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
 
-        <li class="guest"><a href="login.html">Login</a></li>
-        <li class="guest"><a href="register.html">Register</a></li>
+        <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
 
-        <li class="user"><a href="add-dog.html">Add Dog</a></li>
-        <li class="user"><a href="#" id="logoutBtn">Logout</a></li>
-        <li class="user admin-only"><a href="admin.html" class="active">Admin</a></li>
-      </ul>
-    </nav>
+        <!-- Guest -->
+        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
+        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
+
+        <!-- User/Admin -->
+        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
+        <a class="btn btn-outline admin-only active" href="./admin.html" data-i18n="nav_admin">Админ</a>
+        <button type="button" class="btn btn-outline user-only" id="logoutBtn" data-i18n="nav_logout">Изход</button>
+
+        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+
+        <div class="lang">
+          <button type="button" class="lang-btn" data-lang="bg">BG</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- ===== ADMIN PANEL ===== -->
-  <main>
-    <section class="admin-section">
-      <div class="section-header">
-        <h1>Admin Panel</h1>
-        <p>Review dog submissions and approve or reject them.</p>
+  <main class="page">
+    <section class="container page-inner">
+      <div class="card">
+        <h1 class="h1" data-i18n="admin_h1">Админ панел</h1>
+        <p class="lead" data-i18n="admin_lead">
+          Прегледай заявките и реши кои профили да се публикуват в регистъра.
+        </p>
       </div>
 
-      <div class="admin-box">
-        <h3>Pending Submissions</h3>
-
-        <div id="adminList" class="admin-list">
-          <!-- Injected by adminPage.js -->
+      <!-- Pending list -->
+      <div class="card">
+        <div class="row" style="justify-content:space-between; gap:12px; flex-wrap:wrap;">
+          <h2 class="h2" data-i18n="admin_pending_h2" style="margin:0;">Чакащи заявки</h2>
+          <button class="btn btn-outline" type="button" id="btnRefresh" data-i18n="admin_refresh_btn">
+            Обнови
+          </button>
         </div>
 
-        <p id="adminMsg" class="form-msg" style="display:none;"></p>
+        <div class="grid" id="adminList" style="margin-top:12px;">
+          <!-- injected by app.js -->
+          <!-- Example admin card:
+          <div class="card">
+            <h2 class="h2">Ares</h2>
+            <p class="muted">Пол: Мъжко • Цвят: Черен • Град: Пловдив</p>
+            <div class="row" style="gap:12px; flex-wrap:wrap;">
+              <a class="btn btn-outline" href="./dog.html?id=UUID">Профил →</a>
+              <button class="btn btn-primary" data-action="approve" data-id="UUID">Одобри</button>
+              <button class="btn btn-outline" data-action="reject" data-id="UUID">Отхвърли</button>
+            </div>
+          </div>
+          -->
+        </div>
+
+        <div class="toast" id="adminToast" hidden></div>
+
+        <div class="card" id="adminState" hidden style="margin-top:12px;">
+          <p class="muted" id="adminStateText"></p>
+        </div>
+      </div>
+
+      <!-- Optional: quick stats -->
+      <div class="grid">
+        <div class="card">
+          <h2 class="h2" data-i18n="admin_stats_h2">Статус</h2>
+          <ul class="list">
+            <li><strong data-i18n="admin_stats_pending">Чакащи:</strong> <span id="statPending">0</span></li>
+            <li><strong data-i18n="admin_stats_approved">Одобрени:</strong> <span id="statApproved">0</span></li>
+            <li><strong data-i18n="admin_stats_rejected">Отхвърлени:</strong> <span id="statRejected">0</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 class="h2" data-i18n="admin_notes_h2">Бележки</h2>
+          <p class="muted" data-i18n="admin_notes_p">
+            Одобрените профили стават видими в “Регистър”. Отхвърлените остават скрити.
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2026 Cane Corso Registry – Bulgaria</p>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
+      <div class="footer-links">
+        <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
+        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- ===== MAIN JS ===== -->
-  <script type="module" src="./src/main.js"></script>
-  <script type="module" src="./src/pages/adminPage.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
+
