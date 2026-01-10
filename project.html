@@ -22,15 +22,7 @@
         <a class="active" href="./project.html" data-i18n="nav_project">Проектът</a>
         <a href="./partners.html" data-i18n="nav_partners">Партньори</a>
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
-
-        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
-        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
-
-        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
@@ -41,103 +33,139 @@
   </header>
 
   <main class="page">
-    <section class="container page-inner">
-      <div class="form-split">
-        <!-- LEFT: brand panel -->
-        <aside class="brand-panel">
-          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
+    <section class="container">
+      <div class="contact-hero contact-title">
+        <span class="badge">UNICO SUO GENERE</span>
+        <h1 class="h1" data-i18n="project_h1">Проектът</h1>
+        <p class="lead" data-i18n="project_lead">
+          UNICO SUO GENERE е платформа за Cane Corso в България — регистър, стандарт и ясни правила за качество.
+        </p>
+      </div>
 
-          <div class="brand-lines">
-            <div class="t1">UNICO SUO GENERE</div>
-            <div class="t2">by Stefano De Tanini</div>
-            <div class="t3" data-i18n="project_brand_sub">
-              Платформа за българската общност на Cane Corso — стандарт, регистър и отговорност.
-            </div>
-          </div>
+      <div class="contact-layout">
+        <!-- LEFT: BRAND / GOALS / RULES -->
+        <aside class="trust-card">
+          <img class="logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — by Stefano De Tanini" />
 
-          <ul class="brand-bullets">
-            <li data-i18n="project_b1">Ясни правила и критерии</li>
-            <li data-i18n="project_b2">Проверка и одобрение</li>
-            <li data-i18n="project_b3">Общност и партньорства</li>
-          </ul>
-
-          <div class="divider"></div>
+          <p class="h2" style="margin: 6px 0 10px;" data-i18n="project_brand_sub">
+            Платформа за българската общност на Cane Corso — стандарт, регистър и отговорност.
+          </p>
 
           <p class="muted" data-i18n="project_left_note">
             Проектът е създаден, за да защити породата от компромиси и да изгради култура на качество.
           </p>
 
-          <div class="cta" style="margin-top: 12px;">
+          <div class="trust-divider"></div>
+
+          <ul class="trust-list">
+            <li><span class="dot"></span><span data-i18n="project_b1">Ясни правила и критерии</span></li>
+            <li><span class="dot"></span><span data-i18n="project_b2">Проверка и одобрение</span></li>
+            <li><span class="dot"></span><span data-i18n="project_b3">Общност и партньорства</span></li>
+          </ul>
+
+          <div class="trust-divider"></div>
+
+          <div class="card" style="background: rgba(248,245,239,0.03);">
+            <h3 class="h3" style="margin:0 0 10px;" data-i18n="project_rules_h2">Правила за включване</h3>
+            <ul class="list">
+              <li data-i18n="project_rules_li1">Регистърът е само за Cane Corso.</li>
+              <li data-i18n="project_rules_li2">Допускат се и кучета без родословие, ако са реални представители на породата.</li>
+              <li data-i18n="project_rules_li3">Всяка заявка подлежи на експертна верификация и одобрение.</li>
+            </ul>
+          </div>
+
+          <div class="cta" style="margin-top: 14px;">
             <a class="btn btn-secondary" href="./registry.html" data-i18n="project_left_registry_btn">Регистър →</a>
             <a class="btn btn-outline" href="./standard.html" data-i18n="project_left_standard_btn">Стандарт →</a>
           </div>
+
+          <p class="note" style="margin-top:14px;" data-i18n="project_note">
+            UNICO SUO GENERE — by Stefano De Tanini
+          </p>
         </aside>
 
-        <!-- RIGHT: content -->
-        <div class="form-panel">
-          <h1 class="h1" data-i18n="project_h1">Проектът</h1>
-          <p class="lead" data-i18n="project_lead">
-            UNICO SUO GENERE е българска платформа за Cane Corso, която поставя качество, контрол и отговорност над всичко.
-          </p>
-
-          <div class="grid">
-            <div class="card">
-              <h2 class="h2" data-i18n="project_block1_h2">Мисия</h2>
-              <p class="muted" data-i18n="project_block1_p">
-                Да създадем място, където породният тип, здравето и характерът са задължителни, а не “по желание”.
+        <!-- RIGHT: CONTENT -->
+        <div class="apply-card">
+          <div class="apply-head">
+            <div>
+              <h2 class="h2" style="margin:0;" data-i18n="project_goal_h2">Цел</h2>
+              <p class="muted" style="margin-top:6px;" data-i18n="project_goal_p">
+                Да създадем единна точка за доверие: регистър на одобрени кучета, публикуван стандарт и общност,
+                която поставя здраве, темперамент и породен тип на първо място.
               </p>
+            </div>
+            <div class="seal">USG</div>
+          </div>
+
+          <div class="grid" style="margin-top: 12px;">
+            <div class="card">
+              <h3 class="h3" data-i18n="project_audience_h2">За кого е</h3>
+              <ul class="list">
+                <li data-i18n="project_audience_li1">Собственици на Cane Corso, които искат ясно признание и коректност.</li>
+                <li data-i18n="project_audience_li2">Развъдници, които работят отговорно и търсят качествена среда.</li>
+                <li data-i18n="project_audience_li3">Хора, които търсят реална информация, а не рекламен шум.</li>
+              </ul>
             </div>
 
             <div class="card">
-              <h2 class="h2" data-i18n="project_block2_h2">Как работи</h2>
-              <p class="muted" data-i18n="project_block2_p">
-                Профилите се подават като заявки и се публикуват след преглед и одобрение. Само одобрени профили са публични.
+              <h3 class="h3" data-i18n="project_features_h2">Основни функционалности</h3>
+              <p class="muted" style="margin:0;" data-i18n="project_feat5_p">
+                Сайтът поддържа BG/EN, за да е достъпен и за международна аудитория.
+              </p>
+              <div class="divider"></div>
+              <p class="muted" style="margin:0;" data-i18n="project_feat6_p">
+                Премиум визия в черно/злато и ясна марка: UNICO SUO GENERE — by Stefano De Tanini.
               </p>
             </div>
-          </div>
-
-          <div class="card">
-            <h2 class="h2" data-i18n="project_block3_h2">За кого е</h2>
-            <ul class="list">
-              <li data-i18n="project_block3_li1">Собственици, които държат на истината за породата.</li>
-              <li data-i18n="project_block3_li2">Развъдници, които работят дългосрочно и отговорно.</li>
-              <li data-i18n="project_block3_li3">Партньори: ветеринари, треньори, брандове, услуги.</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h2 class="h2" data-i18n="project_block4_h2">Пътна карта</h2>
-            <ul class="list">
-              <li data-i18n="project_road_1">1) Завършен стандарт и правила</li>
-              <li data-i18n="project_road_2">2) Разширен регистър (снимки, тестове, титли)</li>
-              <li data-i18n="project_road_3">3) Партньорска мрежа</li>
-              <li data-i18n="project_road_4">4) Сертификати и верификация</li>
-            </ul>
           </div>
 
           <div class="divider"></div>
 
-          <div class="cta">
-            <a class="btn btn-primary" href="./registry.html" data-i18n="project_cta_registry">Виж регистъра →</a>
-            <a class="btn btn-outline guest-only" href="./register.html" data-i18n="project_cta_join">Регистрация →</a>
-            <a class="btn btn-outline" href="./partners.html" data-i18n="project_cta_partners">Партньори →</a>
+          <!-- FEATURES as CARDS -->
+          <div class="grid">
+            <div class="card">
+              <h3 class="h3" data-i18n="project_feat1_h3">Публичен регистър</h3>
+              <p class="muted" data-i18n="project_feat1_p">Видими са само одобрени профили. Всеки профил има снимки и основни данни за кучето.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="h3" data-i18n="project_feat2_h3">Подаване на заявка</h3>
+              <p class="muted" data-i18n="project_feat2_p">Регистрирани потребители могат да подават заявка за включване и да качват снимки.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="h3" data-i18n="project_feat3_h3">Админ одобрение</h3>
+              <p class="muted" data-i18n="project_feat3_p">Админ панел за преглед, одобрение и отхвърляне на заявки преди публикуване в регистъра.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="h3" data-i18n="project_feat4_h3">Документи и материали</h3>
+              <p class="muted" data-i18n="project_feat4_p">В секция “Стандарт” потребителите могат да изпращат материали (документи/снимки) за преглед и включване.</p>
+            </div>
           </div>
 
-          <p class="note" data-i18n="project_note">
-            UNICO SUO GENERE — by Stefano De Tanini
+          <div class="divider"></div>
+
+          <!-- CTA -->
+          <div class="card">
+            <h3 class="h3" data-i18n="project_cta_h2">Следваща стъпка</h3>
+            <p class="muted" data-i18n="project_cta_p">
+              Ако имаш Cane Corso и искаш профил в регистъра — създай акаунт и подай заявка с коректни данни и снимки.
+            </p>
+
+            <div class="cta" style="margin-top: 12px;">
+              <a class="btn btn-primary" href="./register.html" data-i18n="project_cta_register">Регистрация →</a>
+              <a class="btn btn-secondary" href="./login.html" data-i18n="project_cta_login">Вход →</a>
+              <a class="btn btn-outline" href="./add-dog.html" data-i18n="project_cta_add">Добави куче →</a>
+              <a class="btn btn-outline" href="./registry.html" data-i18n="project_cta_registry">Регистър →</a>
+            </div>
+          </div>
+
+          <p class="note" style="margin-top:14px;">
+            © <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini
           </p>
         </div>
       </div>
-
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
     </section>
   </main>
 
@@ -145,13 +173,14 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
+        <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
         <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
-
