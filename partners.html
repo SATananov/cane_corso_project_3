@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="bg">
 <head>
@@ -21,17 +20,9 @@
         <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
         <a href="./standard.html" data-i18n="nav_standard">Стандарт</a>
         <a href="./project.html" data-i18n="nav_project">Проектът</a>
-        <a class="btn btn-outline active" href="./partners.html" data-i18n="nav_partners">Партньори</a>
+        <a class="active" href="./partners.html" data-i18n="nav_partners">Партньори</a>
         <a href="./registry.html" data-i18n="nav_registry">Регистър</a>
-
-        <a class="btn btn-outline guest-only" href="./login.html" data-i18n="nav_login">Вход</a>
-        <a class="btn btn-outline guest-only" href="./register.html" data-i18n="nav_register">Регистрация</a>
-
-        <a class="btn btn-outline user-only" href="./add-dog.html" data-i18n="nav_add_dog">Добави куче</a>
-        <a class="btn btn-outline admin-only" href="./admin.html" data-i18n="nav_admin">Админ</a>
-        <button class="btn btn-outline user-only" type="button" id="logoutBtn" data-i18n="nav_logout">Изход</button>
-
-        <a class="btn btn-outline" href="./contact.html" data-i18n="nav_contact">Контакт</a>
+        <a href="./contact.html" data-i18n="nav_contact">Контакт</a>
 
         <div class="lang">
           <button type="button" class="lang-btn" data-lang="bg">BG</button>
@@ -42,52 +33,75 @@
   </header>
 
   <main class="page">
-    <section class="container page-inner">
-      <div class="form-split">
-        <!-- LEFT: brand panel -->
-        <aside class="brand-panel">
-          <img class="logo-left" src="./images/logo.jpg" alt="UNICO SUO GENERE logo" />
+    <section class="container">
+      <div class="contact-hero contact-title">
+        <span class="badge">UNICO SUO GENERE</span>
+        <h1 class="h1" data-i18n="partners_h1">Партньори</h1>
+        <p class="lead" data-i18n="partners_lead">
+          Работим с хора и организации, които уважават породата и споделят отговорен подход.
+        </p>
+      </div>
 
-          <div class="brand-lines">
-            <div class="t1">UNICO SUO GENERE</div>
-            <div class="t2">by Stefano De Tanini</div>
-            <div class="t3" data-i18n="partners_brand_sub">
-              Партньорства, основани на реално качество и отговорност.
-            </div>
-          </div>
+      <div class="contact-layout">
+        <!-- LEFT: INFO / REQUIREMENTS -->
+        <aside class="trust-card">
+          <img class="logo" src="./images/logo.jpg" alt="UNICO SUO GENERE — by Stefano De Tanini" />
 
-          <ul class="brand-bullets">
-            <li data-i18n="brand_b1">Cane Corso само.</li>
-            <li data-i18n="brand_b2">Качество, здраве, темперамент.</li>
-            <li data-i18n="brand_b3">Одобрение и ясни правила.</li>
-          </ul>
-
-          <div class="divider"></div>
+          <p class="h2" style="margin: 6px 0 10px;" data-i18n="partners_brand_sub">
+            Партньорства, основани на реално качество и отговорност.
+          </p>
 
           <p class="muted" data-i18n="partners_brand_note">
             Търсим хора и организации, които работят дългосрочно и споделят същите ценности.
           </p>
 
-          <div class="cta" style="margin-top: 12px;">
-            <a class="btn btn-secondary" href="./contact.html" data-i18n="partners_brand_contact_btn">Контакт →</a>
-            <a class="btn btn-outline" href="./project.html" data-i18n="partners_brand_project_btn">Проектът →</a>
+          <div class="trust-divider"></div>
+
+          <div class="card" style="background: rgba(248,245,239,0.03);">
+            <h3 class="h3" data-i18n="partners_types_h2" style="margin:0 0 10px;">Кого търсим</h3>
+            <ul class="trust-list" style="margin:0; gap: 10px;">
+              <li><span class="dot"></span><span data-i18n="partners_types_li1">Развъдници и собственици, които работят по качество, не по количество.</span></li>
+              <li><span class="dot"></span><span data-i18n="partners_types_li2">Ветеринарни клиники и специалисти по диагностика/ортопедия.</span></li>
+              <li><span class="dot"></span><span data-i18n="partners_types_li3">Треньори и центрове за социализация и контрол.</span></li>
+              <li><span class="dot"></span><span data-i18n="partners_types_li4">Брандове за храна, добавки и оборудване с доказано качество.</span></li>
+            </ul>
+          </div>
+
+          <div class="trust-divider"></div>
+
+          <div class="card" style="background: rgba(248,245,239,0.03);">
+            <h3 class="h3" data-i18n="partners_offer_h2" style="margin:0 0 10px;">Какво предлагаме</h3>
+            <ul class="trust-list" style="margin:0; gap: 10px;">
+              <li><span class="dot"></span><span data-i18n="partners_offer_li1">Публично присъствие в секция “Партньори”.</span></li>
+              <li><span class="dot"></span><span data-i18n="partners_offer_li2">Съвместни инициативи и кампании в общността.</span></li>
+              <li><span class="dot"></span><span data-i18n="partners_offer_li3">Ясни правила и нулева толерантност към подвеждащи практики.</span></li>
+            </ul>
+          </div>
+
+          <div class="cta" style="margin-top: 14px;">
+            <a class="btn btn-outline" href="./contact.html" data-i18n="partners_brand_contact_btn">Контакт →</a>
+            <a class="btn btn-secondary" href="./project.html" data-i18n="partners_brand_project_btn">Проектът →</a>
           </div>
         </aside>
 
-        <!-- RIGHT: form panel -->
-        <div class="form-panel">
-          <h1 class="h1" data-i18n="partners_h1">Партньори</h1>
-          <p class="lead" data-i18n="partners_lead">
-            Ако си развъдник, ветеринар, треньор или бранд — изпрати ни заявка за партньорство.
-          </p>
+        <!-- RIGHT: PARTNERS FORM -->
+        <div class="apply-card">
+          <div class="apply-head">
+            <div>
+              <h2 class="h2" style="margin:0;" data-i18n="partners_apply_h2">Заявка за партньорство</h2>
+              <p class="muted" style="margin-top:6px;" data-i18n="partners_apply_p">
+                Опиши дейността си и как виждаш партньорството. Ще се свържем при интерес.
+              </p>
+            </div>
+            <div class="seal">USG</div>
+          </div>
 
-          <form class="apply-form" id="partnersForm" novalidate>
+          <form class="apply-form" novalidate>
             <div class="row">
               <div class="field">
                 <label data-i18n="partners_label_name">Име</label>
                 <input name="name" required data-ph="partners_ph_name" />
               </div>
-
               <div class="field">
                 <label data-i18n="partners_label_org">Организация</label>
                 <input name="org" required data-ph="partners_ph_org" />
@@ -99,7 +113,6 @@
                 <label data-i18n="partners_label_contact">Имейл / Телефон</label>
                 <input name="contact" required data-ph="partners_ph_contact" />
               </div>
-
               <div class="field">
                 <label data-i18n="partners_label_site">Уебсайт / Профил</label>
                 <input name="site" data-ph="partners_ph_site" />
@@ -108,32 +121,24 @@
 
             <div class="field">
               <label data-i18n="partners_label_message">Кратко описание</label>
-              <textarea
-                name="message"
-                rows="5"
-                required
-                data-ph="partners_ph_message"
-              ></textarea>
+              <textarea name="message" required data-ph="partners_ph_message"></textarea>
             </div>
 
-            <button class="btn btn-primary btn-wide" type="submit" data-i18n="partners_btn">
-              Изпрати заявка →
-            </button>
+            <button class="btn btn-primary btn-wide" type="submit" data-i18n="partners_btn">Изпрати →</button>
+            <div class="toast" hidden></div>
 
-            <div class="toast" id="partnersToast" hidden></div>
+            <p class="apply-note">
+              © <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini
+            </p>
           </form>
+
+          <div class="apply-foot">
+            <div class="foot-item"><span class="k">USG</span><span>Partners</span></div>
+            <div class="foot-item"><span class="k">CC</span><span>Quality</span></div>
+            <div class="foot-item"><span class="k">BG</span><span>Standard</span></div>
+          </div>
         </div>
       </div>
-
-      <section class="bottom-nav">
-        <div class="container bottom-nav-inner">
-          <a class="btn btn-outline" href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-          <a class="btn btn-outline" href="./standard.html" data-i18n="nav_standard">Стандарт</a>
-          <a class="btn btn-outline" href="./project.html" data-i18n="nav_project">Проектът</a>
-          <a class="btn btn-outline" href="./partners.html" data-i18n="nav_partners">Партньори</a>
-          <a class="btn btn-outline" href="./registry.html" data-i18n="nav_registry">Регистър</a>
-        </div>
-      </section>
     </section>
   </main>
 
@@ -141,13 +146,14 @@
     <div class="container footer-inner">
       <p>© <span id="y"></span> UNICO SUO GENERE — by Stefano De Tanini</p>
       <div class="footer-links">
+        <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
         <a href="./manifesto.html" data-i18n="nav_manifesto">Манифест</a>
-        <a href="./contact.html" data-i18n="footer_contact">Контакт</a>
       </div>
     </div>
   </footer>
 
-  <script type="module" src="./src/main.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
-
