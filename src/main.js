@@ -217,6 +217,17 @@ add_dog_brand_standard_btn: 'Стандарт →',
     admin_stats_rejected: 'Отхвърлени:',
     admin_notes_h2: 'Бележки',
     admin_notes_p: 'Одобрените профили стават видими в “Регистър”. Отхвърлените профили остават скрити.',
+    admin_brand_sub: 'Админ панел — преглед и одобрение на заявки.',
+admin_stats_h2: 'Статистика',
+admin_stat_pending: 'Чакащи',
+admin_stat_approved: 'Одобрени',
+admin_stat_rejected: 'Отхвърлени',
+admin_stats_note: 'Статистиката се обновява автоматично при действия.',
+admin_left_note: 'Одобрение → профилът става публичен в регистъра. Отхвърляне → остава скрит.',
+admin_left_registry_btn: 'Регистър →',
+admin_left_standard_btn: 'Стандарт →',
+admin_hint: 'Отвори профил, за да видиш детайли и снимки. Одобри/отхвърли директно от картата или от профила.',
+
 
     // CONTACT
     contact_title: 'Контакт — UNICO SUO GENERE',
@@ -310,7 +321,34 @@ project_left_note: 'Проектът е създаден, за да защити
 project_left_registry_btn: 'Регистър →',
 project_left_standard_btn: 'Стандарт →',
 project_cta_join: 'Регистрация →',
-project_note: 'UNICO SUO GENERE — by Stefano De Tanini'
+project_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+
+
+notfound_title: 'Страницата не е намерена — UNICO SUO GENERE',
+notfound_brand_sub: 'Пътят е важен — но понякога страницата липсва.',
+notfound_left_note: 'Ако смяташ, че това е грешка — свържи се с нас и ще я оправим.',
+notfound_contact_btn: 'Контакт →',
+notfound_registry_btn: 'Регистър →',
+notfound_tip: 'Провери адреса или използвай бутоните по-долу.',
+notfound_home_btn: 'Начало →',
+notfound_manifesto_btn: 'Манифест →',
+notfound_standard_btn: 'Стандарт →',
+notfound_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+
+terms_title: 'Общи условия — UNICO SUO GENERE',
+terms_brand_sub: 'Правила за използване на платформата.',
+terms_left_note: 'Използвайки платформата, ти се съгласяваш с условията по-долу.',
+terms_left_privacy_btn: 'Поверителност →',
+terms_left_contact_btn: 'Контакт →',
+terms_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+
+privacy_title: 'Поверителност — UNICO SUO GENERE',
+privacy_brand_sub: 'Защита на личните данни и прозрачност.',
+privacy_left_note: 'Ние уважаваме личните ти данни и ги използваме отговорно.',
+privacy_left_terms_btn: 'Условия →',
+privacy_left_contact_btn: 'Контакт →',
+privacy_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+
 
   },
 
@@ -546,6 +584,17 @@ admin_title: 'Admin — UNICO SUO GENERE',
     admin_stats_rejected: 'Rejected:',
     admin_notes_h2: 'Notes',
     admin_notes_p: 'Approved profiles become visible in “Registry”. Rejected profiles remain hidden.',
+    admin_brand_sub: 'Admin panel — review and approve submissions.',
+admin_stats_h2: 'Stats',
+admin_stat_pending: 'Pending',
+admin_stat_approved: 'Approved',
+admin_stat_rejected: 'Rejected',
+admin_stats_note: 'Stats update automatically after actions.',
+admin_left_note: 'Approve → profile becomes public in the registry. Reject → stays hidden.',
+admin_left_registry_btn: 'Registry →',
+admin_left_standard_btn: 'Standard →',
+admin_hint: 'Open a profile to view details and photos. Approve/reject from the card or from the profile page.',
+
 
     // CONTACT
     contact_title: 'Contact — UNICO SUO GENERE',
@@ -640,7 +689,34 @@ project_left_note: 'The project exists to protect the breed from compromises and
 project_left_registry_btn: 'Registry →',
 project_left_standard_btn: 'Standard →',
 project_cta_join: 'Register →',
-project_note: 'UNICO SUO GENERE — by Stefano De Tanini'
+project_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+
+
+notfound_title: 'Page not found — UNICO SUO GENERE',
+notfound_brand_sub: 'The path matters — but sometimes a page is missing.',
+notfound_left_note: 'If you believe this is a mistake — contact us and we will fix it.',
+notfound_contact_btn: 'Contact →',
+notfound_registry_btn: 'Registry →',
+notfound_tip: 'Check the URL or use the buttons below.',
+notfound_home_btn: 'Home →',
+notfound_manifesto_btn: 'Manifesto →',
+notfound_standard_btn: 'Standard →',
+notfound_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+
+terms_title: 'Terms & Conditions — UNICO SUO GENERE',
+terms_brand_sub: 'Rules for using the platform.',
+terms_left_note: 'By using the platform, you agree to the terms below.',
+terms_left_privacy_btn: 'Privacy →',
+terms_left_contact_btn: 'Contact →',
+terms_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+
+privacy_title: 'Privacy Policy — UNICO SUO GENERE',
+privacy_brand_sub: 'Personal data protection and transparency.',
+privacy_left_note: 'We respect your personal data and use it responsibly.',
+privacy_left_terms_btn: 'Terms →',
+privacy_left_contact_btn: 'Contact →',
+privacy_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+
 
   }
 };
