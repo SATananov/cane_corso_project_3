@@ -16,6 +16,7 @@ const translations = {
     nav_admin: 'Админ',
     nav_logout: 'Изход',
 
+    // FOOTER
     footer_contact: 'Контакт',
 
     // HOME
@@ -39,12 +40,12 @@ const translations = {
     home_block3_login: 'Вход →',
     home_block3_register: 'Регистрация →',
     home_block3_add: 'Добави куче →',
-home_brand_sub: 'Българският стандарт и регистър за Cane Corso — качество, контрол, отговорност.',
-home_brand_note: 'Това е платформа за собственици, развъдници и общност, която държи на породния тип и истината.',
-home_brand_standard_btn: 'Стандарт →',
-home_cta_join: 'Стани част →',
-home_note: 'Всеки профил се публикува след преглед и одобрение.',
 
+    home_brand_sub: 'Българският стандарт и регистър за Cane Corso — качество, контрол, отговорност.',
+    home_brand_note: 'Това е платформа за собственици, развъдници и общност, която държи на породния тип и истината.',
+    home_brand_standard_btn: 'Стандарт →',
+    home_cta_join: 'Стани част →',
+    home_note: 'Всеки профил се публикува след преглед и одобрение.',
 
     // MANIFESTO
     manifesto_title: 'Манифест — UNICO SUO GENERE',
@@ -63,6 +64,15 @@ home_note: 'Всеки профил се публикува след прегл�
       'Cane Corso не е за всеки. Това е куче със сила, интелект и инстинкт — и изисква човек със стабилен характер.',
     manifesto_statement_p2:
       'Тук не “събираме бройки”. Тук изграждаме качество. Поставяме граници. Носим отговорност.',
+
+    // (ако ги ползваш в HTML)
+    manifesto_brand_sub: 'Позиция. Не тенденция. Отговорност към породата Cane Corso.',
+    manifesto_left_note: 'Тук не търсим “харесвания”. Тук поставяме стандарт и носим отговорност.',
+    manifesto_left_standard_btn: 'Стандарт →',
+    manifesto_left_registry_btn: 'Регистър →',
+    manifesto_cta_registry: 'Виж регистъра →',
+    manifesto_cta_standard: 'Прочети стандарта →',
+    manifesto_note: 'UNICO SUO GENERE — by Stefano De Tanini',
 
     // STANDARD
     standard_title: 'Стандарт — UNICO SUO GENERE',
@@ -102,13 +112,13 @@ home_note: 'Всеки профил се публикува след прегл�
     registry_filter_female: 'Женско',
     registry_filter_btn: 'Приложи →',
     registry_clear_btn: 'Изчисти',
-registry_brand_sub: 'Публичен регистър с одобрени Cane Corso в България.',
-registry_brand_note: 'Видими са само одобрени профили. За включване — направи регистрация и подай заявка.',
-registry_brand_register_btn: 'Регистрация →',
-registry_brand_add_btn: 'Добави куче →',
-registry_brand_standard_btn: 'Стандарт →',
-registry_hint: 'Натисни върху профил, за да видиш детайли.',
 
+    registry_brand_sub: 'Публичен регистър с одобрени Cane Corso в България.',
+    registry_brand_note: 'Видими са само одобрени профили. За включване — направи регистрация и подай заявка.',
+    registry_brand_register_btn: 'Регистрация →',
+    registry_brand_add_btn: 'Добави куче →',
+    registry_brand_standard_btn: 'Стандарт →',
+    registry_hint: 'Натисни върху профил, за да видиш детайли.',
 
     // DOG
     dog_title: 'Профил — UNICO SUO GENERE',
@@ -128,15 +138,14 @@ registry_hint: 'Натисни върху профил, за да видиш д�
     dog_notes_h2: 'Описание',
     dog_notes_p: '(Тук ще се визуализира описанието/бележката към профила.)',
     dog_status_h2: 'Статус',
-dog_status_loading: 'Зареждане...',
-dog_left_note: 'Само одобрени профили са публични. Админ може да одобрява/отхвърля заявки.',
-dog_left_standard_btn: 'Стандарт →',
-dog_photos_note: 'Ако няма снимки, профилът не е завършен.',
-dog_admin_note: 'Одобрение/отхвърляне влияе на видимостта в регистъра.',
+    dog_status_loading: 'Зареждане...',
+    dog_left_note: 'Само одобрени профили са публични. Админ може да одобрява/отхвърля заявки.',
+    dog_left_standard_btn: 'Стандарт →',
+    dog_photos_note: 'Ако няма снимки, профилът не е завършен.',
+    dog_admin_note: 'Одобрение/отхвърляне влияе на видимостта в регистъра.',
 
-
-// LOGIN
-login_title: 'Вход — UNICO SUO GENERE',
+    // LOGIN
+    login_title: 'Вход — UNICO SUO GENERE',
     login_h1: 'Вход',
     login_lead: 'Влез в профила си, за да управляваш заявки и съдържание.',
     login_label_email: 'Имейл',
@@ -147,14 +156,14 @@ login_title: 'Вход — UNICO SUO GENERE',
     login_no_account: 'Нямаш профил?',
     login_go_register: 'Регистрация →',
     login_brand_sub: 'Вход за собственици и партньори на Cane Corso в България.',
-login_brand_note: 'Ако нямаш профил — направи регистрация и подай заявка за включване.',
-login_brand_register_btn: 'Регистрация →',
+    login_brand_note: 'Ако нямаш профил — направи регистрация и подай заявка за включване.',
+    login_brand_register_btn: 'Регистрация →',
     login_brand_registry_btn: 'Регистър →',
 
-brand_b1: 'Cane Corso само.',
-brand_b2: 'Качество, здраве, темперамент.',
-brand_b3: 'Одобрение преди публикуване.',
-
+    // BRAND BULLETS
+    brand_b1: 'Cane Corso само.',
+    brand_b2: 'Качество, здраве, темперамент.',
+    brand_b3: 'Одобрение преди публикуване.',
 
     // REGISTER
     register_title: 'Регистрация — UNICO SUO GENERE',
@@ -170,14 +179,13 @@ brand_b3: 'Одобрение преди публикуване.',
     register_have_account: 'Имаш профил?',
     register_go_login: 'Вход →',
     register_brand_sub: 'Регистрация за собственици, развъдници и партньори.',
-register_brand_note: 'След регистрация ще можеш да подадеш заявка и да качиш снимки за профил в регистъра.',
-register_brand_login_btn: 'Вход →',
-register_brand_registry_btn: 'Регистър →',
+    register_brand_note: 'След регистрация ще можеш да подадеш заявка и да качиш снимки за профил в регистъра.',
+    register_brand_login_btn: 'Вход →',
+    register_brand_registry_btn: 'Регистър →',
 
-
-// ADD DOG
-add_dog_title: 'Добави куче — UNICO SUO GENERE',
-add_dog_h1: 'Добави куче',
+    // ADD DOG
+    add_dog_title: 'Добави куче — UNICO SUO GENERE',
+    add_dog_h1: 'Добави куче',
     add_dog_lead: 'Подай заявка за включване в регистъра. Всяка заявка се преглежда преди публикуване.',
     add_dog_label_name: 'Име на кучето',
     add_dog_ph_name: 'например: Ares',
@@ -200,10 +208,10 @@ add_dog_h1: 'Добави куче',
     add_dog_photos_hint: 'Препоръчително: поне 3 снимки (стойка, профил, лице).',
     add_dog_btn: 'Изпрати заявка →',
     add_dog_brand_sub: 'Подай заявка за включване в регистъра. Всяка заявка се преглежда.',
-add_dog_brand_note: 'Снимки: препоръчително — стойка, профил и лице. Колкото по-ясни са данните, толкова по-бърза е верификацията.',
-add_dog_brand_registry_btn: 'Регистър →',
-add_dog_brand_standard_btn: 'Стандарт →',
-
+    add_dog_brand_note:
+      'Снимки: препоръчително — стойка, профил и лице. Колкото по-ясни са данните, толкова по-бърза е верификацията.',
+    add_dog_brand_registry_btn: 'Регистър →',
+    add_dog_brand_standard_btn: 'Стандарт →',
 
     // ADMIN
     admin_title: 'Админ — UNICO SUO GENERE',
@@ -211,23 +219,21 @@ add_dog_brand_standard_btn: 'Стандарт →',
     admin_lead: 'Прегледай заявките и реши кои профили да се публикуват в регистъра.',
     admin_pending_h2: 'Чакащи заявки',
     admin_refresh_btn: 'Обнови',
-    admin_stats_h2: 'Статус',
+    admin_stats_h2: 'Статистика',
     admin_stats_pending: 'Чакащи:',
     admin_stats_approved: 'Одобрени:',
     admin_stats_rejected: 'Отхвърлени:',
     admin_notes_h2: 'Бележки',
     admin_notes_p: 'Одобрените профили стават видими в “Регистър”. Отхвърлените профили остават скрити.',
     admin_brand_sub: 'Админ панел — преглед и одобрение на заявки.',
-admin_stats_h2: 'Статистика',
-admin_stat_pending: 'Чакащи',
-admin_stat_approved: 'Одобрени',
-admin_stat_rejected: 'Отхвърлени',
-admin_stats_note: 'Статистиката се обновява автоматично при действия.',
-admin_left_note: 'Одобрение → профилът става публичен в регистъра. Отхвърляне → остава скрит.',
-admin_left_registry_btn: 'Регистър →',
-admin_left_standard_btn: 'Стандарт →',
-admin_hint: 'Отвори профил, за да видиш детайли и снимки. Одобри/отхвърли директно от картата или от профила.',
-
+    admin_stat_pending: 'Чакащи',
+    admin_stat_approved: 'Одобрени',
+    admin_stat_rejected: 'Отхвърлени',
+    admin_stats_note: 'Статистиката се обновява автоматично при действия.',
+    admin_left_note: 'Одобрение → профилът става публичен в регистъра. Отхвърляне → остава скрит.',
+    admin_left_registry_btn: 'Регистър →',
+    admin_left_standard_btn: 'Стандарт →',
+    admin_hint: 'Отвори профил, за да видиш детайли и снимки. Одобри/отхвърли директно от картата или от профила.',
 
     // CONTACT
     contact_title: 'Контакт — UNICO SUO GENERE',
@@ -240,12 +246,12 @@ admin_hint: 'Отвори профил, за да видиш детайли и �
     contact_ph_name: 'твоето име',
     contact_ph_email: 'name@example.com',
     contact_ph_message: 'напиши твоето съобщение',
-contact_brand_sub: 'Свържи се с нас за въпроси, партньорства или предложения.',
-contact_brand_note: 'Пишеш директно до екипа на UNICO SUO GENERE. Всеки сигнал и предложение се разглеждат лично.',
-contact_brand_partners_btn: 'Партньори →',
-contact_brand_registry_btn: 'Регистър →',
+    contact_brand_sub: 'Свържи се с нас за въпроси, партньорства или предложения.',
+    contact_brand_note: 'Пишеш директно до екипа на UNICO SUO GENERE. Всеки сигнал и предложение се разглеждат лично.',
+    contact_brand_partners_btn: 'Партньори →',
+    contact_brand_registry_btn: 'Регистър →',
 
-// PARTNERS
+    // PARTNERS
     partners_title: 'Партньори — UNICO SUO GENERE',
     partners_h1: 'Партньори',
     partners_lead: 'Работим с хора и организации, които уважават породата и споделят отговорен подход.',
@@ -272,10 +278,9 @@ contact_brand_registry_btn: 'Регистър →',
     partners_ph_site: 'линк (по желание)',
     partners_ph_message: 'какво правите и какво предлагате',
     partners_brand_sub: 'Партньорства, основани на реално качество и отговорност.',
-partners_brand_note: 'Търсим хора и организации, които работят дългосрочно и споделят същите ценности.',
-partners_brand_contact_btn: 'Контакт →',
-partners_brand_project_btn: 'Проектът →',
-
+    partners_brand_note: 'Търсим хора и организации, които работят дългосрочно и споделят същите ценности.',
+    partners_brand_contact_btn: 'Контакт →',
+    partners_brand_project_btn: 'Проектът →',
 
     // PROJECT
     project_title: 'Проектът — UNICO SUO GENERE',
@@ -314,42 +319,73 @@ partners_brand_project_btn: 'Проектът →',
     project_cta_add: 'Добави куче →',
     project_cta_registry: 'Регистър →',
     project_brand_sub: 'Платформа за българската общност на Cane Corso — стандарт, регистър и отговорност.',
-project_b1: 'Ясни правила и критерии',
-project_b2: 'Проверка и одобрение',
-project_b3: 'Общност и партньорства',
-project_left_note: 'Проектът е създаден, за да защити породата от компромиси и да изгради култура на качество.',
-project_left_registry_btn: 'Регистър →',
-project_left_standard_btn: 'Стандарт →',
-project_cta_join: 'Регистрация →',
-project_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+    project_b1: 'Ясни правила и критерии',
+    project_b2: 'Проверка и одобрение',
+    project_b3: 'Общност и партньорства',
+    project_left_note: 'Проектът е създаден, за да защити породата от компромиси и да изгради култура на качество.',
+    project_left_registry_btn: 'Регистър →',
+    project_left_standard_btn: 'Стандарт →',
+    project_cta_join: 'Регистрация →',
+    project_note: 'UNICO SUO GENERE — by Stefano De Tanini',
 
+    // 404 (existing + NEW)
+    notfound_title: 'Страницата не е намерена — UNICO SUO GENERE',
+    notfound_h1: '404',
+    notfound_lead: 'Страницата не е намерена.',
+    notfound_brand_sub: 'Пътят е важен — но понякога страницата липсва.',
+    notfound_left_note: 'Ако смяташ, че това е грешка — свържи се с нас и ще я оправим.',
+    notfound_contact_btn: 'Контакт →',
+    notfound_registry_btn: 'Регистър →',
+    notfound_tip: 'Провери адреса или използвай бутоните по-долу.',
+    notfound_home_btn: 'Начало →',
+    notfound_manifesto_btn: 'Манифест →',
+    notfound_standard_btn: 'Стандарт →',
+    notfound_note: 'UNICO SUO GENERE — by Stefano De Tanini',
 
-notfound_title: 'Страницата не е намерена — UNICO SUO GENERE',
-notfound_brand_sub: 'Пътят е важен — но понякога страницата липсва.',
-notfound_left_note: 'Ако смяташ, че това е грешка — свържи се с нас и ще я оправим.',
-notfound_contact_btn: 'Контакт →',
-notfound_registry_btn: 'Регистър →',
-notfound_tip: 'Провери адреса или използвай бутоните по-долу.',
-notfound_home_btn: 'Начало →',
-notfound_manifesto_btn: 'Манифест →',
-notfound_standard_btn: 'Стандарт →',
-notfound_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+    // TERMS (existing + NEW sections)
+    terms_title: 'Общи условия — UNICO SUO GENERE',
+    terms_h1: 'Общи условия',
+    terms_lead: 'Настоящите условия уреждат използването на платформата UNICO SUO GENERE.',
+    terms_brand_sub: 'Правила за използване на платформата.',
+    terms_left_note: 'Използвайки платформата, ти се съгласяваш с условията по-долу.',
+    terms_left_privacy_btn: 'Поверителност →',
+    terms_left_contact_btn: 'Контакт →',
+    terms_sec1_h2: '1. Обхват',
+    terms_sec1_p:
+      'Платформата е предназначена за информация, регистрация и представяне на Cane Corso кучета и свързани партньори.',
+    terms_sec2_h2: '2. Регистрация',
+    terms_sec2_p: 'Потребителите носят отговорност за предоставената информация. Всяка заявка подлежи на преглед и одобрение.',
+    terms_sec3_h2: '3. Съдържание',
+    terms_sec3_p:
+      'Забранено е публикуването на невярна, подвеждаща или неуместна информация. Администраторът има право да премахва съдържание.',
+    terms_sec4_h2: '4. Отговорност',
+    terms_sec4_p:
+      'Платформата не носи отговорност за действията на потребителите или за последици от използването на публикувана информация.',
+    terms_sec5_h2: '5. Промени',
+    terms_sec5_p:
+      'Условията могат да бъдат актуализирани по всяко време. Продължаването на използването означава съгласие с промените.',
+    terms_note: 'UNICO SUO GENERE — by Stefano De Tanini',
 
-terms_title: 'Общи условия — UNICO SUO GENERE',
-terms_brand_sub: 'Правила за използване на платформата.',
-terms_left_note: 'Използвайки платформата, ти се съгласяваш с условията по-долу.',
-terms_left_privacy_btn: 'Поверителност →',
-terms_left_contact_btn: 'Контакт →',
-terms_note: 'UNICO SUO GENERE — by Stefano De Tanini',
-
-privacy_title: 'Поверителност — UNICO SUO GENERE',
-privacy_brand_sub: 'Защита на личните данни и прозрачност.',
-privacy_left_note: 'Ние уважаваме личните ти данни и ги използваме отговорно.',
-privacy_left_terms_btn: 'Условия →',
-privacy_left_contact_btn: 'Контакт →',
-privacy_note: 'UNICO SUO GENERE — by Stefano De Tanini',
-
-
+    // PRIVACY (existing + NEW sections)
+    privacy_title: 'Поверителност — UNICO SUO GENERE',
+    privacy_h1: 'Поверителност',
+    privacy_lead:
+      'Настоящата политика описва как се събират, използват и защитават личните данни в UNICO SUO GENERE.',
+    privacy_brand_sub: 'Защита на личните данни и прозрачност.',
+    privacy_left_note: 'Ние уважаваме личните ти данни и ги използваме отговорно.',
+    privacy_left_terms_btn: 'Условия →',
+    privacy_left_contact_btn: 'Контакт →',
+    privacy_sec1_h2: '1. Какви данни събираме',
+    privacy_sec1_p: 'Име, имейл, контактна информация и данни, предоставени доброволно при регистрация или контакт.',
+    privacy_sec2_h2: '2. Как използваме данните',
+    privacy_sec2_p: 'Данните се използват за управление на профили, заявки, комуникация и поддръжка на платформата.',
+    privacy_sec3_h2: '3. Съхранение и защита',
+    privacy_sec3_p: 'Прилагаме технически и организационни мерки за защита на информацията от неоторизиран достъп.',
+    privacy_sec4_h2: '4. Споделяне',
+    privacy_sec4_p: 'Лични данни не се споделят с трети страни, освен ако това не се изисква по закон.',
+    privacy_sec5_h2: '5. Права на потребителите',
+    privacy_sec5_p: 'Всеки потребител има право на достъп, корекция и изтриване на своите данни.',
+    privacy_note: 'UNICO SUO GENERE — by Stefano De Tanini',
   },
 
   en: {
@@ -366,6 +402,7 @@ privacy_note: 'UNICO SUO GENERE — by Stefano De Tanini',
     nav_admin: 'Admin',
     nav_logout: 'Logout',
 
+    // FOOTER
     footer_contact: 'Contact',
 
     // HOME
@@ -389,17 +426,21 @@ privacy_note: 'UNICO SUO GENERE — by Stefano De Tanini',
     home_block3_login: 'Login →',
     home_block3_register: 'Register →',
     home_block3_add: 'Add dog →',
+
     home_brand_sub: 'The Bulgarian standard and registry for Cane Corso — quality, control, responsibility.',
-home_brand_note: 'A platform for owners, kennels and a community that values breed type and truth.',
-home_brand_standard_btn: 'Standard →',
-home_cta_join: 'Join →',
-home_note: 'Every profile is published after review and approval.',
+    home_brand_note: 'A platform for owners, kennels and a community that values breed type and truth.',
+    home_brand_standard_btn: 'Standard →',
+    home_cta_join: 'Join →',
+    home_note: 'Every profile is published after review and approval.',
 
-
-    // MANIFESTO
+    // MANIFESTO (FIXED: removed BG duplicates)
     manifesto_title: 'Manifesto — UNICO SUO GENERE',
     manifesto_h1: 'Manifesto',
     manifesto_lead: 'UNICO SUO GENERE is a position. Not a trend. It is responsibility to the Cane Corso breed.',
+    manifesto_brand_sub: 'A position. Not a trend. Responsibility to the Cane Corso breed.',
+    manifesto_left_note: 'We are not chasing “likes”. We set a standard and take responsibility.',
+    manifesto_left_standard_btn: 'Standard →',
+    manifesto_left_registry_btn: 'Registry →',
     manifesto_why_h2: 'Why we exist',
     manifesto_why_li1: 'Protect breed type and functionality — above all.',
     manifesto_why_li2: 'Separate true representatives from imitations.',
@@ -413,21 +454,9 @@ home_note: 'Every profile is published after review and approval.',
       'Cane Corso is not for everyone. It is powerful, intelligent and instinct-driven — and requires a stable handler.',
     manifesto_statement_p2:
       'We do not “collect numbers”. We build quality. We set boundaries. We take responsibility.',
-      manifesto_brand_sub: 'A position. Not a trend. Responsibility to the Cane Corso breed.',
-manifesto_left_note: 'We are not chasing “likes”. We set a standard and take responsibility.',
-manifesto_left_standard_btn: 'Standard →',
-manifesto_left_registry_btn: 'Registry →',
-manifesto_cta_registry: 'View registry →',
-manifesto_cta_standard: 'Read the standard →',
-manifesto_note: 'UNICO SUO GENERE — by Stefano De Tanini',
-manifesto_brand_sub: 'Позиция. Не тенденция. Отговорност към породата Cane Corso.',
-manifesto_left_note: 'Тук не търсим “харесвания”. Тук поставяме стандарт и носим отговорност.',
-manifesto_left_standard_btn: 'Стандарт →',
-manifesto_left_registry_btn: 'Регистър →',
-manifesto_cta_registry: 'Виж регистъра →',
-manifesto_cta_standard: 'Прочети стандарта →',
-manifesto_note: 'UNICO SUO GENERE — by Stefano De Tanini',
-
+    manifesto_cta_registry: 'View registry →',
+    manifesto_cta_standard: 'Read the standard →',
+    manifesto_note: 'UNICO SUO GENERE — by Stefano De Tanini',
 
     // STANDARD
     standard_title: 'Standard — UNICO SUO GENERE',
@@ -468,15 +497,14 @@ manifesto_note: 'UNICO SUO GENERE — by Stefano De Tanini',
     registry_filter_btn: 'Apply →',
     registry_clear_btn: 'Clear',
     registry_brand_sub: 'A public registry of approved Cane Corso in Bulgaria.',
-registry_brand_note: 'Only approved profiles are visible. To join — register and submit a request.',
-registry_brand_register_btn: 'Register →',
-registry_brand_add_btn: 'Add dog →',
-registry_brand_standard_btn: 'Standard →',
-registry_hint: 'Click a profile to view details.',
+    registry_brand_note: 'Only approved profiles are visible. To join — register and submit a request.',
+    registry_brand_register_btn: 'Register →',
+    registry_brand_add_btn: 'Add dog →',
+    registry_brand_standard_btn: 'Standard →',
+    registry_hint: 'Click a profile to view details.',
 
-
-// DOG
-dog_title: 'Profile — UNICO SUO GENERE',
+    // DOG
+    dog_title: 'Profile — UNICO SUO GENERE',
     dog_subtitle: 'Profile in the UNICO SUO GENERE registry',
     dog_photos_h2: 'Photos',
     dog_details_h2: 'Details',
@@ -493,15 +521,14 @@ dog_title: 'Profile — UNICO SUO GENERE',
     dog_notes_h2: 'Description',
     dog_notes_p: '(The description/note will appear here.)',
     dog_status_h2: 'Status',
-dog_status_loading: 'Loading...',
-dog_left_note: 'Only approved profiles are public. Admin can approve/reject submissions.',
-dog_left_standard_btn: 'Standard →',
-dog_photos_note: 'If there are no photos, the profile is not complete.',
-dog_admin_note: 'Approve/reject affects visibility in the registry.',
+    dog_status_loading: 'Loading...',
+    dog_left_note: 'Only approved profiles are public. Admin can approve/reject submissions.',
+    dog_left_standard_btn: 'Standard →',
+    dog_photos_note: 'If there are no photos, the profile is not complete.',
+    dog_admin_note: 'Approve/reject affects visibility in the registry.',
 
-
-// LOGIN
-login_title: 'Login — UNICO SUO GENERE',
+    // LOGIN
+    login_title: 'Login — UNICO SUO GENERE',
     login_h1: 'Login',
     login_lead: 'Sign in to manage submissions and content.',
     login_label_email: 'Email',
@@ -512,15 +539,9 @@ login_title: 'Login — UNICO SUO GENERE',
     login_no_account: "Don't have an account?",
     login_go_register: 'Register →',
     login_brand_sub: 'Sign in for Cane Corso owners and partners in Bulgaria.',
-login_brand_note: 'No account yet? Register and submit a request to be included.',
-login_brand_register_btn: 'Register →',
+    login_brand_note: 'No account yet? Register and submit a request to be included.',
+    login_brand_register_btn: 'Register →',
     login_brand_registry_btn: 'Registry →',
-
-
-brand_b1: 'Cane Corso only.',
-brand_b2: 'Quality, health, temperament.',
-brand_b3: 'Approval before publishing.',
-
 
     // REGISTER
     register_title: 'Register — UNICO SUO GENERE',
@@ -536,8 +557,8 @@ brand_b3: 'Approval before publishing.',
     register_have_account: 'Already have an account?',
     register_go_login: 'Login →',
     register_brand_sub: 'Registration for owners, kennels and partners.',
-register_brand_note: 'After registering you can submit a request and upload photos for a registry profile.',
-register_brand_login_btn: 'Login →',
+    register_brand_note: 'After registering you can submit a request and upload photos for a registry profile.',
+    register_brand_login_btn: 'Login →',
     register_brand_registry_btn: 'Registry →',
 
     // ADD DOG
@@ -565,38 +586,34 @@ register_brand_login_btn: 'Login →',
     add_dog_photos_hint: 'Recommended: at least 3 photos (stance, profile, face).',
     add_dog_btn: 'Submit →',
     add_dog_brand_sub: 'Submit a registry request. Every request is reviewed.',
-add_dog_brand_note: 'Photos: recommended — stance, profile and face. The clearer the data, the faster the verification.',
-add_dog_brand_registry_btn: 'Registry →',
-add_dog_brand_standard_btn: 'Standard →',
+    add_dog_brand_note:
+      'Photos: recommended — stance, profile and face. The clearer the data, the faster the verification.',
+    add_dog_brand_registry_btn: 'Registry →',
+    add_dog_brand_standard_btn: 'Standard →',
 
-
-
-
-// ADMIN
-admin_title: 'Admin — UNICO SUO GENERE',
+    // ADMIN
+    admin_title: 'Admin — UNICO SUO GENERE',
     admin_h1: 'Admin panel',
     admin_lead: 'Review submissions and decide which profiles to publish in the registry.',
     admin_pending_h2: 'Pending submissions',
     admin_refresh_btn: 'Refresh',
-    admin_stats_h2: 'Status',
+    admin_stats_h2: 'Stats',
     admin_stats_pending: 'Pending:',
     admin_stats_approved: 'Approved:',
     admin_stats_rejected: 'Rejected:',
     admin_notes_h2: 'Notes',
     admin_notes_p: 'Approved profiles become visible in “Registry”. Rejected profiles remain hidden.',
     admin_brand_sub: 'Admin panel — review and approve submissions.',
-admin_stats_h2: 'Stats',
-admin_stat_pending: 'Pending',
-admin_stat_approved: 'Approved',
-admin_stat_rejected: 'Rejected',
-admin_stats_note: 'Stats update automatically after actions.',
-admin_left_note: 'Approve → profile becomes public in the registry. Reject → stays hidden.',
-admin_left_registry_btn: 'Registry →',
-admin_left_standard_btn: 'Standard →',
-admin_hint: 'Open a profile to view details and photos. Approve/reject from the card or from the profile page.',
+    admin_stat_pending: 'Pending',
+    admin_stat_approved: 'Approved',
+    admin_stat_rejected: 'Rejected',
+    admin_stats_note: 'Stats update automatically after actions.',
+    admin_left_note: 'Approve → profile becomes public in the registry. Reject → stays hidden.',
+    admin_left_registry_btn: 'Registry →',
+    admin_left_standard_btn: 'Standard →',
+    admin_hint: 'Open a profile to view details and photos. Approve/reject from the card or from the profile page.',
 
-
-    // CONTACT
+    // CONTACT (FIXED: removed BG lines)
     contact_title: 'Contact — UNICO SUO GENERE',
     contact_h1: 'Contact',
     contact_lead: 'Contact us for questions, partnerships or proposals.',
@@ -607,11 +624,10 @@ admin_hint: 'Open a profile to view details and photos. Approve/reject from the 
     contact_ph_name: 'your name',
     contact_ph_email: 'name@example.com',
     contact_ph_message: 'write your message',
-    contact_brand_sub: 'Свържи се с нас за въпроси, партньорства или предложения.',
-contact_brand_note: 'Пишеш директно до екипа на UNICO SUO GENERE. Всеки сигнал и предложение се разглеждат лично.',
-contact_brand_partners_btn: 'Партньори →',
-contact_brand_registry_btn: 'Регистър →',
-
+    contact_brand_sub: 'Contact us for questions, partnerships or proposals.',
+    contact_brand_note: 'You are writing directly to the UNICO SUO GENERE team. Every message is reviewed personally.',
+    contact_brand_partners_btn: 'Partners →',
+    contact_brand_registry_btn: 'Registry →',
 
     // PARTNERS
     partners_title: 'Partners — UNICO SUO GENERE',
@@ -639,11 +655,10 @@ contact_brand_registry_btn: 'Регистър →',
     partners_ph_contact: 'contact',
     partners_ph_site: 'link (optional)',
     partners_ph_message: 'what you do and what you offer',
-partners_brand_sub: 'Partnerships built on real quality and responsibility.',
-partners_brand_note: 'We are looking for people and organizations who think long-term and share the same values.',
-partners_brand_contact_btn: 'Contact →',
-partners_brand_project_btn: 'Project →',
-
+    partners_brand_sub: 'Partnerships built on real quality and responsibility.',
+    partners_brand_note: 'We are looking for people and organizations who think long-term and share the same values.',
+    partners_brand_contact_btn: 'Contact →',
+    partners_brand_project_btn: 'Project →',
 
     // PROJECT
     project_title: 'Project — UNICO SUO GENERE',
@@ -682,42 +697,68 @@ partners_brand_project_btn: 'Project →',
     project_cta_add: 'Add a dog →',
     project_cta_registry: 'Registry →',
     project_brand_sub: 'A platform for the Bulgarian Cane Corso community — standard, registry and responsibility.',
-project_b1: 'Clear rules and criteria',
-project_b2: 'Review and approval',
-project_b3: 'Community and partnerships',
-project_left_note: 'The project exists to protect the breed from compromises and to build a culture of quality.',
-project_left_registry_btn: 'Registry →',
-project_left_standard_btn: 'Standard →',
-project_cta_join: 'Register →',
-project_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+    project_b1: 'Clear rules and criteria',
+    project_b2: 'Review and approval',
+    project_b3: 'Community and partnerships',
+    project_left_note: 'The project exists to protect the breed from compromises and to build a culture of quality.',
+    project_left_registry_btn: 'Registry →',
+    project_left_standard_btn: 'Standard →',
+    project_cta_join: 'Register →',
+    project_note: 'UNICO SUO GENERE — by Stefano De Tanini',
 
+    // 404 (NEW keys)
+    notfound_title: 'Page not found — UNICO SUO GENERE',
+    notfound_h1: '404',
+    notfound_lead: 'Page not found.',
+    notfound_brand_sub: 'The path matters — but sometimes a page is missing.',
+    notfound_left_note: 'If you believe this is a mistake — contact us and we will fix it.',
+    notfound_contact_btn: 'Contact →',
+    notfound_registry_btn: 'Registry →',
+    notfound_tip: 'Check the URL or use the buttons below.',
+    notfound_home_btn: 'Home →',
+    notfound_manifesto_btn: 'Manifesto →',
+    notfound_standard_btn: 'Standard →',
+    notfound_note: 'UNICO SUO GENERE — by Stefano De Tanini',
 
-notfound_title: 'Page not found — UNICO SUO GENERE',
-notfound_brand_sub: 'The path matters — but sometimes a page is missing.',
-notfound_left_note: 'If you believe this is a mistake — contact us and we will fix it.',
-notfound_contact_btn: 'Contact →',
-notfound_registry_btn: 'Registry →',
-notfound_tip: 'Check the URL or use the buttons below.',
-notfound_home_btn: 'Home →',
-notfound_manifesto_btn: 'Manifesto →',
-notfound_standard_btn: 'Standard →',
-notfound_note: 'UNICO SUO GENERE — by Stefano De Tanini',
+    // TERMS (NEW keys)
+    terms_title: 'Terms & Conditions — UNICO SUO GENERE',
+    terms_h1: 'Terms & Conditions',
+    terms_lead: 'These terms govern the use of the UNICO SUO GENERE platform.',
+    terms_brand_sub: 'Rules for using the platform.',
+    terms_left_note: 'By using the platform, you agree to the terms below.',
+    terms_left_privacy_btn: 'Privacy →',
+    terms_left_contact_btn: 'Contact →',
+    terms_sec1_h2: '1. Scope',
+    terms_sec1_p: 'The platform provides information, registration and presentation of Cane Corso dogs and related partners.',
+    terms_sec2_h2: '2. Registration',
+    terms_sec2_p: 'Users are responsible for the information they provide. Each submission is reviewed and approved.',
+    terms_sec3_h2: '3. Content',
+    terms_sec3_p: 'False, misleading or inappropriate content is forbidden. The administrator may remove content.',
+    terms_sec4_h2: '4. Liability',
+    terms_sec4_p: 'The platform is not responsible for user actions or consequences of using published information.',
+    terms_sec5_h2: '5. Changes',
+    terms_sec5_p: 'These terms may be updated at any time. Continued use means acceptance of the changes.',
+    terms_note: 'UNICO SUO GENERE — by Stefano De Tanini',
 
-terms_title: 'Terms & Conditions — UNICO SUO GENERE',
-terms_brand_sub: 'Rules for using the platform.',
-terms_left_note: 'By using the platform, you agree to the terms below.',
-terms_left_privacy_btn: 'Privacy →',
-terms_left_contact_btn: 'Contact →',
-terms_note: 'UNICO SUO GENERE — by Stefano De Tanini',
-
-privacy_title: 'Privacy Policy — UNICO SUO GENERE',
-privacy_brand_sub: 'Personal data protection and transparency.',
-privacy_left_note: 'We respect your personal data and use it responsibly.',
-privacy_left_terms_btn: 'Terms →',
-privacy_left_contact_btn: 'Contact →',
-privacy_note: 'UNICO SUO GENERE — by Stefano De Tanini',
-
-
+    // PRIVACY (NEW keys)
+    privacy_title: 'Privacy Policy — UNICO SUO GENERE',
+    privacy_h1: 'Privacy',
+    privacy_lead: 'This policy describes how personal data is collected, used and protected within UNICO SUO GENERE.',
+    privacy_brand_sub: 'Personal data protection and transparency.',
+    privacy_left_note: 'We respect your personal data and use it responsibly.',
+    privacy_left_terms_btn: 'Terms →',
+    privacy_left_contact_btn: 'Contact →',
+    privacy_sec1_h2: '1. What data we collect',
+    privacy_sec1_p: 'Name, email, contact information and data you voluntarily provide when registering or contacting us.',
+    privacy_sec2_h2: '2. How we use data',
+    privacy_sec2_p: 'Data is used for profile/submission management, communication and platform support.',
+    privacy_sec3_h2: '3. Storage and protection',
+    privacy_sec3_p: 'We apply technical and organizational measures to protect information from unauthorized access.',
+    privacy_sec4_h2: '4. Sharing',
+    privacy_sec4_p: 'Personal data is not shared with third parties unless required by law.',
+    privacy_sec5_h2: '5. User rights',
+    privacy_sec5_p: 'Users have the right to access, correct and delete their data.',
+    privacy_note: 'UNICO SUO GENERE — by Stefano De Tanini',
   }
 };
 
@@ -728,6 +769,7 @@ function getLang() {
 function setLang(lang) {
   localStorage.setItem(LANG_KEY, lang);
   applyTranslations(lang);
+  setActiveLangButton(lang);
 }
 
 function applyTranslations(lang) {
@@ -761,6 +803,13 @@ function initLangButtons() {
   });
 }
 
+function setActiveLangButton(lang) {
+  document.querySelectorAll('.lang-btn').forEach((btn) => {
+    if (btn.dataset.lang === lang) btn.classList.add('active');
+    else btn.classList.remove('active');
+  });
+}
+
 function setYear() {
   const y = document.getElementById('y');
   if (y) y.textContent = new Date().getFullYear();
@@ -768,8 +817,8 @@ function setYear() {
 
 document.addEventListener('DOMContentLoaded', () => {
   initLangButtons();
-  applyTranslations(getLang());
+  const lang = getLang();
+  applyTranslations(lang);
+  setActiveLangButton(lang);
   setYear();
 });
-
-
